@@ -1,0 +1,9 @@
+﻿<Application x:Class="QUAN_LY.UI.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:QUAN_LY.UI"
+            StartupUri="Views/Giao diện admin.xaml">
+    <Application.Resources>
+         
+    </Application.Resources>
+</Application>

@@ -1,0 +1,93 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Giao di\u1EC7n \u0110\u0103ng Nh\u1EADp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|d:\\lap trinh .net\\d\u1EF1 \u00E1n b\u00E1o c\u00E1o\\giao di\u1EC7n \u0111\u0103ng nh\u1EADp\\quan ly.ui\\views\\dangnhap.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|solutionrelative:quan ly.ui\\views\\dangnhap.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|d:\\lap trinh .net\\d\u1EF1 \u00E1n b\u00E1o c\u00E1o\\giao di\u1EC7n \u0111\u0103ng nh\u1EADp\\quan ly.ui\\views\\dangky.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|solutionrelative:quan ly.ui\\views\\dangky.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|d:\\lap trinh .net\\d\u1EF1 \u00E1n b\u00E1o c\u00E1o\\giao di\u1EC7n \u0111\u0103ng nh\u1EADp\\quan ly.ui\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|solutionrelative:quan ly.ui\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|d:\\lap trinh .net\\d\u1EF1 \u00E1n b\u00E1o c\u00E1o\\giao di\u1EC7n \u0111\u0103ng nh\u1EADp\\quan ly.ui\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|solutionrelative:quan ly.ui\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "Dangky.xaml",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Giao di\u1EC7n \u0110\u0103ng Nh\u1EADp\\QUAN LY.UI\\Views\\Dangky.xaml",
+              "RelativeDocumentMoniker": "QUAN LY.UI\\Views\\Dangky.xaml",
+              "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Giao di\u1EC7n \u0110\u0103ng Nh\u1EADp\\QUAN LY.UI\\Views\\Dangky.xaml",
+              "RelativeToolTip": "QUAN LY.UI\\Views\\Dangky.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-09-24T15:00:36.413Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Dangnhap.xaml",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Giao di\u1EC7n \u0110\u0103ng Nh\u1EADp\\QUAN LY.UI\\Views\\Dangnhap.xaml",
+              "RelativeDocumentMoniker": "QUAN LY.UI\\Views\\Dangnhap.xaml",
+              "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Giao di\u1EC7n \u0110\u0103ng Nh\u1EADp\\QUAN LY.UI\\Views\\Dangnhap.xaml",
+              "RelativeToolTip": "QUAN LY.UI\\Views\\Dangnhap.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-09-24T14:54:28.186Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Giao di\u1EC7n \u0110\u0103ng Nh\u1EADp\\QUAN LY.UI\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "QUAN LY.UI\\MainWindow.xaml",
+              "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Giao di\u1EC7n \u0110\u0103ng Nh\u1EADp\\QUAN LY.UI\\MainWindow.xaml",
+              "RelativeToolTip": "QUAN LY.UI\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-09-24T14:48:53.447Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Giao di\u1EC7n \u0110\u0103ng Nh\u1EADp\\QUAN LY.UI\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "QUAN LY.UI\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Giao di\u1EC7n \u0110\u0103ng Nh\u1EADp\\QUAN LY.UI\\MainWindow.xaml.cs",
+              "RelativeToolTip": "QUAN LY.UI\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-24T14:48:53.045Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

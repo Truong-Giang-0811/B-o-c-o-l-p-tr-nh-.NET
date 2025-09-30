@@ -1,0 +1,96 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Giao di\u1EC7n \u0110\u0103ng Nh\u1EADp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4A61B767-3EF3-4B00-896C-B9FF5B5E7B31}|Giao di\u1EC7n Admin\\Giao di\u1EC7n Admin.csproj|d:\\lap trinh .net\\d\u1EF1 \u00E1n b\u00E1o c\u00E1o\\giao di\u1EC7n \u0111\u0103ng nh\u1EADp\\giao di\u1EC7n admin\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{4A61B767-3EF3-4B00-896C-B9FF5B5E7B31}|Giao di\u1EC7n Admin\\Giao di\u1EC7n Admin.csproj|solutionrelative:giao di\u1EC7n admin\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B5EF43AE-01A3-4C55-961A-F7F827097D8F}|Giao di\u1EC7n \u0110\u0103ng Nh\u1EADp\\Giao di\u1EC7n \u0110\u0103ng Nh\u1EADp.csproj|d:\\lap trinh .net\\d\u1EF1 \u00E1n b\u00E1o c\u00E1o\\giao di\u1EC7n \u0111\u0103ng nh\u1EADp\\giao di\u1EC7n \u0111\u0103ng nh\u1EADp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{B5EF43AE-01A3-4C55-961A-F7F827097D8F}|Giao di\u1EC7n \u0110\u0103ng Nh\u1EADp\\Giao di\u1EC7n \u0110\u0103ng Nh\u1EADp.csproj|solutionrelative:giao di\u1EC7n \u0111\u0103ng nh\u1EADp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{39149766-F4B2-41C2-B58D-E2ABC7CB5D2F}|Giao di\u1EC7n \u0111\u0103ng k\u00ED\\Giao di\u1EC7n \u0111\u0103ng k\u00ED.csproj|d:\\lap trinh .net\\d\u1EF1 \u00E1n b\u00E1o c\u00E1o\\giao di\u1EC7n \u0111\u0103ng nh\u1EADp\\giao di\u1EC7n \u0111\u0103ng k\u00ED\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{39149766-F4B2-41C2-B58D-E2ABC7CB5D2F}|Giao di\u1EC7n \u0111\u0103ng k\u00ED\\Giao di\u1EC7n \u0111\u0103ng k\u00ED.csproj|solutionrelative:giao di\u1EC7n \u0111\u0103ng k\u00ED\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4A61B767-3EF3-4B00-896C-B9FF5B5E7B31}|Giao di\u1EC7n Admin\\Giao di\u1EC7n Admin.csproj|d:\\lap trinh .net\\d\u1EF1 \u00E1n b\u00E1o c\u00E1o\\giao di\u1EC7n \u0111\u0103ng nh\u1EADp\\giao di\u1EC7n admin\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4A61B767-3EF3-4B00-896C-B9FF5B5E7B31}|Giao di\u1EC7n Admin\\Giao di\u1EC7n Admin.csproj|solutionrelative:giao di\u1EC7n admin\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Giao di\u1EC7n \u0110\u0103ng Nh\u1EADp\\Giao di\u1EC7n \u0111\u0103ng k\u00ED\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Giao di\u1EC7n \u0111\u0103ng k\u00ED\\MainWindow.xaml",
+              "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Giao di\u1EC7n \u0110\u0103ng Nh\u1EADp\\Giao di\u1EC7n \u0111\u0103ng k\u00ED\\MainWindow.xaml",
+              "RelativeToolTip": "Giao di\u1EC7n \u0111\u0103ng k\u00ED\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-09-21T13:30:53.885Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Giao di\u1EC7n \u0110\u0103ng Nh\u1EADp\\Giao di\u1EC7n \u0110\u0103ng Nh\u1EADp\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Giao di\u1EC7n \u0110\u0103ng Nh\u1EADp\\MainWindow.xaml",
+              "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Giao di\u1EC7n \u0110\u0103ng Nh\u1EADp\\Giao di\u1EC7n \u0110\u0103ng Nh\u1EADp\\MainWindow.xaml",
+              "RelativeToolTip": "Giao di\u1EC7n \u0110\u0103ng Nh\u1EADp\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-09-21T13:27:48.944Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Giao di\u1EC7n \u0110\u0103ng Nh\u1EADp\\Giao di\u1EC7n Admin\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Giao di\u1EC7n Admin\\MainWindow.xaml",
+              "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Giao di\u1EC7n \u0110\u0103ng Nh\u1EADp\\Giao di\u1EC7n Admin\\MainWindow.xaml",
+              "RelativeToolTip": "Giao di\u1EC7n Admin\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-09-23T02:38:57.839Z",
+              "IsPinned": true,
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Giao di\u1EC7n \u0110\u0103ng Nh\u1EADp\\Giao di\u1EC7n Admin\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Giao di\u1EC7n Admin\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Giao di\u1EC7n \u0110\u0103ng Nh\u1EADp\\Giao di\u1EC7n Admin\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Giao di\u1EC7n Admin\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-09-23T02:38:57.013Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
