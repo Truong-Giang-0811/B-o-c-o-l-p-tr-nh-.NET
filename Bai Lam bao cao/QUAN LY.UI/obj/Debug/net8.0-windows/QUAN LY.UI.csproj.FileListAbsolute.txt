@@ -157,3 +157,4 @@ D:\Lap trinh .NET\DỰ ÁN BÁO CÁO\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0
 D:\Lap trinh .NET\DỰ ÁN BÁO CÁO\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\Microsoft.Extensions.FileProviders.Physical.dll
 D:\Lap trinh .NET\DỰ ÁN BÁO CÁO\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\Microsoft.Extensions.FileSystemGlobbing.dll
 D:\Lap trinh .NET\DỰ ÁN BÁO CÁO\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\appsettings.json
+D:\Lap trinh .NET\DỰ ÁN BÁO CÁO\Bai Lam bao cao\QUAN LY.UI\obj\Debug\net8.0-windows\QUAN LY.UI.sourcelink.json

@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
 using System.Text;
@@ -10,15 +11,17 @@ namespace QUAN_LY.UI.Models
     [Table("KhachHang")]
     public class KhachHang
     {
+        [Key]
+        [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int MaKhachHang { get; set; }
         public string HoTen { get; set; }
         public DateTime? NgaySinh { get; set; }
         public string DiaChi { get; set; }
-        public string CMND_CCCD { get; set; }
         public string Email { get; set; }
         public string SoDienThoai { get; set; }
         public string Tendangnhap { get; set; }
         public string Matkhau { get; set; }
+        public bool GioiTinh { get; set; }
 
         // Liên kết đến bảng TaiKhoanKH
 

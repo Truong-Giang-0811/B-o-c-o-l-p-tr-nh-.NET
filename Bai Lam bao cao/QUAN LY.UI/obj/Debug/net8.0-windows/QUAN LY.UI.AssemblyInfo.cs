@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("QUAN LY.UI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+9cc6c755d6709c52fd1a71ff0140758c787108fa")]
 [assembly: System.Reflection.AssemblyProductAttribute("QUAN LY.UI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("QUAN LY.UI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

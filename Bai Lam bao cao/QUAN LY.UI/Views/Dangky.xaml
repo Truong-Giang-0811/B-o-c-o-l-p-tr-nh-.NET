@@ -99,6 +99,7 @@
                 </Setter.Value>
             </Setter>
         </Style>
+       
     </Window.Resources>
     <Grid>
         <Grid.Background>
@@ -126,18 +127,18 @@
             <Label x:Name="lbl_email" Content="Email:" HorizontalAlignment="Left" Margin="152,305,0,0" VerticalAlignment="Top" FontSize="17" FontWeight="Medium"/>
             <Label x:Name="lbl_sdt" Content="Số điện thoại:" HorizontalAlignment="Left" Margin="91,350,0,0" VerticalAlignment="Top" FontSize="17" FontWeight="Medium"/>
             <Label x:Name="lbl_gioitinh" Content="Giới tính:" HorizontalAlignment="Left" Margin="127,395,0,0" VerticalAlignment="Top" FontSize="17" FontWeight="Medium"/>
-            <TextBox HorizontalAlignment="Left" Margin="219,39,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="185"  BorderBrush="#FF08EBDD" BorderThickness="2,2,2,2" Height="24" />
-            <PasswordBox x:Name="pwdbox"  HorizontalAlignment="Left" Margin="219,84,0,0" VerticalAlignment="Top" Width="185" Height="24" BorderBrush="Black" BorderThickness="1,1,1,1"/>
-            <TextBox x:Name="txtpassword" HorizontalAlignment="Left" Margin="219,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="185" Height="24" BorderBrush="Black"/>
-            <PasswordBox x:Name="pwdbox1"  HorizontalAlignment="Left" Margin="219,129,0,0" VerticalAlignment="Top" Width="185" Height="24" BorderBrush="Black" BorderThickness="1,1,1,1"/>
-            <TextBox x:Name="txtpassword1" HorizontalAlignment="Left" Margin="219,129,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="185"  Height="24" BorderBrush="Black"/>
-            <CheckBox Content="Hiện mật khẩu" HorizontalAlignment="Left" Margin="304,157,0,0" VerticalAlignment="Top" FontSize="12" FontWeight="Medium" Checked="CheckBox_Checked" Unchecked="CheckBox_UnChecked"/>
-            <TextBox HorizontalAlignment="Left" Margin="219,174,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="185" Height="24" BorderBrush="Black"/>
-            <TextBox HorizontalAlignment="Left" Margin="219,264,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="185" Height="24" BorderBrush="Black"/>
-            <TextBox HorizontalAlignment="Left" Margin="219,309,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="185" Height="24" BorderBrush="Black"/>
-            <TextBox HorizontalAlignment="Left" Margin="219,354,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="185" Height="24" BorderBrush="Black" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"/>
-            <DatePicker HorizontalAlignment="Left" Margin="219,221,0,0" VerticalAlignment="Top" Height="24" Width="186" BorderBrush="Black" />
-            <RadioButton Content="Nam" HorizontalAlignment="Left" Margin="219,404,0,0" VerticalAlignment="Top" Height="19" Width="50" FontSize="14"/>
+            <TextBox TabIndex="0" x:Name="txttendangnhap" HorizontalAlignment="Left" Margin="219,39,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="185"  BorderBrush="#FF08EBDD" BorderThickness="2,2,2,2" Height="24" />
+            <PasswordBox TabIndex="1" x:Name="pwdbox"  HorizontalAlignment="Left" Margin="219,84,0,0" VerticalAlignment="Top" Width="185" Height="24" BorderBrush="Black" BorderThickness="1,1,1,1"/>
+            <TextBox TabIndex="1" x:Name="txtpassword" HorizontalAlignment="Left" Margin="219,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="185" Height="24" BorderBrush="Black"/>
+            <PasswordBox TabIndex="2" x:Name="pwdbox1"  HorizontalAlignment="Left" Margin="219,129,0,0" VerticalAlignment="Top" Width="185" Height="24" BorderBrush="Black" BorderThickness="1,1,1,1"/>
+            <TextBox TabIndex="2" x:Name="txtpassword1" HorizontalAlignment="Left" Margin="219,129,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="185"  Height="24" BorderBrush="Black"/>
+            <CheckBox TabIndex="3" Content="Hiện mật khẩu" HorizontalAlignment="Left" Margin="304,157,0,0" VerticalAlignment="Top" FontSize="12" FontWeight="Medium" Checked="CheckBox_Checked" Unchecked="CheckBox_UnChecked"/>
+            <TextBox TabIndex="4" x:Name="txthoten" HorizontalAlignment="Left" Margin="219,174,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="185" Height="24" BorderBrush="Black"/>
+            <TextBox TabIndex="6" x:Name="txtdiachi" HorizontalAlignment="Left" Margin="219,264,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="185" Height="24" BorderBrush="Black"/>
+            <TextBox x:Name="txtemail" HorizontalAlignment="Left" Margin="219,309,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="185" Height="24" BorderBrush="Black" TabIndex="7"/>
+            <TextBox x:Name="txtsodienthoai" HorizontalAlignment="Left" Margin="219,354,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="185" Height="24" BorderBrush="Black" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" TabIndex="8"/>
+            <DatePicker x:Name="datengaysinh" HorizontalAlignment="Left" Margin="219,221,0,0" VerticalAlignment="Top" Height="24" Width="186" BorderBrush="Black" TabIndex="5" />
+            <RadioButton x:Name="rdNam" Content="Nam" HorizontalAlignment="Left" Margin="219,404,0,0" VerticalAlignment="Top" Height="19" Width="50" FontSize="14"/>
             <RadioButton Content="Nữ" HorizontalAlignment="Left" Margin="290,404,0,0" VerticalAlignment="Top" Height="19" Width="50" FontSize="14"/>
             <Button Style="{StaticResource Signup}" x:Name="btbdangki" Height="30" Width="160" VerticalContentAlignment="Center" VerticalAlignment="Bottom" Margin="140,0,0,105" Content="ĐĂNG KÝ " FontSize="16" ForceCursor="True" FontWeight="Heavy" Background="#FF0D9F56" BorderThickness="0,0,0,0" Padding="0,0,0,0" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Click="btbdangki_Click"/>
             <TextBlock HorizontalAlignment="Left" Margin="8,0,0,50" TextWrapping="Wrap" Text="Bạn đã có tài khoản? Đăng nhập ngay:" VerticalAlignment="Bottom" FontSize="15" FontWeight="Medium"/>

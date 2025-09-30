@@ -1,4 +1,6 @@
-﻿using System;
+﻿using QUAN_LY.UI.Data;
+using QUAN_LY.UI.Services;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -19,6 +21,7 @@ namespace QUAN_LY.UI.Views
     /// </summary>
     public partial class Dangky : Window
     {
+        private readonly DichvuDangKy dangKy;
         public Dangky()
         {
             InitializeComponent();
@@ -26,7 +29,9 @@ namespace QUAN_LY.UI.Views
             txtpassword.Visibility = Visibility.Collapsed;
             pwdbox1.Visibility = Visibility.Visible;
             txtpassword1.Visibility = Visibility.Collapsed;
-
+            rdNam.IsChecked = true;
+            var db = new LibraryContext();
+            dangKy = new DichvuDangKy(db);
         }
 
         private void btbdangnhap_Click(object sender, RoutedEventArgs e)
@@ -56,7 +61,24 @@ namespace QUAN_LY.UI.Views
 
         private void btbdangki_Click(object sender, RoutedEventArgs e)
         {
-
+            string username = txttendangnhap.Text.Trim();
+            string password = pwdbox.Password.Trim();
+            string rePassword = pwdbox1.Password.Trim();
+            string hoTen = txthoten.Text.Trim();
+            DateTime? ngaySinh = datengaysinh.SelectedDate;
+            string diaChi = txtdiachi.Text.Trim();
+            string email = txtemail.Text.Trim();
+            string soDienThoai = txtsodienthoai.Text.Trim();
+            bool gioiTinh = rdNam.IsChecked == true;
+            if (dangKy.DangKy(username, password, rePassword, hoTen, ngaySinh, diaChi, email, soDienThoai, gioiTinh, out string message))
+            {
+                MessageBox.Show("Dang ky thanh cong");
+               
+            }
+            else
+            {
+                MessageBox.Show(message);
+            }
         }
     }
 }
