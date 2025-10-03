@@ -39,17 +39,17 @@
         </Grid.ColumnDefinitions>
         <Grid Grid.Column="0" Background="#FF6AE4A7">
             <Image Source="/Anh/Logo.png" VerticalAlignment="Top" HorizontalAlignment="Center"></Image>
-            <Button  Style="{StaticResource Btbadmin}" Content="Quản lý sách" Margin="24,180,24,0" VerticalAlignment="Top" Height="33" FontSize="15" FontWeight="Medium" />
+            <Button  Style="{StaticResource Btbadmin}" Content="Quản lý sách" Margin="24,180,24,0" VerticalAlignment="Top" Height="33" Width="132" FontSize="15" FontWeight="Medium" />
             <Button  Style="{StaticResource Btbadmin}" Content="Quản lý nhân viên" HorizontalAlignment="Center" Margin="0,240,0,0" VerticalAlignment="Top" FontSize="15" FontWeight="Medium" Height="33" Width="132"/>
             <Button  Style="{StaticResource Btbadmin}" Content="Quản lý người dùng" HorizontalAlignment="Center" Margin="0,300,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Medium" Height="33" Width="132"/>
             <Button  Style="{StaticResource Btbadmin}" Content="Quản lý đơn mượn" HorizontalAlignment="Center" Margin="0,360,0,0" VerticalAlignment="Top" FontSize="15" FontWeight="Medium" Height="33" Width="132"/>
             <Button  Style="{StaticResource Btbadmin}" Content="Báo cáo thống kê" HorizontalAlignment="Center" Margin="0,420,0,0" VerticalAlignment="Top" FontSize="15" FontWeight="Medium" Height="33" Width="132"/>
-            <Button x:Name="btn_dangxuat"  Style="{StaticResource Btbadmin}" Content="Đăng xuất" HorizontalAlignment="Left" Margin="21,480,0,0" VerticalAlignment="Top" Height="33" Width="132" FontSize="15" FontWeight="Medium" Click="btn_dangxuat_Click" />
+            <Button x:Name="btn_dangxuat"  Style="{StaticResource Btbadmin}" Content="Đăng xuất" HorizontalAlignment="Center" Margin="0,480,0,0" VerticalAlignment="Top" Height="33" Width="132" FontSize="15" FontWeight="Medium" Click="btn_dangxuat_Click" />
 
         </Grid>
         <Grid Grid.Column="1" Background="#FFD3F8E6">
 
-            <StackPanel Background="Red" Height="520" VerticalAlignment="Bottom"/>
+            
             <Label Content="Xin chào:Admin" HorizontalAlignment="Center" Margin="0,8,0,0" VerticalAlignment="Top" FontSize="24" FontWeight="Heavy" Foreground="Black"/>
 
         </Grid>
