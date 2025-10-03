@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace QUAN_LY.UI.Models
 {
-    [Table("Admin")]
+    [Table("Admins")]
     public class Admin
     {
         public int MaNhanVien { get; set; }
