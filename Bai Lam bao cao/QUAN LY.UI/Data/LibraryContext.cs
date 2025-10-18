@@ -22,6 +22,7 @@ namespace QUAN_LY.UI.Data
         public DbSet<Sach> Saches { get; set; }
         public DbSet<MuonSach> MuonSaches { get; set; }
         public DbSet<ChiTietMuonSach> ChiTietMuonSaches { get; set; }
+        public DbSet<Giohang> Giohangs { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -44,18 +45,26 @@ namespace QUAN_LY.UI.Data
             modelBuilder.Entity<ChiTietMuonSach>()
                 .HasKey(c => c.MaChiTietMuon);
 
+            modelBuilder.Entity<Giohang>()
+                .HasKey(g => g.MaGioHang);
+
             // ================== Khai báo quan hệ ==================
             // KhachHang - TaiKhoan (1-1)
-           
+
 
             // Admin - TaiKhoan (1-1)
-           
+
 
             // MuonSach - KhachHang (n-1)
             modelBuilder.Entity<MuonSach>()
                 .HasOne(m => m.KhachHang)
                 .WithMany(k => k.MuonSaches)
                 .HasForeignKey(m => m.MaKhachHang);
+
+            modelBuilder.Entity<MuonSach>()
+              .HasOne(m => m.Yeucaumuon)
+              .WithMany(k => k.MuonSaches)
+              .HasForeignKey(m => m.MaYeuCau);
 
             // MuonSach - Admin (n-1)
             modelBuilder.Entity<MuonSach>()
@@ -74,6 +83,16 @@ namespace QUAN_LY.UI.Data
                 .HasOne(c => c.Sach)
                 .WithMany(s => s.ChiTietMuonSaches)
                 .HasForeignKey(c => c.MaSach);
+            modelBuilder.Entity<Giohang>()
+                .HasOne(g => g.KhachHang)
+                .WithMany(k => k.Giohangs)
+                .HasForeignKey(g => g.MaKhachHang);
+
+            modelBuilder.Entity<Giohang>()
+                .HasOne(g => g.Sach)
+                .WithMany(s => s.Giohangs)
+                .HasForeignKey(g => g.MaSach);
+
         }
 
         // Cấu hình kết nối đến SQL Server
