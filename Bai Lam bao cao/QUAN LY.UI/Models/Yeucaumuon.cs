@@ -1,0 +1,20 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace QUAN_LY.UI.Models
+{
+    public class Yeucaumuon
+    {
+        public int MaYeuCau { get; set; }
+        public int MaGioHang { get; set; }
+        public int SoLuongMuon { get; set; }
+        public DateTime? NgayTaoDon { get; set; }
+        public String Trangthai { get; set; }
+
+        public Giohang Giohang { get; set; }
+        public MuonSach? MuonSach { get; set; } // có thể null (nếu chưa được duyệt)
+    }
+}

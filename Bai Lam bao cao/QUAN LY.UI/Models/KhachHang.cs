@@ -23,9 +23,7 @@ namespace QUAN_LY.UI.Models
         public string Matkhau { get; set; }
         public bool GioiTinh { get; set; }
 
-        // Liên kết đến bảng TaiKhoanKH
-
-
+        public ICollection<Giohang> Giohangs { get; set; }
 
         // Khách hàng có nhiều phiếu mượn
         public ICollection<MuonSach> MuonSaches { get; set; }
