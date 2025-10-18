@@ -23,12 +23,13 @@ namespace QUAN_LY.UI.Views
     public partial class Dangnhap : Window
     {
         private readonly Xac_Thuc_Dangnhap xacthuc;
+        private readonly LibraryContext db;
         public Dangnhap()
         {
             InitializeComponent();
             pwdbox.Visibility = Visibility.Visible;
             txtpassword.Visibility = Visibility.Collapsed;
-            var db = new LibraryContext();
+            db = new LibraryContext();
             xacthuc = new Xac_Thuc_Dangnhap(db);
 
         }
@@ -51,6 +52,7 @@ namespace QUAN_LY.UI.Views
             {
                 if (xacthuc.LaAdmin(taikhoanadmin))
                 {
+                    UserSession.SetAdmin(taikhoanadmin);
                     Giao_diện_admin giao_Diện_Admin = new Giao_diện_admin();
                     giao_Diện_Admin.Show();
                     this.Close();
@@ -58,7 +60,8 @@ namespace QUAN_LY.UI.Views
                 }
                 else if (xacthuc.LaNhanVien(taikhoanadmin))
                 {
-                  
+                    UserSession.SetAdmin(taikhoanadmin);
+
                     // mở giao diện nhân viên
                 }
             }
@@ -67,7 +70,11 @@ namespace QUAN_LY.UI.Views
             {
                 if (xacthuc.LaKhachHang(taikhoankh))
                 {
-                   
+                    UserSession.SetKhachHang(taikhoankh);
+                    Giao_dien_doc_gia giao_Dien_Doc_Gia = new Giao_dien_doc_gia();
+                    giao_Dien_Doc_Gia.Show();
+                    this.Close();
+
                     // mở giao diện khách hàng ở đây
                 }
             }
@@ -91,6 +98,11 @@ namespace QUAN_LY.UI.Views
             pwdbox.Password = txtpassword.Text;
             pwdbox.Visibility = Visibility.Visible;
             txtpassword.Visibility = Visibility.Collapsed;
+        }
+
+        private void txtpassword_TextChanged(object sender, TextChangedEventArgs e)
+        {
+
         }
     }
 }

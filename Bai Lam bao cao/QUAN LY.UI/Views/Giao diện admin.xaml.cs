@@ -30,5 +30,15 @@ namespace QUAN_LY.UI.Views
             dangnhap.Show();
             this.Close();
         }
+
+        private void Quanlysach(object sender, RoutedEventArgs e)
+        {
+            Mainconten.Content = new Views.Quan_Ly_Sach();
+        }
+
+        private void Quanlydonmuon(object sender, RoutedEventArgs e)
+        {
+            Mainconten.Content = new Views.Quan_ly_muon_tra();
+        }
     }
 }
