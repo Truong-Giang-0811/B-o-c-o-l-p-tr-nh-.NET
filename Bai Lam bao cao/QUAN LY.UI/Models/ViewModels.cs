@@ -8,6 +8,7 @@ namespace QUAN_LY.UI.Models
 {
     public class GioHangViewModel
     {
+        public bool IsChecked { get; set; }
         public int MaGioHang { get; set; }
         public int MaSach { get; set; }
         public string TieuDe { get; set; }

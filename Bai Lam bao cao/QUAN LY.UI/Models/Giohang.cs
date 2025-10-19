@@ -17,6 +17,7 @@ namespace QUAN_LY.UI.Models
         public int MaSach { get; set; }
         public int MaKhachHang { get; set; }
         public int SoLuongmuon { get; set; }
+        public string TrangThai { get; set; }
 
         public Sach Sach { get; set; }
         public KhachHang KhachHang { get; set; }
