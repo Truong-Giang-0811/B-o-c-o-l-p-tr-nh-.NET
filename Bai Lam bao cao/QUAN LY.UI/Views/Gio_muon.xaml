@@ -35,7 +35,7 @@
                 Background="#FF5C5C"
                 Foreground="White" FontWeight="Bold"
                 HorizontalAlignment="Left" Margin="10,0,0,10"
-                VerticalAlignment="Bottom" Click="BtnXoa_Click"
+                VerticalAlignment="Bottom" Click="XoaGiohang_Click"
                />
 
         <Button Content="✅ Xác nhận mượn"
@@ -43,7 +43,7 @@
                 Background="#0D9F56"
                 Foreground="White" FontWeight="Bold"
                 HorizontalAlignment="Right" Margin="0,0,10,10"
-                VerticalAlignment="Bottom" Click="Button_Click"
+                VerticalAlignment="Bottom" Click="Xacnhan_Click"
                />
     </Grid>
 </UserControl>

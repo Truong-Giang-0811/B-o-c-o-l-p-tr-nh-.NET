@@ -102,9 +102,8 @@
 
                         <!-- DataGrid -->
                         <GroupBox Header="Danh Sách Đơn Mượn" Grid.Row="2" Margin="5">
-                            <DataGrid AutoGenerateColumns="False" Margin="5">
+                            <DataGrid AutoGenerateColumns="False" Margin="5" SelectionChanged="DataGrid_SelectionChanged">
                                 <DataGrid.Columns>
-                                    <DataGridTextColumn Header="Mã Mượn" Binding="{Binding MaMuon}"/>
                                     <DataGridTextColumn Header="Tên Độc Giả" Binding="{Binding TenDocGia}"/>
                                     <DataGridTextColumn Header="Tên Sách" Binding="{Binding TenSach}"/>
                                     <DataGridTextColumn Header="Số Lượng" Binding="{Binding SoLuong}"/>
