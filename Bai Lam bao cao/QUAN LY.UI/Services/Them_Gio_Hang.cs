@@ -22,23 +22,16 @@ namespace QUAN_LY.UI.Services
         public bool themvaogio(int masach) 
         {
             int makh = UserSession.CurrentKhachHang.MaKhachHang;
-            var item = _context.Giohangs
-                    .FirstOrDefault(g => g.MaSach == masach && g.MaKhachHang == makh);
-            if (item != null)
-            {
-                item.SoLuongmuon += 1;
-            }
-            else
-            {
+
                 var newItem = new Giohang
                 {
                     MaKhachHang = makh,
                     MaSach = masach,
-                    SoLuongmuon = 1
+                    SoLuongmuon = 1,
+                    TrangThai = "Đang chọn"
                 };
                 _context.Giohangs.Add(newItem);
 
-            }
             _context.SaveChanges();
             return true;
         }
