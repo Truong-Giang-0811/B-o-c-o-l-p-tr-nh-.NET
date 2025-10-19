@@ -61,10 +61,7 @@ namespace QUAN_LY.UI.Data
                 .WithMany(k => k.MuonSaches)
                 .HasForeignKey(m => m.MaKhachHang);
 
-            modelBuilder.Entity<MuonSach>()
-              .HasOne(m => m.Yeucaumuon)
-              .WithMany(k => k.MuonSaches)
-              .HasForeignKey(m => m.MaYeuCau);
+            
 
             // MuonSach - Admin (n-1)
             modelBuilder.Entity<MuonSach>()
@@ -83,6 +80,7 @@ namespace QUAN_LY.UI.Data
                 .HasOne(c => c.Sach)
                 .WithMany(s => s.ChiTietMuonSaches)
                 .HasForeignKey(c => c.MaSach);
+
             modelBuilder.Entity<Giohang>()
                 .HasOne(g => g.KhachHang)
                 .WithMany(k => k.Giohangs)
@@ -92,7 +90,16 @@ namespace QUAN_LY.UI.Data
                 .HasOne(g => g.Sach)
                 .WithMany(s => s.Giohangs)
                 .HasForeignKey(g => g.MaSach);
-
+            // Giohang ↔ Yeucaumuon (1-1)
+            modelBuilder.Entity<Yeucaumuon>()
+                .HasOne(y => y.Giohang)
+                .WithOne(g => g.Yeucaumuon)
+                .HasForeignKey<Yeucaumuon>(y => y.MaGioHang);
+            // Yeucaumuon ↔ MuonSach(1 - 1)
+            modelBuilder.Entity<MuonSach>()
+                .HasOne(m => m.Yeucaumuon)
+                .WithOne(y => y.MuonSach)
+                .HasForeignKey<MuonSach>(m => m.MaYeuCau);
         }
 
         // Cấu hình kết nối đến SQL Server
