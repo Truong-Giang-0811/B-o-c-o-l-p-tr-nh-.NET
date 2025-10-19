@@ -23,6 +23,7 @@ namespace QUAN_LY.UI.Data
         public DbSet<MuonSach> MuonSaches { get; set; }
         public DbSet<ChiTietMuonSach> ChiTietMuonSaches { get; set; }
         public DbSet<Giohang> Giohangs { get; set; }
+        public DbSet<Yeucaumuon> Yeucaumuons { get; set; }
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
