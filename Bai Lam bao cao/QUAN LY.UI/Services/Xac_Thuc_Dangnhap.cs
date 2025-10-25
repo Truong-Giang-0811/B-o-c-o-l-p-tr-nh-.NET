@@ -38,7 +38,7 @@ namespace QUAN_LY.UI.Services
         // Kiểm tra tài khoản có phải Admin không
         public bool LaAdmin(Admin taiKhoan)
         {
-            return taiKhoan != null && taiKhoan.Chucvu == "admin";
+            return taiKhoan != null && taiKhoan.Chucvu == "Admin";
         }
 
         // Kiểm tra tài khoản có phải Nhân viên không

@@ -28,7 +28,7 @@ namespace QUAN_LY.UI.Services
                     MaKhachHang = makh,
                     MaSach = masach,
                     SoLuongmuon = 1,
-                    TrangThai = "Đang chọn"
+                    
                 };
                 _context.Giohangs.Add(newItem);
 
