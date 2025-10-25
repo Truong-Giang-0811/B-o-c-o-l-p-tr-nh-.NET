@@ -15,16 +15,16 @@ namespace QUAN_LY.UI.Models
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int MaMuon { get; set; }
         public int MaKhachHang { get; set; }
-        public int MaNhanVien { get; set; }
-        public int MaYeuCau { get; set; }
+     
         public int Soluong   { get; set; }
         public string GhiChu { get; set; }
+        public DateTime? NgayYeuCau { get; set; }
 
         public string TrangThai { get; set; }
         // Navigation
         public KhachHang KhachHang { get; set; }
-        public Admin Admin { get; set; }
-        public Yeucaumuon Yeucaumuon { get; set; }
+    
+        public ICollection<Giohang> Giohangs { get; set; }
         public ICollection<ChiTietMuonSach> ChiTietMuonSaches { get; set; }
     }
 }

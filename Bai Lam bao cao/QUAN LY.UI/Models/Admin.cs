@@ -24,12 +24,6 @@ namespace QUAN_LY.UI.Models
         public string Chucvu { get; set; }
         public string Tendangnhap { get; set; }
         public string Matkhau { get; set; }
-
-
-
-
-        // Admin có thể cho nhiều khách mượn
-        public ICollection<MuonSach> MuonSaches { get; set; }
     
  
     }

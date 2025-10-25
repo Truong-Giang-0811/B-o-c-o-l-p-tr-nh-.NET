@@ -17,8 +17,8 @@ namespace QUAN_LY.UI.Models
         public int MaMuon { get; set; }
         public int MaSach { get; set; }
         public int SoLuong { get; set; }
-        public DateTime NgayMuon { get; set; }
-        public DateTime HanTra { get; set; }
+        public DateTime? NgayMuon { get; set; }
+        public DateTime? HanTra { get; set; }
         public DateTime? NgayTra { get; set; }
         public string TrangThai { get; set; }
         public string GhiChu { get; set; }
@@ -26,5 +26,6 @@ namespace QUAN_LY.UI.Models
         // Navigation
         public MuonSach MuonSach { get; set; }
         public Sach Sach { get; set; }
+        public ICollection<HiddenHistories> HiddenHistories { get; set; }
     }
 }

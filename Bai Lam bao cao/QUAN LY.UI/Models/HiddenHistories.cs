@@ -3,28 +3,20 @@ using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 using System.Linq;
-using System.Security.Permissions;
 using System.Text;
 using System.Threading.Tasks;
 
 namespace QUAN_LY.UI.Models
 {
-    [Table("Giohang")]
-    public class Giohang
+    [Table("HiddenHistories")]
+    public class HiddenHistories
     {
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
-        public int MaGioHang { get; set; }
-        public int MaSach { get; set; }
+        public int Id { get; set; }
         public int MaKhachHang { get; set; }
-        public int? MaMuon { get; set; }
-        public int SoLuongmuon { get; set; }
-        
-        
-        public MuonSach MuonSach { get; set; }
-        public Sach Sach { get; set; }
+        public int MaChiTietMuon { get; set; }
         public KhachHang KhachHang { get; set; }
-
-      
+        public ChiTietMuonSach ChiTietMuonSach { get; set; }
     }
 }

@@ -27,5 +27,7 @@ namespace QUAN_LY.UI.Models
 
         // Khách hàng có nhiều phiếu mượn
         public ICollection<MuonSach> MuonSaches { get; set; }
+        public ICollection<HiddenHistories> HiddenHistories { get; set; }
+
     }
 }
