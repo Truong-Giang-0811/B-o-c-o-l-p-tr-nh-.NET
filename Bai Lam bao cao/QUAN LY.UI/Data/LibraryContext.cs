@@ -23,7 +23,8 @@ namespace QUAN_LY.UI.Data
         public DbSet<MuonSach> MuonSaches { get; set; }
         public DbSet<ChiTietMuonSach> ChiTietMuonSaches { get; set; }
         public DbSet<Giohang> Giohangs { get; set; }
-        public DbSet<Yeucaumuon> Yeucaumuons { get; set; }
+        public DbSet<HiddenHistories> HiddenHistories { get; set; }
+
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -48,6 +49,8 @@ namespace QUAN_LY.UI.Data
 
             modelBuilder.Entity<Giohang>()
                 .HasKey(g => g.MaGioHang);
+            modelBuilder.Entity<HiddenHistories>()
+                .HasKey(h => h.Id);
 
             // ================== Khai báo quan hệ ==================
             // KhachHang - TaiKhoan (1-1)
@@ -65,10 +68,7 @@ namespace QUAN_LY.UI.Data
             
 
             // MuonSach - Admin (n-1)
-            modelBuilder.Entity<MuonSach>()
-                .HasOne(m => m.Admin)
-                .WithMany(a => a.MuonSaches)
-                .HasForeignKey(m => m.MaNhanVien);
+          
 
             // ChiTietMuonSach - MuonSach (n-1)
             modelBuilder.Entity<ChiTietMuonSach>()
@@ -91,16 +91,24 @@ namespace QUAN_LY.UI.Data
                 .HasOne(g => g.Sach)
                 .WithMany(s => s.Giohangs)
                 .HasForeignKey(g => g.MaSach);
-            // Giohang ↔ Yeucaumuon (1-1)
-            modelBuilder.Entity<Yeucaumuon>()
-                .HasOne(y => y.Giohang)
-                .WithOne(g => g.Yeucaumuon)
-                .HasForeignKey<Yeucaumuon>(y => y.MaGioHang);
-            // Yeucaumuon ↔ MuonSach(1 - 1)
-            modelBuilder.Entity<MuonSach>()
-                .HasOne(m => m.Yeucaumuon)
-                .WithOne(y => y.MuonSach)
-                .HasForeignKey<MuonSach>(m => m.MaYeuCau);
+
+            // Giohang ↔ Donmuon (1-n)
+            modelBuilder.Entity<Giohang>()
+                .HasOne(g => g.MuonSach)
+                .WithMany(m => m.Giohangs)
+                .HasForeignKey(g => g.MaMuon);
+
+            modelBuilder.Entity<HiddenHistories>()
+                 .HasOne(h => h.KhachHang)
+                 .WithMany(k => k.HiddenHistories)
+                 .HasForeignKey(h => h.MaKhachHang)
+                 .OnDelete(DeleteBehavior.Cascade);
+
+            modelBuilder.Entity<HiddenHistories>()
+                .HasOne(h => h.ChiTietMuonSach)
+                .WithMany(c => c.HiddenHistories)
+                .HasForeignKey(h => h.MaChiTietMuon)
+                .OnDelete(DeleteBehavior.Cascade);
         }
 
         // Cấu hình kết nối đến SQL Server
