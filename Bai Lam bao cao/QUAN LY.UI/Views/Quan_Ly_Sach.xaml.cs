@@ -89,7 +89,7 @@ namespace QUAN_LY.UI.Views
                 txtSLMuon.Value = selectedBook.SoLuongMuon;
                 txtMota.Text = selectedBook.Mota;
                 dpNgayNhap.SelectedDate = selectedBook.NgayNhap;
-               txtThoihanmuon.Value = selectedBook.Thoihanmuon;
+                txtThoihanmuon.Value = selectedBook.Thoihanmuon;
             }
         }
 

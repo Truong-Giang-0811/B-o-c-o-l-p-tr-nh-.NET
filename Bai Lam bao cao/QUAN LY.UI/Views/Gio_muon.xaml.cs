@@ -1,4 +1,5 @@
-﻿using QUAN_LY.UI.Data;
+﻿using Microsoft.EntityFrameworkCore;
+using QUAN_LY.UI.Data;
 using QUAN_LY.UI.Models;
 using QUAN_LY.UI.Services;
 using System;
@@ -6,6 +7,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Transactions;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -15,7 +17,6 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Microsoft.EntityFrameworkCore;
 
 
 namespace QUAN_LY.UI.Views
@@ -25,7 +26,7 @@ namespace QUAN_LY.UI.Views
     /// </summary>
     public partial class Gio_muon : UserControl
     {
-            private readonly LibraryContext db;
+         private readonly LibraryContext db;
 
 
         public Gio_muon()
@@ -40,7 +41,7 @@ namespace QUAN_LY.UI.Views
 
             var giohang = db.Giohangs
                 .Include(g => g.Sach)
-                .Where(g => g.MaKhachHang == makh && g.TrangThai == "Đang chọn")
+                .Where(g => g.MaKhachHang == makh)
                 .Select(g => new Models.GioHangViewModel
                 {
                     MaGioHang = g.MaGioHang,
@@ -111,15 +112,16 @@ namespace QUAN_LY.UI.Views
 
         private void Xacnhan_Click(object sender, RoutedEventArgs e)
         {
-            // Lấy danh sách hiển thị trên DataGrid
+            // 1. Lấy danh sách sách đã chọn trong Giỏ mượn
             var danhSachHienThi = dgGioMuon.ItemsSource as List<Models.GioHangViewModel>;
-            if (danhSachHienThi == null)
+            if (danhSachHienThi == null || !danhSachHienThi.Any())
             {
-                MessageBox.Show("Không có dữ liệu trong giỏ mượn!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Warning);
+                MessageBox.Show("Giỏ mượn trống. Vui lòng thêm sách trước khi xác nhận!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
 
             // Lọc những sách được chọn (checkbox)
+            // LƯU Ý: Đảm bảo class GioHangViewModel có thuộc tính 'IsChecked'
             var danhSachChon = danhSachHienThi.Where(g => g.IsChecked).ToList();
             if (danhSachChon.Count == 0)
             {
@@ -127,39 +129,101 @@ namespace QUAN_LY.UI.Views
                 return;
             }
 
-            // Lặp qua từng sách được chọn để tạo yêu cầu mượn
-            foreach (var item in danhSachChon)
+            int maKhachHangHienTai = UserSession.CurrentKhachHang.MaKhachHang;
+           
+            int tongSoLuongMuon = danhSachChon.Sum(g => g.SoLuongmuon);
+            
+
+            // Thiết lập Transaction Scope để đảm bảo tính nhất quán dữ liệu
+            using (var dbTransaction = db.Database.BeginTransaction())
             {
-                // Tìm lại Giohang trong DB dựa trên MaGioHang
-                var gioHangDb = db.Giohangs.FirstOrDefault(g => g.MaGioHang == item.MaGioHang);
-                if (gioHangDb == null) continue; // nếu không có thì bỏ qua
-
-                // Kiểm tra xem đã có yêu cầu mượn cho giỏ này chưa (tránh trùng)
-                var tonTai = db.Yeucaumuons.Any(y => y.MaGioHang == gioHangDb.MaGioHang);
-                if (tonTai)
-                    continue;
-
-                // Tạo đối tượng Yeucaumuon mới
-                var yeuCau = new Yeucaumuon
+                try
                 {
-                    MaGioHang = gioHangDb.MaGioHang,
-                    SoLuong = gioHangDb.SoLuongmuon,
-                    NgayTaoDon = DateTime.Now,
-                    Trangthai = "Đang chờ duyệt"
+              
+                    // BƯỚC 1: TẠO BẢN GHI MỚI TRONG BẢNG MuonSach (HEADER)
+                   
+                    var donMuonMoi = new MuonSach
+                    {
+                        MaKhachHang = maKhachHangHienTai,
+                        Soluong = tongSoLuongMuon, 
+                        NgayYeuCau = DateTime.Now,
+                        TrangThai = "Đang chờ duyệt", 
+                        GhiChu = "Yêu cầu mượn từ khách hàng",
+                    };
+                    db.MuonSaches.Add(donMuonMoi);
+                    db.SaveChanges(); // Lệnh này giúp lấy được MaMuon vừa được sinh ra
 
-                };
+                    int maMuonVuaTao = donMuonMoi.MaMuon;
+                    var maGioHangCanXoa = new List<int>();
 
-                // Thêm vào DB context
-                db.Yeucaumuons.Add(yeuCau);
-                gioHangDb.TrangThai = "Đã gửi yêu cầu";
+                    // =======================================================
+                    // BƯỚC 2 & 3: TẠO CHI TIẾT ĐƠN MƯỢN & CẬP NHẬT TỒN KHO
+                    // =======================================================
+                    foreach (var item in danhSachChon)
+                    {
+                        // 3. Kiểm tra và Cập nhật tồn kho (Giảm SoLuongTon)
+                        var sachCanCapNhat = db.Saches.FirstOrDefault(s => s.MaSach == item.MaSach);
+                        if (sachCanCapNhat != null)
+                        {
+                            if (sachCanCapNhat.SoLuongTon < item.SoLuongmuon)
+                            {
+                                // Hủy giao dịch nếu không đủ sách tồn
+                                throw new Exception($"Sách '{item.TieuDe}' chỉ còn {sachCanCapNhat.SoLuongTon} cuốn. Vui lòng cập nhật số lượng.");
+                            }
+                            sachCanCapNhat.SoLuongTon -= item.SoLuongmuon;
+                        }
+
+                        int thoihanmuon = sachCanCapNhat.Thoihanmuon;
+                        // 2. Tạo bản ghi ChiTietMuonSach
+                        var chiTiet = new ChiTietMuonSach
+                        {
+                            MaMuon = maMuonVuaTao, // Khóa ngoại trỏ về Đơn mượn vừa tạo
+                            MaSach = item.MaSach,
+                            SoLuong = item.SoLuongmuon,
+                            TrangThai = "Đang chờ duyệt",
+                            // NgayTra để NULL
+                            GhiChu = ""
+                        };
+                        db.ChiTietMuonSaches.Add(chiTiet);
+
+                        // Thêm MaGioHang vào danh sách cần xóa
+                        maGioHangCanXoa.Add(item.MaGioHang);
+                    }
+                   
+
+                    // =======================================================
+                    // BƯỚC 4: XÓA DỮ LIỆU KHỎI BẢNG Giohang
+                    // =======================================================
+                    var gioHangCanXoa = db.Giohangs.Where(g => maGioHangCanXoa.Contains(g.MaGioHang)).ToList();
+                    db.Giohangs.RemoveRange(gioHangCanXoa);
+                    db.SaveChanges(); // Lưu thay đổi (xóa giỏ hàng)
+
+                    // Hoàn tất giao dịch nếu tất cả các bước thành công
+                    dbTransaction.Commit();
+
+                    MessageBox.Show($"Đã tạo đơn mượn thành công", "Thành công", MessageBoxButton.OK, MessageBoxImage.Information);
+
+                   
+
+                }
+                catch (Exception ex)
+                {
+                    string innerExMessage = ex.InnerException != null ? ex.InnerException.Message : ex.Message;
+
+                    // Tìm lỗi chi tiết nhất từ Inner Exception nếu có nhiều lớp lỗi
+                    var detailEx = ex;
+                    while (detailEx.InnerException != null)
+                    {
+                        detailEx = detailEx.InnerException;
+                    }
+                    string finalMessage = detailEx.Message;
+
+
+                    MessageBox.Show($"Lỗi trong quá trình tạo đơn mượn. Đơn hàng chưa được tạo. Chi tiết: {finalMessage}",
+                                    "LỖI CƠ SỞ DỮ LIỆU", MessageBoxButton.OK, MessageBoxImage.Error);
+                }
+                LoadData();
             }
-
-            // Lưu toàn bộ thay đổi vào DB
-            db.SaveChanges();
-            LoadData(); // Tải lại dữ liệu trên giao diện
-
-            MessageBox.Show($"Đã gửi {danhSachChon.Count} yêu cầu mượn thành công!");
-
         }
 
         private void XoaGiohang_Click(object sender, RoutedEventArgs e)

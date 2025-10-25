@@ -11,18 +11,18 @@
             <TabControl>
                 <!-- TAB 1: Quản lý mượn sách -->
                 <TabItem Header="Quản Lý Mượn Sách">
-                    <Grid Background="#FF7DBD7D" Margin="5">
+                    <Grid Background="#FF7DBD7D" Margin="5,4,5,5">
                         <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto" MinHeight="188"/>
                             <!-- Thông tin -->
-                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto" MinHeight="58.96"/>
                             <!-- Nút -->
-                            <RowDefinition Height="*"/>
+                            <RowDefinition/>
                             <!-- DataGrid -->
                         </Grid.RowDefinitions>
 
                         <!-- Khối Thông tin -->
-                        <Grid Grid.Row="0" Margin="5,0,0,-10" >
+                        <Grid Grid.Row="0" Margin="5,0,0,40" Grid.RowSpan="2" >
                             <Grid.ColumnDefinitions>
                                 <ColumnDefinition Width="Auto"/>
                                 <ColumnDefinition Width="45"/>
@@ -31,7 +31,7 @@
 
                             <!-- Thông tin sách -->
                             <GroupBox Header="Thông Tin Sách" Width="250" Margin="30,10,0,14" Padding="10" Grid.Column="0">
-                                <Grid Height="140">
+                                <Grid x:Name="dpNgayHenTra" Height="150">
                                     <Grid.RowDefinitions>
                                         <RowDefinition Height="Auto"/>
                                         <RowDefinition Height="Auto"/>
@@ -46,19 +46,22 @@
                                         <ColumnDefinition Width="*"/>
                                     </Grid.ColumnDefinitions>
 
-                                    <TextBlock Text="Chọn Mã Sách:" Grid.Row="0" Grid.Column="0" Margin="3,0,3,3" Grid.ColumnSpan="2" VerticalAlignment="Top"/>
-                                    <ComboBox Grid.Row="0" Grid.Column="2" Margin="0,3,0,3" HorizontalAlignment="Center" Width="107" Padding="6,0,5,3"/>
+                                    <TextBlock Text="Chọn Tên Sách:" Grid.Row="0" Grid.Column="0" Margin="3,0,3,3" Grid.ColumnSpan="2" VerticalAlignment="Top"/>
+                                    <ComboBox x:Name="cbotensach" Grid.Row="0" Grid.Column="2" Margin="0,3,0,3" HorizontalAlignment="Center" Width="107" Padding="6,0,5,3" SelectionChanged="cbotensach_SelectionChanged"/>
 
-                                    <TextBlock Text="Tên Sách:" Grid.Row="1" Grid.Column="0" Margin="3,3,3,3" Grid.ColumnSpan="2"/>
-                                    <TextBox Grid.Row="1" Grid.Column="2" Margin="3,3,3,3"/>
+                                    <TextBlock Text="Trạng thái:" Grid.Row="1" Grid.Column="0" Margin="3,3,3,3" Grid.ColumnSpan="2"/>
+                                    <TextBox IsReadOnly="True" x:Name="txtTrangthai" Grid.Row="1" Grid.Column="2" Margin="3,3,3,3"/>
 
-                                    <TextBlock Text="Thể Loại:" Grid.Row="2" Grid.Column="0" Margin="3,3,3,3" Grid.ColumnSpan="2"/>
-                                    <TextBox Grid.Row="2" Grid.Column="2" Margin="3,3,3,3"/>
+                                    <TextBlock Text="Ngày mượn:" Grid.Row="2" Grid.Column="0" Margin="3,3,3,3" Grid.ColumnSpan="2"/>
+                                    <DatePicker x:Name="dpNgaymuon" Grid.Row="2" Grid.Column="2" Margin="3,3,3,3"/>
 
                                     <TextBlock Text="Ngày Hẹn Trả:" Grid.Row="3" Grid.Column="0" Margin="3,3,3,3" Grid.ColumnSpan="2"/>
-                                    <DatePicker Grid.Row="3" Grid.Column="2" Margin="3,3,3,3"/>
-
+                                    <DatePicker x:Name="dpNgayHenTra1" Grid.Row="3" Grid.Column="2" Margin="3,3,3,3"/>
                                     
+                                    <TextBlock Text="Số Lượng Mượn:" Grid.Row="4" Grid.Column="0" Margin="3"/>
+                                    <TextBox IsReadOnly="True" x:Name="txtSoLuong" Grid.Row="4" Grid.Column="1" Margin="3"/>
+
+
                                 </Grid>
                             </GroupBox>
 
@@ -79,13 +82,20 @@
                                     </Grid.ColumnDefinitions>
 
                                     <TextBlock Text="Mã Độc Giả:" Grid.Row="0" Grid.Column="0" Margin="3"/>
-                                    <TextBox Grid.Row="0" Grid.Column="1" Margin="3"/>
+                                    <TextBox IsReadOnly="True" x:Name="txtmadocgia" Grid.Row="0" Grid.Column="1" Margin="3"/>
 
                                     <TextBlock Text="Tên Độc Giả:" Grid.Row="1" Grid.Column="0" Margin="3"/>
-                                    <TextBox Grid.Row="1" Grid.Column="1" Margin="3"/>
+                                    <TextBox IsReadOnly="True" x:Name="txttendocgia" Grid.Row="1" Grid.Column="1" Margin="3"/>
 
-                                    <TextBlock Text="Số Lượng Mượn:" Grid.Row="2" Grid.Column="0" Margin="3"/>
-                                    <TextBox Grid.Row="2" Grid.Column="1" Margin="3"/>
+                                    <TextBlock Text="Địa chỉ:" Grid.Row="2" Grid.Column="0" Margin="3"/>
+                                    <TextBox IsReadOnly="True" x:Name="txtdiachi" Grid.Row="2" Grid.Column="1" Margin="3"/>
+
+                                    <TextBlock Text="Số điện thoại:" Grid.Row="3" Grid.Column="0" Margin="3"/>
+                                    <TextBox IsReadOnly="True" x:Name="txtsodienthoai" Grid.Row="3" Grid.Column="1" Margin="3"/>
+
+
+
+
 
 
                                 </Grid>
@@ -94,20 +104,19 @@
                         </Grid>
 
                         <!-- Nút -->
-                        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,10,0,10">
-                            <Button x:Name="btnMuonMoi" Content="Mượn Mới" Width="100" Height="30"/>
-                            <Button x:Name="btnChoMuon" Content="Cho Mượn" Width="100" Height="30" Margin="10,0"/>
-                            <Button x:Name="btnKetThuc" Content="Kết Thúc" Width="100" Height="30" Margin="10,0"/>
+                        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,40,0,10" Width="230">
+                            <Button x:Name="btnTuchoi"  Content="Từ chối"  Width="100" Height="30" Click="TuChoi_Click"/>
+                            <Button x:Name="btnChoMuon" Content="Cho Mượn" Width="100" Height="30" Click="DuyetSach_Click" Margin="20,0,0,0"/>
                         </StackPanel>
 
                         <!-- DataGrid -->
-                        <GroupBox Header="Danh Sách Đơn Mượn" Grid.Row="2" Margin="5">
-                            <DataGrid AutoGenerateColumns="False" Margin="5" SelectionChanged="DataGrid_SelectionChanged">
+                        <GroupBox Header="Danh Sách Đơn Mượn" Grid.Row="2" Margin="5,5,5,5">
+                            <DataGrid x:Name="dgmuontra" AutoGenerateColumns="False" Margin="5" SelectionChanged="DataGrid_SelectionChanged">
                                 <DataGrid.Columns>
-                                    <DataGridTextColumn Header="Tên Độc Giả" Binding="{Binding TenDocGia}"/>
-                                    <DataGridTextColumn Header="Tên Sách" Binding="{Binding TenSach}"/>
+                                    <DataGridTextColumn Header="Mã Đơn Mượn" Binding="{Binding MaDonMuon}"/>
+                                    <DataGridTextColumn Header="Tên Độc Giả" Binding="{Binding TenKhachHang}"/>
                                     <DataGridTextColumn Header="Số Lượng" Binding="{Binding SoLuong}"/>
-                                    <DataGridTextColumn Header="Ngày Mượn" Binding="{Binding NgayMuon}"/>
+                                    <DataGridTextColumn Header="Ngày yêu cầu" Binding="{Binding NgayYeuCau}"/>
                                     <DataGridTextColumn Header="Trạng Thái" Binding="{Binding TrangThai}"/>
                                 </DataGrid.Columns>
                             </DataGrid>
@@ -119,8 +128,8 @@
                 <TabItem Header="Quản Lý Trả Sách">
                     <Grid Background="#FF7DBD7D" Margin="5">
                         <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="47*"/>
-                            <ColumnDefinition Width="469*"/>
+                            <ColumnDefinition Width="15*"/>
+                            
                         </Grid.ColumnDefinitions>
                         <Grid.RowDefinitions>
                             <RowDefinition Height="Auto"/>
@@ -132,46 +141,48 @@
                         </Grid.RowDefinitions>
 
                         <!-- Thực hiện trả sách -->
-                        <GroupBox Header="Thực Hiện Trả Sách" Grid.Row="0" Margin="5,5,5,5" Grid.ColumnSpan="2">
+                        <GroupBox Header="Thực Hiện Trả Sách" Grid.Row="0" Margin="5,5,5,5" Grid.ColumnSpan="3">
                             <StackPanel Margin="5">
                                 <StackPanel Orientation="Horizontal" Margin="2">
                                     <TextBlock Text="Mã Độc Giả:" Width="100" VerticalAlignment="Center"/>
-                                    <ComboBox Width="150"/>
+                                    <TextBox x:Name="txtMaDocGiaTras" Width="150"/>
                                     <TextBlock Text="Ngày Mượn:" Width="80" VerticalAlignment="Center" Margin="10,0,0,0"/>
-                                    <DatePicker Width="140"/>
+                                    <DatePicker x:Name="dpNgayMuonTrs" Width="140"/>
                                 </StackPanel>
                                 <StackPanel Orientation="Horizontal" Margin="2">
                                     <TextBlock Text="Mã Sách:" Width="100" VerticalAlignment="Center"/>
-                                    <TextBox Width="150"/>
+                                    <TextBox x:Name="txtMaSachTras" Width="150"/>
                                     <TextBlock Text="Ngày Hẹn Trả:" Width="80" VerticalAlignment="Center" Margin="10,0,0,0"/>
-                                    <DatePicker Width="140"/>
+                                    <DatePicker x:Name="dpNgayHenTraTrs" Width="140"/>
                                 </StackPanel>
                                 <StackPanel Orientation="Horizontal" Margin="2">
                                     <TextBlock Text="Số Lượng Mượn:" Width="100" VerticalAlignment="Center"/>
-                                    <TextBox Width="150"/>
+                                    <TextBox x:Name="txtSoLuongTrs" Width="150"/>
                                     <TextBlock Text="Ngày Trả:" Width="80" VerticalAlignment="Center" Margin="10,0,0,0"/>
-                                    <DatePicker Width="140"/>
+                                    <DatePicker x:Name="dpNgayTraTrs" Width="140"/>
                                 </StackPanel>
                             </StackPanel>
                         </GroupBox>
 
                         <!-- Nút thao tác -->
-                        <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="46,5,0,5" HorizontalAlignment="Left" Grid.Column="1">
-                            <Button Content="Trả Sách" Width="100" Margin="5"/>
-                            <Button Content="Lưu" Width="100" Margin="5"/>
-                            <Button Content="Thoát" Width="100" Margin="5"/>
+                        <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="-1,0,0,5" HorizontalAlignment="Center" Grid.Column="0">
+                            <Button Content="Trả Sách" Width="100" Margin="5" Click="BtnTraSach_Click"/>
+                            
+                            <Button Content="Thoát" Width="100" Margin="5" Click="BtnThoat"/>
                         </StackPanel>
 
                         <!-- Danh sách trả sách -->
-                        <GroupBox Header="Danh Sách Trả Sách" Grid.Row="2" Margin="5,5,5,5" Grid.ColumnSpan="2">
-                            <DataGrid AutoGenerateColumns="False" IsReadOnly="True" Margin="5">
+                        <GroupBox Header="Danh Sách Trả Sách" Grid.Row="2" Margin="5,5,5,5" Grid.ColumnSpan="3">
+                            <DataGrid x:Name="dgTraSach" AutoGenerateColumns="False" IsReadOnly="True" SelectionChanged="DataGrid_SelectionChanged" Margin="5" >
                                 <DataGrid.Columns>
-                                    <DataGridTextColumn Header="Mã Độc Giả"/>
-                                    <DataGridTextColumn Header="Mã Sách"/>
-                                    <DataGridTextColumn Header="Số Lượng"/>
-                                    <DataGridTextColumn Header="Ngày Mượn"/>
-                                    <DataGridTextColumn Header="Ngày Hẹn Trả"/>
-                                    <DataGridTextColumn Header="Ngày Trả"/>
+                                    <DataGridTextColumn Header="Tên Độc Giả" Binding="{Binding TenKhachHang}"/>
+                                    <DataGridTextColumn Header="Tên Sách" Binding="{Binding TieuDe}"/>
+                                    <DataGridTextColumn Header="Số Lượng" Binding="{Binding SoLuong}"/>
+                                    <DataGridTextColumn Header="Ngày Mượn" Binding="{Binding NgayMuon}"/>
+                                    <DataGridTextColumn Header="Ngày Hẹn Trả" Binding="{Binding NgayHenTra}"/>
+                                    <DataGridTextColumn Header="Ngày Trả" Binding="{Binding NgayTra}"/>
+                                    <DataGridTextColumn Header="Trạng Thái" Binding="{Binding TrangThai}"/>
+                                    
                                 </DataGrid.Columns>
                             </DataGrid>
                         </GroupBox>

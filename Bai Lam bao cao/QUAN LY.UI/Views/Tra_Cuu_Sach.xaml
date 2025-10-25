@@ -89,12 +89,12 @@
 
                     <TextBlock Text="Mô tả:" Grid.Row="2" Grid.Column="2" FontWeight="Bold"/>
                     <ScrollViewer Grid.Row="2" Grid.Column="3"
-              VerticalScrollBarVisibility="Auto"
-              MaxHeight="80">
+                                  VerticalScrollBarVisibility="Auto"
+                                  MaxHeight="80">
                         <TextBlock x:Name="txtMota"
-               TextWrapping="Wrap"
-               TextTrimming="None"
-               Margin="0,2,0,0"/>
+                                   TextWrapping="Wrap"
+                                   TextTrimming="None"
+                                   Margin="0,2,0,0"/>
                     </ScrollViewer>
 
 

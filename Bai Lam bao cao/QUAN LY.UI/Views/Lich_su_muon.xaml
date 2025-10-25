@@ -26,11 +26,11 @@
                   Grid.Row="1"
                   AutoGenerateColumns="False"
                   CanUserAddRows="False"
-                  IsReadOnly="True"
                   Margin="20"
-                  FontSize="14">
+                  FontSize="14" SelectionChanged="dgLichSuMuon_SelectionChanged">
             <DataGrid.Columns>
-                <DataGridTextColumn Header="Tên sách" Binding="{Binding TenSach}" Width="*"/>
+                <DataGridCheckBoxColumn IsReadOnly="False" Header="Chọn" Binding="{Binding IsChecked, Mode=TwoWay}" Width="60"/>
+                <DataGridTextColumn Header="Tên sách" Binding="{Binding TieuDe}" Width="*"/>
                 <DataGridTextColumn Header="Thể loại" Binding="{Binding TheLoai}" Width="*"/>
                 <DataGridTextColumn Header="Ngày mượn" Binding="{Binding NgayMuon, StringFormat=d}" Width="*"/>
                 <DataGridTextColumn Header="Ngày tra" Binding="{Binding NgayTra, StringFormat=d}" Width="*"/>
@@ -48,7 +48,7 @@
                     FontWeight="Bold"
                     Background="#FF0D9F56"
                     Foreground="White"
-                    BorderBrush="#FF0D9F56"
+                    BorderBrush="#FF0D9F56" Click="btnXoaLichSu_Click"
                     />
         </StackPanel>
     </Grid>

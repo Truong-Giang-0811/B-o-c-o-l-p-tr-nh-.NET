@@ -15,15 +15,14 @@ using System.Windows.Shapes;
 namespace QUAN_LY.UI.Views
 {
     /// <summary>
-    /// Interaction logic for Giao_diện_admin.xaml
+    /// Interaction logic for Giao_Dien_Nhan_vien.xaml
     /// </summary>
-    public partial class Giao_diện_admin : Window
+    public partial class Giao_Dien_Nhan_vien : Window
     {
-        public Giao_diện_admin()
+        public Giao_Dien_Nhan_vien()
         {
             InitializeComponent();
         }
-
         private void btn_dangxuat_Click(object sender, RoutedEventArgs e)
         {
             Dangnhap dangnhap = new Dangnhap();
@@ -39,11 +38,6 @@ namespace QUAN_LY.UI.Views
         private void Quanlydonmuon(object sender, RoutedEventArgs e)
         {
             Mainconten.Content = new Views.Quan_ly_muon_tra();
-        }
-
-        private void Quanlynhanvien_Click(object sender, RoutedEventArgs e)
-        {
-            Mainconten.Content = new Views.Quan_Ly_Nhan_Vien();
         }
     }
 }
