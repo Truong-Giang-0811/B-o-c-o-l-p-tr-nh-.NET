@@ -102,7 +102,7 @@ namespace QUAN_LY.UI.Data
                  .HasOne(h => h.KhachHang)
                  .WithMany(k => k.HiddenHistories)
                  .HasForeignKey(h => h.MaKhachHang)
-                 .OnDelete(DeleteBehavior.Cascade);
+                 .OnDelete(DeleteBehavior.NoAction);
 
             modelBuilder.Entity<HiddenHistories>()
                 .HasOne(h => h.ChiTietMuonSach)
