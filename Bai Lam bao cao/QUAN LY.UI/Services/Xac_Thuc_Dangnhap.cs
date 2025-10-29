@@ -20,10 +20,13 @@ namespace QUAN_LY.UI.Services
         {
             // Tìm tài khoản khớp username + password
             var taiKhoan = xacthuc.KhachHangs
-                                      .FirstOrDefault(t => t.Tendangnhap == tenDangNhap
-                                                        && t.Matkhau == matKhau);
+                                      .FirstOrDefault(t => t.Tendangnhap == tenDangNhap);
+            if (taiKhoan == null)
+                return null;
 
-            return taiKhoan; // Trả về tài khoản (null nếu sai)
+            // Kiểm tra mật khẩu bằng BCrypt
+            bool hopLe = BCrypt.Net.BCrypt.Verify(matKhau, taiKhoan.Matkhau);
+            return hopLe ? taiKhoan : null;
         }
         // Đăng nhập cho Admin và Nhân viên
         public Admin DangNhap2(string tenDangNhap, string matKhau)
@@ -33,7 +36,7 @@ namespace QUAN_LY.UI.Services
                                       .FirstOrDefault(t => t.Tendangnhap == tenDangNhap
                                                         && t.Matkhau == matKhau);
 
-            return taiKhoan; // Trả về tài khoản (null nếu sai)
+            return taiKhoan; // Trả về tài khoản (null nếu sai);
         }
         // Kiểm tra tài khoản có phải Admin không
         public bool LaAdmin(Admin taiKhoan)
@@ -44,7 +47,7 @@ namespace QUAN_LY.UI.Services
         // Kiểm tra tài khoản có phải Nhân viên không
         public bool LaNhanVien(Admin taiKhoan)
         {
-            return taiKhoan != null && taiKhoan.Chucvu == "nhanvien";
+            return taiKhoan != null && taiKhoan.Chucvu == "Nhân viên";
         }
 
         // Kiểm tra tài khoản có phải Khách hàng không
