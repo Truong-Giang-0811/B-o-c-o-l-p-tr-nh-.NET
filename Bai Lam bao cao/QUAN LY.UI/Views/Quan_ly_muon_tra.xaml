@@ -168,19 +168,19 @@
                         <StackPanel Grid.Row="1" Orientation="Horizontal" Margin="-1,0,0,5" HorizontalAlignment="Center" Grid.Column="0">
                             <Button Content="Trả Sách" Width="100" Margin="5" Click="BtnTraSach_Click"/>
                             
-                            <Button Content="Thoát" Width="100" Margin="5" Click="BtnThoat"/>
+                            <Button Content="Reset" Width="100" Margin="5" Click="BtnThoat"/>
                         </StackPanel>
 
                         <!-- Danh sách trả sách -->
                         <GroupBox Header="Danh Sách Trả Sách" Grid.Row="2" Margin="5,5,5,5" Grid.ColumnSpan="3">
-                            <DataGrid x:Name="dgTraSach" AutoGenerateColumns="False" IsReadOnly="True" SelectionChanged="DataGrid_SelectionChanged" Margin="5" >
+                            <DataGrid x:Name="dgTraSach" AutoGenerateColumns="False" IsReadOnly="True" SelectionChanged="dgTraSach_SelectionChanged" Margin="5" >
                                 <DataGrid.Columns>
                                     <DataGridTextColumn Header="Tên Độc Giả" Binding="{Binding TenKhachHang}"/>
                                     <DataGridTextColumn Header="Tên Sách" Binding="{Binding TieuDe}"/>
                                     <DataGridTextColumn Header="Số Lượng" Binding="{Binding SoLuong}"/>
-                                    <DataGridTextColumn Header="Ngày Mượn" Binding="{Binding NgayMuon}"/>
-                                    <DataGridTextColumn Header="Ngày Hẹn Trả" Binding="{Binding NgayHenTra}"/>
-                                    <DataGridTextColumn Header="Ngày Trả" Binding="{Binding NgayTra}"/>
+                                    <DataGridTextColumn Header="Ngày Mượn" Binding="{Binding NgayMuon, StringFormat={}{0:dd/MM/yyyy}}"/>
+                                    <DataGridTextColumn Header="Ngày Hẹn Trả" Binding="{Binding NgayHenTra, StringFormat={}{0:dd/MM/yyyy}}"/>
+                                    <DataGridTextColumn Header="Ngày Trả" Binding="{Binding NgayTra, StringFormat={}{0:dd/MM/yyyy}}"/>
                                     <DataGridTextColumn Header="Trạng Thái" Binding="{Binding TrangThai}"/>
                                     
                                 </DataGrid.Columns>

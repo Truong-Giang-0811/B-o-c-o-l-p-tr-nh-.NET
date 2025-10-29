@@ -22,6 +22,7 @@ namespace QUAN_LY.UI.Views
             InitializeComponent();
             db = new Data.LibraryContext();
             LoadDatamuonsach();
+            LoadDatatrasach();
         }
 
         private void LoadDatamuonsach()
@@ -42,55 +43,61 @@ namespace QUAN_LY.UI.Views
         }
         private void LoadDatatrasach()
         {
-            // Chỉ lấy các sách đang mượn
             var data = db.ChiTietMuonSaches
                 .Include(ct => ct.Sach)
                 .Include(ct => ct.MuonSach)
                     .ThenInclude(m => m.KhachHang)
-                .Where(ct => ct.TrangThai == "Đang mượn")
-                .Select(ct => new
+                .Where(ct => ct.TrangThai != "Đang chờ duyệt" && ct.TrangThai != "Đã từ chối")
+                .Select(ct => new DonTraViewModel
                 {
-                    ct.MaChiTietMuon,
-                    ct.MaSach,
-                    TenSach = ct.Sach.TieuDe,
-                    ct.SoLuong,
-                    ct.NgayMuon,
-                    ct.HanTra,
-                    ct.TrangThai,
-                    ct.MuonSach.KhachHang.MaKhachHang,
-                    TenKhachHang = ct.MuonSach.KhachHang.HoTen
+                    MaChiTietMuon = ct.MaChiTietMuon,
+                    TieuDe = ct.Sach.TieuDe,
+                    TenKhachHang = ct.MuonSach.KhachHang.HoTen,
+                    NgayMuon = ct.NgayMuon,
+                    HanTra = ct.HanTra,
+                    NgayTra = ct.NgayTra,
+                    TrangThai = ct.TrangThai
                 })
                 .ToList();
 
             dgTraSach.ItemsSource = data;
         }
+
         private void dgTraSach_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
-            if (dgTraSach.SelectedItem == null) return;
+            if (dgTraSach.SelectedItem == null)
+            {
+                ClearForm();
+                return;
+            }
 
-            dynamic item = dgTraSach.SelectedItem;
+            // Ép kiểu thay vì dynamic (đúng kiểu ViewModel)
+            var item = dgTraSach.SelectedItem as DonTraViewModel;
+            if (item == null) return;
 
-            // Lấy dữ liệu từ dynamic ra biến thường
-            int maSach = (int)item.MaSach;
-            int maKhachHang = (int)item.MaKhachHang;
-
-            // Hiển thị thông tin
-            txtMaDocGiaTras.Text = maKhachHang.ToString();
-            txtMaSachTras.Text = maSach.ToString();
-            txtSoLuongTrs.Text = item.SoLuong.ToString();
-            dpNgayMuonTrs.SelectedDate = item.NgayMuon;
-            dpNgayHenTraTrs.SelectedDate = item.HanTra;
-            dpNgayTraTrs.SelectedDate = DateTime.Now;
-
-            // Dùng biến kiểu rõ ràng (không dùng dynamic trong LINQ)
-            selectedChiTiet = db.ChiTietMuonSaches
+            // Lấy lại chi tiết mượn trong DB để thao tác
+            this.selectedChiTiet = db.ChiTietMuonSaches
                 .Include(ct => ct.Sach)
                 .Include(ct => ct.MuonSach)
                     .ThenInclude(m => m.KhachHang)
-                .FirstOrDefault(ct =>
-                    ct.Sach.MaSach == maSach &&
-                    ct.MuonSach.KhachHang.MaKhachHang == maKhachHang);
+                .FirstOrDefault(ct => ct.MaChiTietMuon == item.MaChiTietMuon);
+
+            if (this.selectedChiTiet == null)
+            {
+                MessageBox.Show("Không tìm thấy chi tiết mượn sách đang chờ trả!", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
+                ClearForm();
+                return;
+            }
+
+            // Gán dữ liệu lên form
+            txtMaDocGiaTras.Text = this.selectedChiTiet.MuonSach.KhachHang.MaKhachHang.ToString();
+            txtMaSachTras.Text = this.selectedChiTiet.Sach.MaSach.ToString();
+            txtSoLuongTrs.Text = this.selectedChiTiet.SoLuong.ToString();
+            dpNgayMuonTrs.SelectedDate = this.selectedChiTiet.NgayMuon;
+            dpNgayHenTraTrs.SelectedDate = this.selectedChiTiet.HanTra;
+            dpNgayTraTrs.SelectedDate = DateTime.Now;
         }
+
         private void BtnTraSach_Click(object sender, RoutedEventArgs e)
         {
             if (selectedChiTiet == null)
@@ -141,8 +148,6 @@ namespace QUAN_LY.UI.Views
                 // Refresh cả 2 danh sách để đồng bộ giao diện
                 LoadDatatrasach();
                 LoadDatamuonsach();
-
-                ClearForm();
                 selectedChiTiet = null;
             }
             catch (Exception ex)
@@ -282,6 +287,7 @@ namespace QUAN_LY.UI.Views
                 MessageBox.Show("Cập nhật trạng thái thành công!", "Thành công", MessageBoxButton.OK, MessageBoxImage.Information);
                 dpNgaymuon.SelectedDate = chiTiet.NgayMuon;
                 dpNgayHenTra1.SelectedDate = chiTiet.HanTra;
+                txtTrangthai.Text = chiTiet.TrangThai;
                 LoadDatamuonsach();
             }
             catch (Exception ex)
@@ -324,6 +330,7 @@ namespace QUAN_LY.UI.Views
 
             db.SaveChanges();
             MessageBox.Show("Đã cập nhật trạng thái chi tiết!", "Thành công", MessageBoxButton.OK, MessageBoxImage.Information);
+            txtTrangthai.Text = chiTiet.TrangThai;
             LoadDatamuonsach();
         }
     }

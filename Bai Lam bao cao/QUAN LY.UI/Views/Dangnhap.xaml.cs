@@ -61,6 +61,9 @@ namespace QUAN_LY.UI.Views
                 else if (xacthuc.LaNhanVien(taikhoanadmin))
                 {
                     UserSession.SetAdmin(taikhoanadmin);
+                    Giao_Dien_Nhan_vien giao_Dien_Nhan_Vien = new Giao_Dien_Nhan_vien();
+                    giao_Dien_Nhan_Vien.Show();
+                    this.Close();
 
                     // mở giao diện nhân viên
                 }
