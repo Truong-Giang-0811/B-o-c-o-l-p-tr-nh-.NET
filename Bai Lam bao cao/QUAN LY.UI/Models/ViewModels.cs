@@ -27,6 +27,16 @@ namespace QUAN_LY.UI.Models
         public string TrangThai { get; set; }
        
     }
+    public class DonTraViewModel
+    {
+        public int MaChiTietMuon { get; set; }
+        public string TieuDe { get; set; }
+        public string TenKhachHang { get; set; }
+        public DateTime? NgayMuon { get; set; }
+        public DateTime? HanTra { get; set; }
+        public DateTime? NgayTra { get; set; }
+        public string TrangThai { get; set; }
+    }
     public class  Lichsumuonsach 
     {
         public int MaChiTietMuon { get; set; }
