@@ -18,16 +18,16 @@ namespace QUAN_LY.UI.Services
             _context = context;
         }
 
-        // ✅ Kiểm tra độ mạnh mật khẩu
-        private bool KiemTraDoManhMatKhau(string password)
-        {
-            if (password.Length < 8) return false; // Ít nhất 8 ký tự
-            if (!password.Any(char.IsUpper)) return false; // Có chữ hoa
-            if (!password.Any(char.IsLower)) return false; // Có chữ thường
-            if (!password.Any(char.IsDigit)) return false; // Có số
-            if (!password.Any(ch => !char.IsLetterOrDigit(ch))) return false; // Có ký tự đặc biệt
-            return true;
-        }
+        // Kiểm tra mật khẩu
+            private bool KiemTraDoManhMatKhau(string password)
+            {
+                if (password.Length < 8) return false; // Ít nhất 8 ký tự
+                if (!password.Any(char.IsUpper)) return false; // Có chữ hoa
+                if (!password.Any(char.IsLower)) return false; // Có chữ thường
+                if (!password.Any(char.IsDigit)) return false; // Có số
+                if (!password.Any(ch => !char.IsLetterOrDigit(ch))) return false; // Có ký tự đặc biệt
+                return true;
+            }
 
         // ✅ Hàm đăng ký (đã tích hợp kiểm tra và mã hóa BCrypt)
         public bool DangKy(
@@ -39,7 +39,7 @@ namespace QUAN_LY.UI.Services
             string diaChi,
             string email,
             string soDienThoai,
-            bool gioiTinh,
+            string gioiTinh,
             out string message)
         {
             message = "";
@@ -69,7 +69,13 @@ namespace QUAN_LY.UI.Services
                 message = "Mật khẩu nhập lại không khớp!";
                 return false;
             }
-
+            var tuoi = DateTime.Today.Year - ngaySinh.Value.Year;
+            if (ngaySinh.Value.Date > DateTime.Today.AddYears(-tuoi)) tuoi--; 
+            if (tuoi < 18)
+            {
+                message = "Khách hàng phải đủ 18 tuổi trở lên!";
+                return false;
+            }
             // Kiểm tra username đã tồn tại chưa
             var existingUser = _context.KhachHangs.FirstOrDefault(u => u.Tendangnhap == username);
             if (existingUser != null)

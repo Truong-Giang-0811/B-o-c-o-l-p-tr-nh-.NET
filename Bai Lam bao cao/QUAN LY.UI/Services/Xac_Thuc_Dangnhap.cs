@@ -33,10 +33,14 @@ namespace QUAN_LY.UI.Services
         {
             // Tìm tài khoản khớp username + password
             var taiKhoan = xacthuc.Admins
-                                      .FirstOrDefault(t => t.Tendangnhap == tenDangNhap
-                                                        && t.Matkhau == matKhau);
+                                      .FirstOrDefault(t => t.Tendangnhap == tenDangNhap);
 
-            return taiKhoan; // Trả về tài khoản (null nếu sai);
+            if (taiKhoan == null)
+                return null;
+
+            // Kiểm tra mật khẩu bằng BCrypt
+            bool hopLe = BCrypt.Net.BCrypt.Verify(matKhau, taiKhoan.Matkhau);
+            return hopLe ? taiKhoan : null;
         }
         // Kiểm tra tài khoản có phải Admin không
         public bool LaAdmin(Admin taiKhoan)
