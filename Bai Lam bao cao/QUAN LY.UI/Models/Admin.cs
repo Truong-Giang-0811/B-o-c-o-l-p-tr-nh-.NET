@@ -15,12 +15,13 @@ namespace QUAN_LY.UI.Models
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int MaNhanVien { get; set; }
+        public string? Anhcanhan { get; set; }
         public string HoTen { get; set; }
-        public string Email { get; set; }
-        public string SoDienThoai { get; set; }
-        public bool GioiTinh { get; set; }
-        public DateTime NgaySinh { get; set; }
-        public string DiaChi { get; set; }
+        public string? Email { get; set; }
+        public string? SoDienThoai { get; set; }
+        public string GioiTinh { get; set; }
+        public DateTime? NgaySinh { get; set; }
+        public string? DiaChi { get; set; }
         public string Chucvu { get; set; }
         public string Tendangnhap { get; set; }
         public string Matkhau { get; set; }

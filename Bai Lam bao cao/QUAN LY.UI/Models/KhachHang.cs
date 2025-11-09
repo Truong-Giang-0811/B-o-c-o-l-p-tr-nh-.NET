@@ -21,7 +21,8 @@ namespace QUAN_LY.UI.Models
         public string SoDienThoai { get; set; }
         public string Tendangnhap { get; set; }
         public string Matkhau { get; set; }
-        public bool GioiTinh { get; set; }
+        public string GioiTinh { get; set; }
+        public string? Anhcanhan { get; set; }
 
         public ICollection<Giohang> Giohangs { get; set; }
 
