@@ -102,7 +102,7 @@
                 <Button Style="{StaticResource Signup}" x:Name="btnTaiKhoan"
                         Content="👤 Tài khoản cá nhân" Margin="10,10,10,0"
                         Height="37" FontSize="16" FontWeight="Bold"
-                        BorderBrush="#FF0D9F56" Background="#FF0D9F56"
+                        BorderBrush="#FF0D9F56" Background="#FF0D9F56" Click="btnTaiKhoan_Click"
                         />
 
                 <Button Style="{StaticResource Signup}" x:Name="btnExit"

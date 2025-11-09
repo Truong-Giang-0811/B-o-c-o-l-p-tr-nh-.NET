@@ -24,6 +24,7 @@ namespace QUAN_LY.UI.Views
     public partial class Quan_Ly_Sach : UserControl
     {
         private readonly Quan_ly_Sach Qlsach;
+        private Sach selectedSach;
         public Quan_Ly_Sach()
         {
             InitializeComponent();
@@ -80,7 +81,7 @@ namespace QUAN_LY.UI.Views
             if (dgSach.SelectedItem is Sach selectedBook)
             {
                 // Hiển thị thông tin chi tiết của sách đã chọn
-                
+                selectedSach = selectedBook;
                 txtTieude.Text = selectedBook.TieuDe;
                 txtTacGia.Text = selectedBook.TacGia;
                 txtNXB.Text = selectedBook.NhaXuatBan;
@@ -97,7 +98,7 @@ namespace QUAN_LY.UI.Views
         {
             var sachmoi = new Sach
             {
-               
+                MaSach = selectedSach.MaSach,
                 TieuDe = txtTieude.Text.Trim(),
                 TacGia = txtTacGia.Text.Trim(),
                 NhaXuatBan = txtNXB.Text.Trim(),

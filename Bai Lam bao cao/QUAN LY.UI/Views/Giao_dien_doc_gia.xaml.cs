@@ -54,5 +54,10 @@ namespace QUAN_LY.UI.Views
             }
                 
         }
+
+        private void btnTaiKhoan_Click(object sender, RoutedEventArgs e)
+        {
+            Mainconten.Content = new Views.Tai_khoan_ca_nhan();
+        }
     }
 }

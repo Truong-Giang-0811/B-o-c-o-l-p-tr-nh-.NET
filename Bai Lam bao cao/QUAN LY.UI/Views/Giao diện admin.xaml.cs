@@ -45,5 +45,15 @@ namespace QUAN_LY.UI.Views
         {
             Mainconten.Content = new Views.Quan_Ly_Nhan_Vien();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Mainconten.Content = new Views.Thong_Ke();
+        }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Mainconten.Content = new Views.Quan_ly_nguoi_dung();
+        }
     }
 }

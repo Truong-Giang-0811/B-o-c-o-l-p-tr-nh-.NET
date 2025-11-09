@@ -69,7 +69,8 @@ namespace QUAN_LY.UI.Views
             string diaChi = txtdiachi.Text.Trim();
             string email = txtemail.Text.Trim();
             string soDienThoai = txtsodienthoai.Text.Trim();
-            bool gioiTinh = rdNam.IsChecked == true;
+            string gioiTinh = (rdNam.IsChecked == true) ? "Nam" : "Nữ";
+
             if (dangKy.DangKy(username, password, rePassword, hoTen, ngaySinh, diaChi, email, soDienThoai, gioiTinh, out string message))
             {
                 MessageBox.Show("Dang ky thanh cong");

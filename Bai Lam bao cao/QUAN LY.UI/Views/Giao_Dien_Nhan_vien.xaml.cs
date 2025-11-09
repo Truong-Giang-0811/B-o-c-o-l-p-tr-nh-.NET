@@ -39,5 +39,15 @@ namespace QUAN_LY.UI.Views
         {
             Mainconten.Content = new Views.Quan_ly_muon_tra();
         }
+
+        private void Taikhoancanhan(object sender, RoutedEventArgs e)
+        {
+            Mainconten.Content = new Views.Tai_khoan_ca_nhan();
+        }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            Mainconten.Content = new Views.Quan_ly_nguoi_dung();
+        }
     }
 }
