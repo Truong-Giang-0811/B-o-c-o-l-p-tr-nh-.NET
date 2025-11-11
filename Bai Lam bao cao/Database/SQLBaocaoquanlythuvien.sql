@@ -30,22 +30,20 @@ CREATE TABLE Sach (
     MaSach INT PRIMARY KEY IDENTITY(1,1),
     TieuDe NVARCHAR(200) NOT NULL,
     TacGia NVARCHAR(100) NOT NULL,
-    NhaXuatBan NVARCHAR(100)NOT NULL
+    NhaXuatBan NVARCHAR(100)NOT NULL,
     TheLoai NVARCHAR(50) NOT NULL,
     SoLuongTon INT NOT NULL DEFAULT 0,
 	SoLuongMuon Int not null Default 0,
 	NgayNhap date not null
+	Thoihanmuon int not null default 3,
 );
-drop table MuonSach ;
+
 CREATE TABLE MuonSach (
     MaMuon INT PRIMARY KEY IDENTITY(1,1),
     MaKhachHang INT NOT NULL,
     MaNhanVien INT NOT NULL,
     NgayMuon DATE NOT NULL DEFAULT GETDATE(),
-    HanTra DATE NOT NULL,
-    NgayTra DATE NULL,
-    TrangThai NVARCHAR(20) NOT NULL DEFAULT N'Đang mượn'
-        CHECK (TrangThai IN (N'Đang mượn', N'Đã trả', N'Trễ hạn')),
+	Ghichu Nvarchar(255) null,
 
     FOREIGN KEY (MaKhachHang) REFERENCES KhachHang(MaKhachHang),
     FOREIGN KEY (MaNhanVien) REFERENCES Admins(MaNhanVien)

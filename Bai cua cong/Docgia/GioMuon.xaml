@@ -1,0 +1,47 @@
+﻿<UserControl x:Class="Docgia.GioMuon"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Docgia"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <Grid Background="#E8FFF0">
+        <TextBlock Text="🛒 Danh sách sách trong giỏ mượn" 
+                   FontSize="20" FontWeight="Bold"
+                   Margin="10,10,0,20"/>
+
+        <DataGrid x:Name="dgGioMuon" 
+                  AutoGenerateColumns="False"
+                  Margin="10,50,10,70"
+                  IsReadOnly="False"
+                  CanUserAddRows="False" SelectionChanged="dgGioMuon_SelectionChanged">
+
+            <DataGrid.Columns>
+                <DataGridCheckBoxColumn Header="Chọn" Binding="{Binding IsChecked, Mode=TwoWay}" Width="60"/>
+                <DataGridTextColumn Header="Tên sách" Binding="{Binding TenSach}" Width="*"/>
+                <DataGridTextColumn Header="Tác giả" Binding="{Binding TacGia}" Width="*"/>
+                <DataGridTextColumn Header="Thể loại" Binding="{Binding TheLoai}" Width="*"/>
+                <DataGridTextColumn Header="NXB" Binding="{Binding NXB}" Width="*"/>
+                <DataGridTextColumn Header="SL tồn" Binding="{Binding SLTon}" Width="*"/>
+                <DataGridTextColumn Header="SL mượn" Binding="{Binding SLMuon}" Width="*"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <Button Content="❌ Xóa khỏi giỏ"
+                Width="150" Height="35"
+                Background="#FF5C5C"
+                Foreground="White" FontWeight="Bold"
+                HorizontalAlignment="Left" Margin="10,0,0,10"
+                VerticalAlignment="Bottom"
+                Click="btnXoa_Click"/>
+
+        <Button Content="✅ Xác nhận mượn"
+                Width="150" Height="35"
+                Background="#0D9F56"
+                Foreground="White" FontWeight="Bold"
+                HorizontalAlignment="Right" Margin="0,0,10,10"
+                VerticalAlignment="Bottom"
+                Click="btnXacNhan_Click"/>
+    </Grid>
+</UserControl>

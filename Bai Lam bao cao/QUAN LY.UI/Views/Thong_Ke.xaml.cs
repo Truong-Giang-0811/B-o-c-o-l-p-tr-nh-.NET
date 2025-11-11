@@ -27,6 +27,7 @@ namespace QUAN_LY.UI.Views
         public Thong_Ke()
         {
             InitializeComponent();
+            db = new LibraryContext();
 
         }
         private void UserControl_Loaded(object sender, RoutedEventArgs e)
@@ -55,64 +56,74 @@ namespace QUAN_LY.UI.Views
         }
         private void LoadData(int thang)
         {
-            // Lấy dữ liệu mượn theo tháng
-            var duLieu = db.ChiTietMuonSaches
-                .Where(ct => ct.NgayMuon.HasValue &&
-                             ct.NgayMuon.Value.Month == thang &&
-                             ct.Sach != null)
-                .GroupBy(ct => ct.Sach.TheLoai)
-                .Select(g => new
+            try
+            {
+                // ... (TOÀN BỘ CODE TRUY VẤN VÀ VẼ BIỂU ĐỒ CỦA BẠN)
+                var duLieu = db.ChiTietMuonSaches
+               .Where(ct => ct.NgayMuon.HasValue &&
+                            ct.NgayMuon.Value.Month == thang &&
+                            ct.Sach != null)
+               .GroupBy(ct => ct.Sach.TheLoai)
+               .Select(g => new
+               {
+                   TheLoai = g.Key,
+                   TongSoLuongMuon = g.Sum(x => x.SoLuong)
+               })
+               .OrderBy(x => x.TheLoai)
+               .ToList();
+
+                // Xóa dữ liệu cũ của biểu đồ
+                chart.Series.Clear();
+
+                if (duLieu.Count == 0)
                 {
-                    TheLoai = g.Key,
-                    TongSoLuongMuon = g.Sum(x => x.SoLuong)
-                })
-                .OrderBy(x => x.TheLoai)
-                .ToList();
+                    MessageBox.Show($"Không có dữ liệu mượn sách trong tháng {thang}.", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
+                    return;
+                }
 
-            // Xóa dữ liệu cũ của biểu đồ
-            chart.Series.Clear();
+                // Gán nhãn (thể loại) và giá trị (số lượt mượn)
+                var labels = duLieu.Select(d => d.TheLoai).ToList();
+                var values = new ChartValues<double>(duLieu.Select(d => (double)d.TongSoLuongMuon));
 
-            if (duLieu.Count == 0)
-            {
-                MessageBox.Show($"Không có dữ liệu mượn sách trong tháng {thang}.", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
-                return;
+                // Tạo cột hiển thị
+                var columnSeries = new ColumnSeries
+                {
+                    Title = $"Số lượt mượn - Tháng {thang}",
+                    Values = values,
+                    Fill = new SolidColorBrush(Color.FromRgb(46, 125, 50)),
+                    DataLabels = true,
+                    LabelPoint = point => point.Y.ToString()
+                };
+
+                chart.Series.Add(columnSeries);
+
+                // Cập nhật trục X
+                chart.AxisX.Clear();
+                chart.AxisX.Add(new Axis
+                {
+                    Labels = labels,
+                    FontSize = 13,
+                    Foreground = new SolidColorBrush(Color.FromRgb(2, 136, 209)),
+                    Separator = new LiveCharts.Wpf.Separator { Step = 1 }
+                });
+
+                // Cập nhật trục Y
+                chart.AxisY.Clear();
+                chart.AxisY.Add(new Axis
+                {
+                    Title = "Số lượt mượn",
+                    MinValue = 0,
+                    FontSize = 12,
+                    Foreground = new SolidColorBrush(Color.FromRgb(2, 136, 209))
+                });
             }
-
-            // Gán nhãn (thể loại) và giá trị (số lượt mượn)
-            var labels = duLieu.Select(d => d.TheLoai).ToList();
-            var values = new ChartValues<double>(duLieu.Select(d => (double)d.TongSoLuongMuon));
-
-            // Tạo cột hiển thị
-            var columnSeries = new ColumnSeries
+            catch (Exception ex)
             {
-                Title = $"Số lượt mượn - Tháng {thang}",
-                Values = values,
-                Fill = new SolidColorBrush(Color.FromRgb(46, 125, 50)),
-                DataLabels = true,
-                LabelPoint = point => point.Y.ToString()
-            };
-
-            chart.Series.Add(columnSeries);
-
-            // Cập nhật trục X
-            chart.AxisX.Clear();
-            chart.AxisX.Add(new Axis
-            {
-                Labels = labels,
-                FontSize = 13,
-                Foreground = new SolidColorBrush(Color.FromRgb(2, 136, 209)),
-                Separator = new LiveCharts.Wpf.Separator { Step = 1 }
-            });
-
-            // Cập nhật trục Y
-            chart.AxisY.Clear();
-            chart.AxisY.Add(new Axis
-            {
-                Title = "Số lượt mượn",
-                MinValue = 0,
-                FontSize = 12,
-                Foreground = new SolidColorBrush(Color.FromRgb(2, 136, 209))
-            });
+                // 🚨 Dòng này sẽ hiển thị thông tin lỗi chi tiết nhất
+                MessageBox.Show($"Đã xảy ra lỗi khi tải dữ liệu: {ex.Message}\nStack Trace: {ex.StackTrace}", "Lỗi Hệ Thống", MessageBoxButton.OK, MessageBoxImage.Error);
+            }
+            // Lấy dữ liệu mượn theo tháng
+           
         }
         private void cbMonth_SelectionChanged(object sender, System.Windows.Controls.SelectionChangedEventArgs e)
         {

@@ -3,8 +3,84 @@
   "WorkspaceRootPath": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|d:\\lap trinh .net\\d\u1EF1 \u00E1n b\u00E1o c\u00E1o\\bai lam bao cao\\quan ly.ui\\views\\quan_ly_nguoi_dung.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|solutionrelative:quan ly.ui\\views\\quan_ly_nguoi_dung.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|d:\\lap trinh .net\\d\u1EF1 \u00E1n b\u00E1o c\u00E1o\\bai lam bao cao\\quan ly.ui\\views\\dangky.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|solutionrelative:quan ly.ui\\views\\dangky.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|d:\\lap trinh .net\\d\u1EF1 \u00E1n b\u00E1o c\u00E1o\\bai lam bao cao\\quan ly.ui\\views\\giao_dien_doc_gia.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|solutionrelative:quan ly.ui\\views\\giao_dien_doc_gia.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|d:\\lap trinh .net\\d\u1EF1 \u00E1n b\u00E1o c\u00E1o\\bai lam bao cao\\quan ly.ui\\models\\viewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|solutionrelative:quan ly.ui\\models\\viewmodels.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|d:\\lap trinh .net\\d\u1EF1 \u00E1n b\u00E1o c\u00E1o\\bai lam bao cao\\quan ly.ui\\views\\giao di\u1EC7n admin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|solutionrelative:quan ly.ui\\views\\giao di\u1EC7n admin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|d:\\lap trinh .net\\d\u1EF1 \u00E1n b\u00E1o c\u00E1o\\bai lam bao cao\\quan ly.ui\\views\\quan_ly_sach.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|solutionrelative:quan ly.ui\\views\\quan_ly_sach.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|d:\\lap trinh .net\\d\u1EF1 \u00E1n b\u00E1o c\u00E1o\\bai lam bao cao\\quan ly.ui\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|solutionrelative:quan ly.ui\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|d:\\lap trinh .net\\d\u1EF1 \u00E1n b\u00E1o c\u00E1o\\bai lam bao cao\\quan ly.ui\\views\\quan_ly_muon_tra.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|solutionrelative:quan ly.ui\\views\\quan_ly_muon_tra.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|d:\\lap trinh .net\\d\u1EF1 \u00E1n b\u00E1o c\u00E1o\\bai lam bao cao\\quan ly.ui\\views\\tra_cuu_sach.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|solutionrelative:quan ly.ui\\views\\tra_cuu_sach.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|d:\\lap trinh .net\\d\u1EF1 \u00E1n b\u00E1o c\u00E1o\\bai lam bao cao\\quan ly.ui\\views\\thong_ke.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|solutionrelative:quan ly.ui\\views\\thong_ke.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|d:\\lap trinh .net\\d\u1EF1 \u00E1n b\u00E1o c\u00E1o\\bai lam bao cao\\quan ly.ui\\views\\thong_ke.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|solutionrelative:quan ly.ui\\views\\thong_ke.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|d:\\lap trinh .net\\d\u1EF1 \u00E1n b\u00E1o c\u00E1o\\bai lam bao cao\\quan ly.ui\\views\\giao di\u1EC7n admin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|solutionrelative:quan ly.ui\\views\\giao di\u1EC7n admin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|d:\\lap trinh .net\\d\u1EF1 \u00E1n b\u00E1o c\u00E1o\\bai lam bao cao\\quan ly.ui\\views\\tai_khoan_ca_nhan.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|solutionrelative:quan ly.ui\\views\\tai_khoan_ca_nhan.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|d:\\lap trinh .net\\d\u1EF1 \u00E1n b\u00E1o c\u00E1o\\bai lam bao cao\\quan ly.ui\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|solutionrelative:quan ly.ui\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|d:\\lap trinh .net\\d\u1EF1 \u00E1n b\u00E1o c\u00E1o\\bai lam bao cao\\quan ly.ui\\data\\librarycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|solutionrelative:quan ly.ui\\data\\librarycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Migrations\\20251109164233_SeedAdminAccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:QUAN LY.UI\\Migrations\\20251109164233_SeedAdminAccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Migrations\\20251109164044_AddSeededAdmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:QUAN LY.UI\\Migrations\\20251109164044_AddSeededAdmin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|d:\\lap trinh .net\\d\u1EF1 \u00E1n b\u00E1o c\u00E1o\\bai lam bao cao\\quan ly.ui\\services\\quan_ly_nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|solutionrelative:quan ly.ui\\services\\quan_ly_nhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|d:\\lap trinh .net\\d\u1EF1 \u00E1n b\u00E1o c\u00E1o\\bai lam bao cao\\quan ly.ui\\models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|solutionrelative:quan ly.ui\\models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|d:\\lap trinh .net\\d\u1EF1 \u00E1n b\u00E1o c\u00E1o\\bai lam bao cao\\quan ly.ui\\services\\dichvudangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|solutionrelative:quan ly.ui\\services\\dichvudangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|d:\\lap trinh .net\\d\u1EF1 \u00E1n b\u00E1o c\u00E1o\\bai lam bao cao\\quan ly.ui\\views\\dangky.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -15,52 +91,116 @@
       "RelativeMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|solutionrelative:quan ly.ui\\models\\khachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|d:\\lap trinh .net\\d\u1EF1 \u00E1n b\u00E1o c\u00E1o\\bai lam bao cao\\quan ly.ui\\services\\dichvudangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|solutionrelative:quan ly.ui\\services\\dichvudangky.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|d:\\lap trinh .net\\d\u1EF1 \u00E1n b\u00E1o c\u00E1o\\bai lam bao cao\\quan ly.ui\\views\\quan_ly_nguoi_dung.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|solutionrelative:quan ly.ui\\views\\quan_ly_nguoi_dung.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|d:\\lap trinh .net\\d\u1EF1 \u00E1n b\u00E1o c\u00E1o\\bai lam bao cao\\quan ly.ui\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|solutionrelative:quan ly.ui\\app.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|d:\\lap trinh .net\\d\u1EF1 \u00E1n b\u00E1o c\u00E1o\\bai lam bao cao\\quan ly.ui\\views\\quan_ly_nhan_vien.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|solutionrelative:quan ly.ui\\views\\quan_ly_nhan_vien.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|d:\\lap trinh .net\\d\u1EF1 \u00E1n b\u00E1o c\u00E1o\\bai lam bao cao\\quan ly.ui\\views\\dangnhap.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|solutionrelative:quan ly.ui\\views\\dangnhap.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|d:\\lap trinh .net\\d\u1EF1 \u00E1n b\u00E1o c\u00E1o\\bai lam bao cao\\quan ly.ui\\views\\tai_khoan_ca_nhan.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|solutionrelative:quan ly.ui\\views\\tai_khoan_ca_nhan.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|d:\\lap trinh .net\\d\u1EF1 \u00E1n b\u00E1o c\u00E1o\\bai lam bao cao\\quan ly.ui\\views\\giao_dien_nhan_vien.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|solutionrelative:quan ly.ui\\views\\giao_dien_nhan_vien.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|d:\\lap trinh .net\\d\u1EF1 \u00E1n b\u00E1o c\u00E1o\\bai lam bao cao\\quan ly.ui\\views\\giao_dien_nhan_vien.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|solutionrelative:quan ly.ui\\views\\giao_dien_nhan_vien.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|d:\\lap trinh .net\\d\u1EF1 \u00E1n b\u00E1o c\u00E1o\\bai lam bao cao\\quan ly.ui\\views\\quan_ly_nhan_vien.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|solutionrelative:quan ly.ui\\views\\quan_ly_nhan_vien.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|d:\\lap trinh .net\\d\u1EF1 \u00E1n b\u00E1o c\u00E1o\\bai lam bao cao\\quan ly.ui\\services\\xac_thuc_dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|solutionrelative:quan ly.ui\\services\\xac_thuc_dangnhap.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|d:\\lap trinh .net\\d\u1EF1 \u00E1n b\u00E1o c\u00E1o\\bai lam bao cao\\quan ly.ui\\data\\librarycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|solutionrelative:quan ly.ui\\data\\librarycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|d:\\lap trinh .net\\d\u1EF1 \u00E1n b\u00E1o c\u00E1o\\bai lam bao cao\\quan ly.ui\\services\\them_gio_hang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|solutionrelative:quan ly.ui\\services\\them_gio_hang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|d:\\lap trinh .net\\d\u1EF1 \u00E1n b\u00E1o c\u00E1o\\bai lam bao cao\\quan ly.ui\\models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|solutionrelative:quan ly.ui\\models\\admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|d:\\lap trinh .net\\d\u1EF1 \u00E1n b\u00E1o c\u00E1o\\bai lam bao cao\\quan ly.ui\\views\\quan_ly_sach.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|solutionrelative:quan ly.ui\\views\\quan_ly_sach.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|d:\\lap trinh .net\\d\u1EF1 \u00E1n b\u00E1o c\u00E1o\\bai lam bao cao\\quan ly.ui\\services\\quan_ly_sach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|solutionrelative:quan ly.ui\\services\\quan_ly_sach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|d:\\lap trinh .net\\d\u1EF1 \u00E1n b\u00E1o c\u00E1o\\bai lam bao cao\\quan ly.ui\\views\\dangnhap.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|solutionrelative:quan ly.ui\\views\\dangnhap.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|d:\\lap trinh .net\\d\u1EF1 \u00E1n b\u00E1o c\u00E1o\\bai lam bao cao\\quan ly.ui\\views\\dangnhap.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
       "RelativeMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|solutionrelative:quan ly.ui\\views\\dangnhap.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|d:\\lap trinh .net\\d\u1EF1 \u00E1n b\u00E1o c\u00E1o\\bai lam bao cao\\quan ly.ui\\migrations\\librarycontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|solutionrelative:quan ly.ui\\migrations\\librarycontextmodelsnapshot.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|d:\\lap trinh .net\\d\u1EF1 \u00E1n b\u00E1o c\u00E1o\\bai lam bao cao\\quan ly.ui\\migrations\\20251029141720_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|solutionrelative:quan ly.ui\\migrations\\20251029141720_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|d:\\lap trinh .net\\d\u1EF1 \u00E1n b\u00E1o c\u00E1o\\bai lam bao cao\\quan ly.ui\\views\\quan_ly_muon_tra.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|solutionrelative:quan ly.ui\\views\\quan_ly_muon_tra.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|d:\\lap trinh .net\\d\u1EF1 \u00E1n b\u00E1o c\u00E1o\\bai lam bao cao\\quan ly.ui\\services\\usersession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|solutionrelative:quan ly.ui\\services\\usersession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|d:\\lap trinh .net\\d\u1EF1 \u00E1n b\u00E1o c\u00E1o\\bai lam bao cao\\quan ly.ui\\views\\gio_muon.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|solutionrelative:quan ly.ui\\views\\gio_muon.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|d:\\lap trinh .net\\d\u1EF1 \u00E1n b\u00E1o c\u00E1o\\bai lam bao cao\\quan ly.ui\\models\\sach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|solutionrelative:quan ly.ui\\models\\sach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|d:\\lap trinh .net\\d\u1EF1 \u00E1n b\u00E1o c\u00E1o\\bai lam bao cao\\quan ly.ui\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|solutionrelative:quan ly.ui\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+      "AbsoluteMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|d:\\lap trinh .net\\d\u1EF1 \u00E1n b\u00E1o c\u00E1o\\bai lam bao cao\\quan ly.ui\\models\\muonsach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|solutionrelative:quan ly.ui\\models\\muonsach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|d:\\lap trinh .net\\d\u1EF1 \u00E1n b\u00E1o c\u00E1o\\bai lam bao cao\\quan ly.ui\\quan ly.ui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|solutionrelative:quan ly.ui\\quan ly.ui.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+      "AbsoluteMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|d:\\lap trinh .net\\d\u1EF1 \u00E1n b\u00E1o c\u00E1o\\bai lam bao cao\\quan ly.ui\\models\\hiddenhistories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|solutionrelative:quan ly.ui\\models\\hiddenhistories.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|d:\\lap trinh .net\\d\u1EF1 \u00E1n b\u00E1o c\u00E1o\\bai lam bao cao\\quan ly.ui\\views\\giao di\u1EC7n admin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
-      "RelativeMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|solutionrelative:quan ly.ui\\views\\giao di\u1EC7n admin.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+      "AbsoluteMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|d:\\lap trinh .net\\d\u1EF1 \u00E1n b\u00E1o c\u00E1o\\bai lam bao cao\\quan ly.ui\\models\\giohang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|solutionrelative:quan ly.ui\\models\\giohang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|d:\\lap trinh .net\\d\u1EF1 \u00E1n b\u00E1o c\u00E1o\\bai lam bao cao\\quan ly.ui\\views\\giao di\u1EC7n admin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|solutionrelative:quan ly.ui\\views\\giao di\u1EC7n admin.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|d:\\lap trinh .net\\d\u1EF1 \u00E1n b\u00E1o c\u00E1o\\bai lam bao cao\\quan ly.ui\\models\\chitietmuonsach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|solutionrelative:quan ly.ui\\models\\chitietmuonsach.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|d:\\lap trinh .net\\d\u1EF1 \u00E1n b\u00E1o c\u00E1o\\bai lam bao cao\\quan ly.ui\\views\\giao_dien_doc_gia.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|solutionrelative:quan ly.ui\\views\\giao_dien_doc_gia.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|d:\\lap trinh .net\\d\u1EF1 \u00E1n b\u00E1o c\u00E1o\\bai lam bao cao\\quan ly.ui\\views\\lich_su_muon.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|solutionrelative:quan ly.ui\\views\\lich_su_muon.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|d:\\lap trinh .net\\d\u1EF1 \u00E1n b\u00E1o c\u00E1o\\bai lam bao cao\\quan ly.ui\\views\\gio_muon.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|solutionrelative:quan ly.ui\\views\\gio_muon.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|d:\\lap trinh .net\\d\u1EF1 \u00E1n b\u00E1o c\u00E1o\\bai lam bao cao\\quan ly.ui\\views\\lich_su_muon.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|solutionrelative:quan ly.ui\\views\\lich_su_muon.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|d:\\lap trinh .net\\d\u1EF1 \u00E1n b\u00E1o c\u00E1o\\bai lam bao cao\\quan ly.ui\\views\\tra_cuu_sach.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|solutionrelative:quan ly.ui\\views\\tra_cuu_sach.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|d:\\lap trinh .net\\d\u1EF1 \u00E1n b\u00E1o c\u00E1o\\bai lam bao cao\\quan ly.ui\\migrations\\20251109164553_seedadminaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{04B368DE-7B9A-40B0-95D4-5F937BDCBAF4}|QUAN LY.UI\\QUAN LY.UI.csproj|solutionrelative:quan ly.ui\\migrations\\20251109164553_seedadminaccount.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -70,85 +210,608 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "Dangnhap.xaml",
-              "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Views\\Dangnhap.xaml",
-              "RelativeDocumentMoniker": "QUAN LY.UI\\Views\\Dangnhap.xaml",
-              "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Views\\Dangnhap.xaml",
-              "RelativeToolTip": "QUAN LY.UI\\Views\\Dangnhap.xaml",
+              "DocumentIndex": 7,
+              "Title": "Quan_ly_muon_tra.xaml",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Views\\Quan_ly_muon_tra.xaml",
+              "RelativeDocumentMoniker": "QUAN LY.UI\\Views\\Quan_ly_muon_tra.xaml",
+              "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Views\\Quan_ly_muon_tra.xaml",
+              "RelativeToolTip": "QUAN LY.UI\\Views\\Quan_ly_muon_tra.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-09-24T15:13:21.653Z",
+              "WhenOpened": "2025-10-18T02:30:14.884Z",
               "IsPinned": true
             },
             {
               "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "Gio_muon.xaml.cs",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Views\\Gio_muon.xaml.cs",
+              "RelativeDocumentMoniker": "QUAN LY.UI\\Views\\Gio_muon.xaml.cs",
+              "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Views\\Gio_muon.xaml.cs",
+              "RelativeToolTip": "QUAN LY.UI\\Views\\Gio_muon.xaml.cs",
+              "ViewState": "AgIAAPAAAAAAAAAAAAAqwA0BAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T13:55:06.044Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "Gio_muon.xaml",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Views\\Gio_muon.xaml",
+              "RelativeDocumentMoniker": "QUAN LY.UI\\Views\\Gio_muon.xaml",
+              "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Views\\Gio_muon.xaml",
+              "RelativeToolTip": "QUAN LY.UI\\Views\\Gio_muon.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-15T14:59:02.179Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "Quan_ly_muon_tra.xaml.cs",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Views\\Quan_ly_muon_tra.xaml.cs",
+              "RelativeDocumentMoniker": "QUAN LY.UI\\Views\\Quan_ly_muon_tra.xaml.cs",
+              "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Views\\Quan_ly_muon_tra.xaml.cs",
+              "RelativeToolTip": "QUAN LY.UI\\Views\\Quan_ly_muon_tra.xaml.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAUwBAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T11:23:06.755Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Quan_Ly_Sach.xaml.cs",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Views\\Quan_Ly_Sach.xaml.cs",
+              "RelativeDocumentMoniker": "QUAN LY.UI\\Views\\Quan_Ly_Sach.xaml.cs",
+              "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Views\\Quan_Ly_Sach.xaml.cs",
+              "RelativeToolTip": "QUAN LY.UI\\Views\\Quan_Ly_Sach.xaml.cs",
+              "ViewState": "AgIAAGkAAAAAAAAAAAAAAGQAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T11:38:13.079Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:1:0:{d212f56b-c48a-434c-a121-1c5d80b59b9f}"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "Quan_ly_nguoi_dung.xaml",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Views\\Quan_ly_nguoi_dung.xaml",
+              "RelativeDocumentMoniker": "QUAN LY.UI\\Views\\Quan_ly_nguoi_dung.xaml",
+              "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Views\\Quan_ly_nguoi_dung.xaml",
+              "RelativeToolTip": "QUAN LY.UI\\Views\\Quan_ly_nguoi_dung.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-11-09T02:19:21.433Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Dangky.xaml",
               "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Views\\Dangky.xaml",
               "RelativeDocumentMoniker": "QUAN LY.UI\\Views\\Dangky.xaml",
               "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Views\\Dangky.xaml",
               "RelativeToolTip": "QUAN LY.UI\\Views\\Dangky.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-09-24T15:11:50.958Z",
-              "IsPinned": true,
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "Dangky.xaml.cs",
-              "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Views\\Dangky.xaml.cs",
-              "RelativeDocumentMoniker": "QUAN LY.UI\\Views\\Dangky.xaml.cs",
-              "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Views\\Dangky.xaml.cs",
-              "RelativeToolTip": "QUAN LY.UI\\Views\\Dangky.xaml.cs",
-              "ViewState": "AgIAADUAAAAAAAAAAAAAAEYAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T15:31:37.918Z",
-              "IsPinned": true,
+              "WhenOpened": "2025-10-20T03:41:03.792Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 5,
-              "Title": "Dangnhap.xaml.cs",
-              "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Views\\Dangnhap.xaml.cs",
-              "RelativeDocumentMoniker": "QUAN LY.UI\\Views\\Dangnhap.xaml.cs",
-              "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Views\\Dangnhap.xaml.cs",
-              "RelativeToolTip": "QUAN LY.UI\\Views\\Dangnhap.xaml.cs",
-              "ViewState": "AgIAACcAAAAAAAAAAAAAABkAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-26T11:03:00.602Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "Title": "Quan_Ly_Sach.xaml",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Views\\Quan_Ly_Sach.xaml",
+              "RelativeDocumentMoniker": "QUAN LY.UI\\Views\\Quan_Ly_Sach.xaml",
+              "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Views\\Quan_Ly_Sach.xaml",
+              "RelativeToolTip": "QUAN LY.UI\\Views\\Quan_Ly_Sach.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-20T09:43:50.908Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 4,
               "Title": "Giao di\u1EC7n admin.xaml",
               "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Views\\Giao di\u1EC7n admin.xaml",
               "RelativeDocumentMoniker": "QUAN LY.UI\\Views\\Giao di\u1EC7n admin.xaml",
               "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Views\\Giao di\u1EC7n admin.xaml",
               "RelativeToolTip": "QUAN LY.UI\\Views\\Giao di\u1EC7n admin.xaml",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-09-25T00:25:27.525Z",
-              "IsPinned": true
+              "WhenOpened": "2025-10-20T11:38:11.337Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 2,
+              "Title": "Giao_dien_doc_gia.xaml",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Views\\Giao_dien_doc_gia.xaml",
+              "RelativeDocumentMoniker": "QUAN LY.UI\\Views\\Giao_dien_doc_gia.xaml",
+              "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Views\\Giao_dien_doc_gia.xaml",
+              "RelativeToolTip": "QUAN LY.UI\\Views\\Giao_dien_doc_gia.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-20T11:38:11.731Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ViewModels.cs",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Models\\ViewModels.cs",
+              "RelativeDocumentMoniker": "QUAN LY.UI\\Models\\ViewModels.cs",
+              "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Models\\ViewModels.cs",
+              "RelativeToolTip": "QUAN LY.UI\\Models\\ViewModels.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAAACQAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T01:24:43.236Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Thong_Ke.xaml",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Views\\Thong_Ke.xaml",
+              "RelativeDocumentMoniker": "QUAN LY.UI\\Views\\Thong_Ke.xaml",
+              "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Views\\Thong_Ke.xaml",
+              "RelativeToolTip": "QUAN LY.UI\\Views\\Thong_Ke.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-26T02:21:28.771Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Tra_Cuu_Sach.xaml",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Views\\Tra_Cuu_Sach.xaml",
+              "RelativeDocumentMoniker": "QUAN LY.UI\\Views\\Tra_Cuu_Sach.xaml",
+              "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Views\\Tra_Cuu_Sach.xaml",
+              "RelativeToolTip": "QUAN LY.UI\\Views\\Tra_Cuu_Sach.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-20T10:14:51.116Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "App.xaml",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\App.xaml",
+              "RelativeDocumentMoniker": "QUAN LY.UI\\App.xaml",
+              "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\App.xaml",
+              "RelativeToolTip": "QUAN LY.UI\\App.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-18T14:55:08.168Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Thong_Ke.xaml.cs",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Views\\Thong_Ke.xaml.cs",
+              "RelativeDocumentMoniker": "QUAN LY.UI\\Views\\Thong_Ke.xaml.cs",
+              "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Views\\Thong_Ke.xaml.cs",
+              "RelativeToolTip": "QUAN LY.UI\\Views\\Thong_Ke.xaml.cs",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAowIUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T10:36:13.811Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "Giao di\u1EC7n admin.xaml.cs",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Views\\Giao di\u1EC7n admin.xaml.cs",
+              "RelativeDocumentMoniker": "QUAN LY.UI\\Views\\Giao di\u1EC7n admin.xaml.cs",
+              "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Views\\Giao di\u1EC7n admin.xaml.cs",
+              "RelativeToolTip": "QUAN LY.UI\\Views\\Giao di\u1EC7n admin.xaml.cs",
+              "ViewState": "AgIAACEAAAAAAAAAAAAowDIAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T11:38:11.622Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Tai_khoan_ca_nhan.xaml.cs",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Views\\Tai_khoan_ca_nhan.xaml.cs",
+              "RelativeDocumentMoniker": "QUAN LY.UI\\Views\\Tai_khoan_ca_nhan.xaml.cs",
+              "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Views\\Tai_khoan_ca_nhan.xaml.cs",
+              "RelativeToolTip": "QUAN LY.UI\\Views\\Tai_khoan_ca_nhan.xaml.cs",
+              "ViewState": "AgIAADsBAAAAAAAAAAAQwFgBAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-31T14:43:09.359Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\appsettings.json",
+              "RelativeDocumentMoniker": "QUAN LY.UI\\appsettings.json",
+              "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\appsettings.json",
+              "RelativeToolTip": "QUAN LY.UI\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-10-18T14:55:03.294Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
               "Title": "LibraryContext.cs",
               "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Data\\LibraryContext.cs",
               "RelativeDocumentMoniker": "QUAN LY.UI\\Data\\LibraryContext.cs",
               "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Data\\LibraryContext.cs",
               "RelativeToolTip": "QUAN LY.UI\\Data\\LibraryContext.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAAADMAAAALAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABAAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-28T03:18:20.192Z",
-              "IsPinned": true
+              "WhenOpened": "2025-10-17T09:50:36.406Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "20251109164553_SeedAdminAccount.cs",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Migrations\\20251109164553_SeedAdminAccount.cs",
+              "RelativeDocumentMoniker": "QUAN LY.UI\\Migrations\\20251109164553_SeedAdminAccount.cs",
+              "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Migrations\\20251109164553_SeedAdminAccount.cs",
+              "RelativeToolTip": "QUAN LY.UI\\Migrations\\20251109164553_SeedAdminAccount.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T16:45:53.549Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "20251109164233_SeedAdminAccount.cs",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Migrations\\20251109164233_SeedAdminAccount.cs",
+              "RelativeDocumentMoniker": "QUAN LY.UI\\Migrations\\20251109164233_SeedAdminAccount.cs",
+              "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Migrations\\20251109164233_SeedAdminAccount.cs",
+              "RelativeToolTip": "QUAN LY.UI\\Migrations\\20251109164233_SeedAdminAccount.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T16:42:34.091Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "20251109164044_AddSeededAdmin.cs",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Migrations\\20251109164044_AddSeededAdmin.cs",
+              "RelativeDocumentMoniker": "QUAN LY.UI\\Migrations\\20251109164044_AddSeededAdmin.cs",
+              "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Migrations\\20251109164044_AddSeededAdmin.cs",
+              "RelativeToolTip": "QUAN LY.UI\\Migrations\\20251109164044_AddSeededAdmin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T16:40:44.488Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "DichvuDangKy.cs",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Services\\DichvuDangKy.cs",
+              "RelativeDocumentMoniker": "QUAN LY.UI\\Services\\DichvuDangKy.cs",
+              "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Services\\DichvuDangKy.cs",
+              "RelativeToolTip": "QUAN LY.UI\\Services\\DichvuDangKy.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAAgwBQAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T14:05:38.426Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Admin.cs",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Models\\Admin.cs",
+              "RelativeDocumentMoniker": "QUAN LY.UI\\Models\\Admin.cs",
+              "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Models\\Admin.cs",
+              "RelativeToolTip": "QUAN LY.UI\\Models\\Admin.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAmwBUAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T02:18:24.24Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Quan_Ly_Nhanvien.cs",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Services\\Quan_Ly_Nhanvien.cs",
+              "RelativeDocumentMoniker": "QUAN LY.UI\\Services\\Quan_Ly_Nhanvien.cs",
+              "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Services\\Quan_Ly_Nhanvien.cs",
+              "RelativeToolTip": "QUAN LY.UI\\Services\\Quan_Ly_Nhanvien.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAuwEQAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T11:47:38.479Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "Dangky.xaml.cs",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Views\\Dangky.xaml.cs",
+              "RelativeDocumentMoniker": "QUAN LY.UI\\Views\\Dangky.xaml.cs",
+              "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Views\\Dangky.xaml.cs",
+              "RelativeToolTip": "QUAN LY.UI\\Views\\Dangky.xaml.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAA+wFUAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T03:41:12.081Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "KhachHang.cs",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Models\\KhachHang.cs",
+              "RelativeDocumentMoniker": "QUAN LY.UI\\Models\\KhachHang.cs",
+              "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Models\\KhachHang.cs",
+              "RelativeToolTip": "QUAN LY.UI\\Models\\KhachHang.cs",
+              "ViewState": "AgIAAAwAAAAAAAAAAADwvw8AAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T02:18:18.157Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "Quan_ly_nguoi_dung.xaml.cs",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Views\\Quan_ly_nguoi_dung.xaml.cs",
+              "RelativeDocumentMoniker": "QUAN LY.UI\\Views\\Quan_ly_nguoi_dung.xaml.cs",
+              "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Views\\Quan_ly_nguoi_dung.xaml.cs",
+              "RelativeToolTip": "QUAN LY.UI\\Views\\Quan_ly_nguoi_dung.xaml.cs",
+              "ViewState": "AgIAAEwAAAAAAAAAAAAmwKQAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-09T02:28:30.129Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Quan_Ly_Nhan_Vien.xaml.cs",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Views\\Quan_Ly_Nhan_Vien.xaml.cs",
+              "RelativeDocumentMoniker": "QUAN LY.UI\\Views\\Quan_Ly_Nhan_Vien.xaml.cs",
+              "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Views\\Quan_Ly_Nhan_Vien.xaml.cs",
+              "RelativeToolTip": "QUAN LY.UI\\Views\\Quan_Ly_Nhan_Vien.xaml.cs",
+              "ViewState": "AgIAAMsAAAAAAAAAAAAgwOMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T13:14:33.337Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "Tai_khoan_ca_nhan.xaml",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Views\\Tai_khoan_ca_nhan.xaml",
+              "RelativeDocumentMoniker": "QUAN LY.UI\\Views\\Tai_khoan_ca_nhan.xaml",
+              "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Views\\Tai_khoan_ca_nhan.xaml",
+              "RelativeToolTip": "QUAN LY.UI\\Views\\Tai_khoan_ca_nhan.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-31T14:26:33.793Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Giao_Dien_Nhan_vien.xaml.cs",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Views\\Giao_Dien_Nhan_vien.xaml.cs",
+              "RelativeDocumentMoniker": "QUAN LY.UI\\Views\\Giao_Dien_Nhan_vien.xaml.cs",
+              "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Views\\Giao_Dien_Nhan_vien.xaml.cs",
+              "RelativeToolTip": "QUAN LY.UI\\Views\\Giao_Dien_Nhan_vien.xaml.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAvwDEAAABAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-25T04:45:19.591Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "Giao_Dien_Nhan_vien.xaml",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Views\\Giao_Dien_Nhan_vien.xaml",
+              "RelativeDocumentMoniker": "QUAN LY.UI\\Views\\Giao_Dien_Nhan_vien.xaml",
+              "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Views\\Giao_Dien_Nhan_vien.xaml",
+              "RelativeToolTip": "QUAN LY.UI\\Views\\Giao_Dien_Nhan_vien.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-25T04:30:34.705Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "Quan_Ly_Nhan_Vien.xaml",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Views\\Quan_Ly_Nhan_Vien.xaml",
+              "RelativeDocumentMoniker": "QUAN LY.UI\\Views\\Quan_Ly_Nhan_Vien.xaml",
+              "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Views\\Quan_Ly_Nhan_Vien.xaml",
+              "RelativeToolTip": "QUAN LY.UI\\Views\\Quan_Ly_Nhan_Vien.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-25T04:23:32.621Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "Xac_Thuc_Dangnhap.cs",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Services\\Xac_Thuc_Dangnhap.cs",
+              "RelativeDocumentMoniker": "QUAN LY.UI\\Services\\Xac_Thuc_Dangnhap.cs",
+              "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Services\\Xac_Thuc_Dangnhap.cs",
+              "RelativeToolTip": "QUAN LY.UI\\Services\\Xac_Thuc_Dangnhap.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAACYAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T03:08:35.148Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Them_Gio_Hang.cs",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Services\\Them_Gio_Hang.cs",
+              "RelativeDocumentMoniker": "QUAN LY.UI\\Services\\Them_Gio_Hang.cs",
+              "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Services\\Them_Gio_Hang.cs",
+              "RelativeToolTip": "QUAN LY.UI\\Services\\Them_Gio_Hang.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T09:48:31.178Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Quan_Ly_Sach.cs",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Services\\Quan_Ly_Sach.cs",
+              "RelativeDocumentMoniker": "QUAN LY.UI\\Services\\Quan_Ly_Sach.cs",
+              "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Services\\Quan_Ly_Sach.cs",
+              "RelativeToolTip": "QUAN LY.UI\\Services\\Quan_Ly_Sach.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAG8AAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T14:44:12.163Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "Dangnhap.xaml.cs",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Views\\Dangnhap.xaml.cs",
+              "RelativeDocumentMoniker": "QUAN LY.UI\\Views\\Dangnhap.xaml.cs",
+              "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Views\\Dangnhap.xaml.cs",
+              "RelativeToolTip": "QUAN LY.UI\\Views\\Dangnhap.xaml.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAmwG8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T14:16:07.253Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "Dangnhap.xaml",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Views\\Dangnhap.xaml",
+              "RelativeDocumentMoniker": "QUAN LY.UI\\Views\\Dangnhap.xaml",
+              "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Views\\Dangnhap.xaml",
+              "RelativeToolTip": "QUAN LY.UI\\Views\\Dangnhap.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-20T11:38:10.951Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "LibraryContextModelSnapshot.cs",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Migrations\\LibraryContextModelSnapshot.cs",
+              "RelativeDocumentMoniker": "QUAN LY.UI\\Migrations\\LibraryContextModelSnapshot.cs",
+              "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Migrations\\LibraryContextModelSnapshot.cs",
+              "RelativeToolTip": "QUAN LY.UI\\Migrations\\LibraryContextModelSnapshot.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-05T14:06:05.383Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "20251029141720_InitialCreate.cs",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Migrations\\20251029141720_InitialCreate.cs",
+              "RelativeDocumentMoniker": "QUAN LY.UI\\Migrations\\20251029141720_InitialCreate.cs",
+              "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Migrations\\20251029141720_InitialCreate.cs",
+              "RelativeToolTip": "QUAN LY.UI\\Migrations\\20251029141720_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-29T14:17:20.384Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "UserSession.cs",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Services\\UserSession.cs",
+              "RelativeDocumentMoniker": "QUAN LY.UI\\Services\\UserSession.cs",
+              "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Services\\UserSession.cs",
+              "RelativeToolTip": "QUAN LY.UI\\Services\\UserSession.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T14:11:43.937Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "Sach.cs",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Models\\Sach.cs",
+              "RelativeDocumentMoniker": "QUAN LY.UI\\Models\\Sach.cs",
+              "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Models\\Sach.cs",
+              "RelativeToolTip": "QUAN LY.UI\\Models\\Sach.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAAAwAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T02:45:38.637Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "MuonSach.cs",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Models\\MuonSach.cs",
+              "RelativeDocumentMoniker": "QUAN LY.UI\\Models\\MuonSach.cs",
+              "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Models\\MuonSach.cs",
+              "RelativeToolTip": "QUAN LY.UI\\Models\\MuonSach.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAAAsAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-18T03:15:37.653Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "ChiTietMuonSach.cs",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Models\\ChiTietMuonSach.cs",
+              "RelativeDocumentMoniker": "QUAN LY.UI\\Models\\ChiTietMuonSach.cs",
+              "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Models\\ChiTietMuonSach.cs",
+              "RelativeToolTip": "QUAN LY.UI\\Models\\ChiTietMuonSach.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAAAsAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-19T02:18:22.712Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "Giohang.cs",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Models\\Giohang.cs",
+              "RelativeDocumentMoniker": "QUAN LY.UI\\Models\\Giohang.cs",
+              "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Models\\Giohang.cs",
+              "RelativeToolTip": "QUAN LY.UI\\Models\\Giohang.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAAABwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-16T14:48:46.875Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "HiddenHistories.cs",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Models\\HiddenHistories.cs",
+              "RelativeDocumentMoniker": "QUAN LY.UI\\Models\\HiddenHistories.cs",
+              "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Models\\HiddenHistories.cs",
+              "RelativeToolTip": "QUAN LY.UI\\Models\\HiddenHistories.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAADAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-21T09:19:39.246Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "Giao_dien_doc_gia.xaml.cs",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Views\\Giao_dien_doc_gia.xaml.cs",
+              "RelativeDocumentMoniker": "QUAN LY.UI\\Views\\Giao_dien_doc_gia.xaml.cs",
+              "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Views\\Giao_dien_doc_gia.xaml.cs",
+              "RelativeToolTip": "QUAN LY.UI\\Views\\Giao_dien_doc_gia.xaml.cs",
+              "ViewState": "AgIAACYAAAAAAAAAAAAAADsAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-15T11:31:09.908Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "Lich_su_muon.xaml",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Views\\Lich_su_muon.xaml",
+              "RelativeDocumentMoniker": "QUAN LY.UI\\Views\\Lich_su_muon.xaml",
+              "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Views\\Lich_su_muon.xaml",
+              "RelativeToolTip": "QUAN LY.UI\\Views\\Lich_su_muon.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-20T03:48:46.323Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "Lich_su_muon.xaml.cs",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Views\\Lich_su_muon.xaml.cs",
+              "RelativeDocumentMoniker": "QUAN LY.UI\\Views\\Lich_su_muon.xaml.cs",
+              "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Views\\Lich_su_muon.xaml.cs",
+              "RelativeToolTip": "QUAN LY.UI\\Views\\Lich_su_muon.xaml.cs",
+              "ViewState": "AgIAAEkAAAAAAAAAAAAkwFoAAAAnAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-20T11:38:12.668Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "Tra_Cuu_Sach.xaml.cs",
+              "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Views\\Tra_Cuu_Sach.xaml.cs",
+              "RelativeDocumentMoniker": "QUAN LY.UI\\Views\\Tra_Cuu_Sach.xaml.cs",
+              "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Views\\Tra_Cuu_Sach.xaml.cs",
+              "RelativeToolTip": "QUAN LY.UI\\Views\\Tra_Cuu_Sach.xaml.cs",
+              "ViewState": "AgIAABsAAAAAAAAAAAAAAEkAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-17T09:48:04.157Z"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
             },
             {
               "$type": "Bookmark",
@@ -156,118 +819,7 @@
             },
             {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{34e76e81-ee4a-11d0-ae2e-00a0c90fffc3}"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "DichvuDangKy.cs",
-              "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Services\\DichvuDangKy.cs",
-              "RelativeDocumentMoniker": "QUAN LY.UI\\Services\\DichvuDangKy.cs",
-              "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Services\\DichvuDangKy.cs",
-              "RelativeToolTip": "QUAN LY.UI\\Services\\DichvuDangKy.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAAAADkAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-30T10:24:17.634Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "KhachHang.cs",
-              "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Models\\KhachHang.cs",
-              "RelativeDocumentMoniker": "QUAN LY.UI\\Models\\KhachHang.cs",
-              "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Models\\KhachHang.cs",
-              "RelativeToolTip": "QUAN LY.UI\\Models\\KhachHang.cs",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAmwA0AAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-29T06:30:48.183Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "App.xaml",
-              "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\App.xaml",
-              "RelativeDocumentMoniker": "QUAN LY.UI\\App.xaml",
-              "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\App.xaml",
-              "RelativeToolTip": "QUAN LY.UI\\App.xaml",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
-              "WhenOpened": "2025-09-29T01:09:14.088Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\appsettings.json",
-              "RelativeDocumentMoniker": "QUAN LY.UI\\appsettings.json",
-              "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\appsettings.json",
-              "RelativeToolTip": "QUAN LY.UI\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-09-29T00:36:22.108Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Admin.cs",
-              "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Models\\Admin.cs",
-              "RelativeDocumentMoniker": "QUAN LY.UI\\Models\\Admin.cs",
-              "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Models\\Admin.cs",
-              "RelativeToolTip": "QUAN LY.UI\\Models\\Admin.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-29T00:36:44.512Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Sach.cs",
-              "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Models\\Sach.cs",
-              "RelativeDocumentMoniker": "QUAN LY.UI\\Models\\Sach.cs",
-              "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Models\\Sach.cs",
-              "RelativeToolTip": "QUAN LY.UI\\Models\\Sach.cs",
-              "ViewState": "AgIAAAoAAAAAAAAAAAAuwBUAAAAaAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-28T05:40:13.469Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Xac_Thuc_Dangnhap.cs",
-              "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Services\\Xac_Thuc_Dangnhap.cs",
-              "RelativeDocumentMoniker": "QUAN LY.UI\\Services\\Xac_Thuc_Dangnhap.cs",
-              "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Services\\Xac_Thuc_Dangnhap.cs",
-              "RelativeToolTip": "QUAN LY.UI\\Services\\Xac_Thuc_Dangnhap.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADIAAAAqAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T13:34:01.827Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "Giao di\u1EC7n admin.xaml.cs",
-              "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Views\\Giao di\u1EC7n admin.xaml.cs",
-              "RelativeDocumentMoniker": "QUAN LY.UI\\Views\\Giao di\u1EC7n admin.xaml.cs",
-              "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\Views\\Giao di\u1EC7n admin.xaml.cs",
-              "RelativeToolTip": "QUAN LY.UI\\Views\\Giao di\u1EC7n admin.xaml.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAAAB4AAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-27T03:55:25.505Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "QUAN LY.UI.csproj",
-              "DocumentMoniker": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\QUAN LY.UI.csproj",
-              "RelativeDocumentMoniker": "QUAN LY.UI\\QUAN LY.UI.csproj",
-              "ToolTip": "D:\\Lap trinh .NET\\D\u1EF0 \u00C1N B\u00C1O C\u00C1O\\Bai Lam bao cao\\QUAN LY.UI\\QUAN LY.UI.csproj",
-              "RelativeToolTip": "QUAN LY.UI\\QUAN LY.UI.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-09-25T13:51:09.254Z"
+              "Name": "ST:0:0:{0ad07096-bba9-4900-a651-0598d26f6d24}"
             }
           ]
         }

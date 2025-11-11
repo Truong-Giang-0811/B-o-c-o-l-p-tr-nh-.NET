@@ -3,72 +3,120 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
              xmlns:local="clr-namespace:QUAN_LY.UI" 
              xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit" 
-             StartupUri="Views/Dangnhap.xaml">
+             StartupUri="Views/Giao diện admin.xaml">
     <Application.Resources>
+        <!-- Màu sắc chủ đạo mới -->
+        <SolidColorBrush x:Key="PrimaryColor" Color="#00BCD4"/>
+        <SolidColorBrush x:Key="PrimaryDarkColor" Color="#0097A7"/>
+        <SolidColorBrush x:Key="AccentGreen" Color="#0D9F56"/>
+        <SolidColorBrush x:Key="AccentDarkGreen" Color="#007139"/>
+
+        <!-- Style cho IntegerUpDown (Giảm CornerRadius xuống 5) -->
         <Style TargetType="xctk:IntegerUpDown">
-            <Setter Property="BorderBrush" Value="#FF087026"/>
+            <Setter Property="BorderBrush" Value="{StaticResource PrimaryDarkColor}"/>
             <Setter Property="BorderThickness" Value="1"/>
             <Setter Property="Background" Value="White"/>
             <Setter Property="Padding" Value="2"/>
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="xctk:IntegerUpDown">
-                        <Border CornerRadius="10" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}">
+                        <Border CornerRadius="5" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}">
                             <Grid>
                                 <Grid.ColumnDefinitions>
                                     <ColumnDefinition/>
-                                    <ColumnDefinition Width="10"/>
+                                    <ColumnDefinition Width="20"/>
                                 </Grid.ColumnDefinitions>
-                                <TextBox x:Name="TextBox" Text="{Binding Path=Text, RelativeSource={RelativeSource TemplatedParent}, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" BorderThickness="0" Background="Transparent" VerticalContentAlignment="Center"/>
+                                <TextBox x:Name="TextBox" Text="{Binding Path=Text, RelativeSource={RelativeSource TemplatedParent}, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" 
+                                         BorderThickness="0" Background="Transparent" VerticalContentAlignment="Center" Margin="5,0,0,0"/>
+                                <!-- Placeholder for Up/Down buttons if needed, but keeping original structure simple -->
                             </Grid>
                         </Border>
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>
         </Style>
-        <!-- Style bo góc cho TextBox -->
+
+        <!-- Style bo góc cho TextBox (Giảm CornerRadius xuống 5) -->
         <Style TargetType="TextBox">
-            <Setter Property="BorderBrush" Value="#FF087026"/>
+            <Setter Property="BorderBrush" Value="{StaticResource PrimaryDarkColor}"/>
             <Setter Property="BorderThickness" Value="1"/>
             <Setter Property="Background" Value="White"/>
-            <Setter Property="Padding" Value="4,2"/>
+            <Setter Property="Padding" Value="8,4"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="TextBox">
-                        <Border CornerRadius="10" BorderBrush="{TemplateBinding BorderBrush}" 
+                        <Border CornerRadius="5" BorderBrush="{TemplateBinding BorderBrush}" 
                                 BorderThickness="{TemplateBinding BorderThickness}" 
                                 Background="{TemplateBinding Background}">
                             <ScrollViewer x:Name="PART_ContentHost" 
                                           Margin="{TemplateBinding Padding}" 
-                                       />
+                                        />
                         </Border>
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>
         </Style>
-        <!-- Style bo góc cho PasswordBox -->
+
+        <!-- Style bo góc cho PasswordBox (Giảm CornerRadius xuống 5) -->
         <Style TargetType="PasswordBox">
-            <Setter Property="BorderBrush" Value="#FF087026"/>
+            <Setter Property="BorderBrush" Value="{StaticResource PrimaryDarkColor}"/>
             <Setter Property="BorderThickness" Value="1"/>
             <Setter Property="Background" Value="White"/>
-            <Setter Property="Padding" Value="4,2"/>
+            <Setter Property="Padding" Value="8,4"/>
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="PasswordBox">
-                        <Border CornerRadius="10" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}">
+                        <Border CornerRadius="5" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}">
                             <ScrollViewer x:Name="PART_ContentHost" Margin="{TemplateBinding Padding}" HorizontalScrollBarVisibility="Hidden" VerticalScrollBarVisibility="Hidden"/>
                         </Border>
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>
         </Style>
-        <Style x:Key="Btbadmin" TargetType="Button">
-            <Setter Property="Cursor" Value="Arrow"></Setter>
+
+        <!-- Style cho DatePicker (Thêm CornerRadius) -->
+        <Style TargetType="{x:Type DatePicker}">
+            <Setter Property="BorderBrush" Value="{StaticResource PrimaryDarkColor}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="Padding" Value="4"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type DatePicker}">
+                        <Border CornerRadius="5" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}" Background="{TemplateBinding Background}">
+                            <DatePickerTextBox x:Name="PART_TextBox" BorderThickness="0" Background="Transparent" Padding="{TemplateBinding Padding}" VerticalContentAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Style cho Button chức năng (Thêm, Xóa, Cập nhật) với màu xanh lá hiện đại -->
+        <Style x:Key="FunctionButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="{StaticResource AccentGreen}"></Setter>
+            <Setter Property="Foreground" Value="White"></Setter>
+            <Setter Property="FontSize" Value="14"></Setter>
+            <Setter Property="FontWeight" Value="SemiBold"></Setter>
+            <Setter Property="Padding" Value="15,5"></Setter>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}"
+                                CornerRadius="5"
+                                BorderThickness="0">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"></ContentPresenter>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
             <Style.Triggers>
                 <Trigger Property="IsMouseOver" Value="True">
-                    <Setter Property="Cursor" Value="Hand"/>
+                    <Setter Property="Background" Value="{StaticResource AccentDarkGreen}"></Setter>
                 </Trigger>
             </Style.Triggers>
         </Style>
+
     </Application.Resources>
 </Application>

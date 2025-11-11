@@ -1,0 +1,116 @@
+﻿<UserControl x:Class="Docgia.TraCuuSach"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Docgia"
+             mc:Ignorable="d" 
+             >
+    <UserControl.Resources>
+        <!-- Converter dùng cho placeholder visibility -->
+        <BooleanToVisibilityConverter x:Key="BoolToVisibilityConverter"/>
+    </UserControl.Resources>
+    <Grid Margin="10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+            <RowDefinition Height="Auto" MinHeight="241"/>
+        </Grid.RowDefinitions>
+
+        <!-- Thanh tìm kiếm -->
+        <Grid Margin="0,10,0,10">
+            <TextBox x:Name="txtTimKiem" 
+             Height="35" 
+             FontSize="14"
+             Padding="10,0,10,0"
+             TextChanged="txtTimKiem_TextChanged"/>
+
+            <TextBlock Text="🔍 Nhập tên sách cần tìm..."
+               FontStyle="Italic"
+               Foreground="Gray"
+               Margin="0,8,10,0"
+               IsHitTestVisible="False"
+               Visibility="{Binding Text.IsEmpty, ElementName=txtTimKiem, Converter={StaticResource BoolToVisibilityConverter}}" HorizontalAlignment="Right" Width="528"/>
+        </Grid>
+
+        <!-- Bảng danh sách sách -->
+        <DataGrid x:Name="dgSach" Grid.Row="1"
+                  CanUserAddRows="False"
+                  HeadersVisibility="Column"
+                  AutoGenerateColumns="False"
+                  IsReadOnly="True"
+                  SelectionMode="Single"
+                  SelectionChanged="dgSach_SelectionChanged"
+                 Margin="0,0,0,241" Grid.RowSpan="2">
+            <DataGrid.Columns>
+                <DataGridTextColumn Header="Tên sách" Binding="{Binding TenSach}" Width="*"/>
+                <DataGridTextColumn Header="Tác giả" Binding="{Binding TacGia}" Width="*"/>
+                <DataGridTextColumn Header="Thể loại" Binding="{Binding TheLoai}" Width="*"/>
+                <DataGridTextColumn Header="NXB" Binding="{Binding NXB}" Width="*"/>
+                <DataGridTextColumn Header="Số lượng tồn" Binding="{Binding SLTon}" Width="Auto"/>
+            </DataGrid.Columns>
+        </DataGrid>
+
+        <!-- Khu vực chi tiết sách -->
+        <Border Grid.Row="2" Margin="0,49,0,0" Padding="15"
+        BorderBrush="#0D9F56" BorderThickness="1" CornerRadius="8"
+        Background="#F0FFF4">
+            <StackPanel>
+                <TextBlock Text="📖 Thông tin chi tiết sách" 
+                   FontWeight="Bold" 
+                   FontSize="18" 
+                   Margin="0,0,0,10"/>
+
+                <!-- Form thông tin sách -->
+                <Grid Margin="10,0,0,0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="80"/>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="60"/>
+                        <ColumnDefinition Width="*"/>
+                    </Grid.ColumnDefinitions>
+
+                    <Grid.RowDefinitions>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="20"/>
+                        <RowDefinition Height="Auto"/>
+                    </Grid.RowDefinitions>
+
+                    <TextBlock Text="Tên sách:" Grid.Row="0" Grid.Column="0" FontWeight="Bold"/>
+                    <TextBlock Text="{Binding SelectedTenSach}" Grid.Row="0" Grid.Column="1"/>
+
+                    <TextBlock Text="NXB:" Grid.Row="0" Grid.Column="2" FontWeight="Bold"/>
+                    <TextBlock Text="{Binding SelectedNXB}" Grid.Row="0" Grid.Column="3"/>
+
+                    <TextBlock Text="Thể loại:" Grid.Row="1" Grid.Column="0" FontWeight="Bold"/>
+                    <TextBlock Text="{Binding SelectedTheLoai}" Grid.Row="1" Grid.Column="1"/>
+
+                    <TextBlock Text="Tác giả:" Grid.Row="1" Grid.Column="2" FontWeight="Bold"/>
+                    <TextBlock Text="{Binding SelectedTacGia}" Grid.Row="1" Grid.Column="3"/>
+
+                    <TextBlock Text="Số lượng tồn:" Grid.Row="2" Grid.Column="0" FontWeight="Bold"/>
+                    <TextBlock Text="{Binding SelectedSLTon}" Grid.Row="2" Grid.Column="1"/>
+
+                    <TextBlock Text="Mô tả:" Grid.Row="2" Grid.Column="2" FontWeight="Bold"/>
+                    <TextBlock Text="{Binding SelectedMoTa}" Grid.Row="2" TextWrapping="Wrap" TextTrimming="None" 
+                               MaxHeight="80" Grid.Column="3"/>
+
+
+                </Grid>
+
+                <!-- Nút thêm giỏ -->
+                <Button x:Name="btnThemGio" 
+                Content="🛒 Thêm vào giỏ mượn"
+                Width="150" Height="30" 
+                Margin="150,10,0,0"
+                HorizontalAlignment="Left"
+                Background="#0D9F56" 
+                Foreground="White" 
+                FontWeight="Bold"
+                Cursor="Hand" 
+                Click="btnThemGio_Click"/>
+            </StackPanel>
+        </Border>
+
+    </Grid>
+</UserControl>

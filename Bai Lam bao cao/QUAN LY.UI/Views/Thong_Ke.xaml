@@ -37,9 +37,7 @@
         </Grid>
         <!-- Biểu đồ -->
         <lvc:CartesianChart x:Name="chart" DisableAnimations="True" Padding="16,8,24,40" Grid.Row="1" LegendLocation="Top" Height="300" Width="500" Margin="0">
-            <lvc:CartesianChart.Series>
-                <lvc:ColumnSeries Title="Số lượt mượn" Values="{Binding Values}" Fill="#2E7D32"/>
-            </lvc:CartesianChart.Series>
+ 
             <lvc:CartesianChart.AxisX>
                 <lvc:Axis 
                       Labels="{Binding Labels}"

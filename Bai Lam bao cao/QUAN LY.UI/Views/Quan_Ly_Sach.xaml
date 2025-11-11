@@ -6,120 +6,201 @@
              xmlns:local="clr-namespace:QUAN_LY.UI.Views"
              mc:Ignorable="d" 
              xmlns:xctk="http://schemas.xceed.com/wpf/xaml/toolkit"
+             d:DesignHeight="720" d:DesignWidth="850">
 
-             d:DesignHeight="540" d:DesignWidth="720">
+    <UserControl.Resources>
+        <!-- Style cơ bản cho GroupBox (giả định CardGroupBoxStyle) -->
+        <Style x:Key="CardGroupBoxStyle" TargetType="GroupBox">
+            <Setter Property="BorderBrush" Value="#DDDDDD"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="Padding" Value="10"/>
+            <Setter Property="Margin" Value="10"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="GroupBox">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="*"/>
+                            </Grid.RowDefinitions>
+                            <!-- Header -->
+                            <ContentPresenter Grid.Row="0" ContentSource="Header" Margin="0,0,0,10"/>
+                            <!-- Content -->
+                            <Border Grid.Row="1" BorderBrush="{TemplateBinding BorderBrush}" 
+                                    BorderThickness="{TemplateBinding BorderThickness}" 
+                                    Background="{TemplateBinding Background}" CornerRadius="4">
+                                <ContentPresenter Margin="{TemplateBinding Padding}"/>
+                            </Border>
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
 
+        <!-- Style cơ bản cho các nút chức năng (giả định FunctionButtonStyle) -->
+        <Style x:Key="FunctionButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="#007ACC"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Padding" Value="10,5"/>
+            <Setter Property="Margin" Value="5"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Border Background="{TemplateBinding Background}" CornerRadius="4" Padding="{TemplateBinding Padding}">
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
 
-    <Border Background="#FF7DCE7D" Padding="10" CornerRadius="8"
-            HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
-        <Grid>
-            <Grid.RowDefinitions>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="Auto"/>
-                <RowDefinition Height="*"/>
-            </Grid.RowDefinitions>
+    </UserControl.Resources>
 
-            <!-- ===== Thông tin sách ===== -->
-            <GroupBox FontWeight="Bold" Grid.Row="0" Margin="0,0,0,10">
-                <GroupBox.Header>
-                    <TextBlock Text="Thông Tin Sách" 
-                               HorizontalAlignment="Center"
-                               FontWeight="Bold"
-                               FontSize="14"/>
-                </GroupBox.Header>
+    <Grid Background="White">
+        <Grid.RowDefinitions>
+            
+            <RowDefinition Height="320"/>
+           
+            <RowDefinition Height="Auto"/>
+          
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
 
-                <Grid Margin="10">
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="Auto"/>
-                        <ColumnDefinition Width="220"/>
-                        <ColumnDefinition Width="60"/>
-                        <ColumnDefinition Width="Auto"/>
-                        <ColumnDefinition Width="150"/>
-                    </Grid.ColumnDefinitions>
-                    <Grid.RowDefinitions>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <RowDefinition Height="Auto"/>
-                        <!-- ⬇️ ĐÃ THÊM -->
-                        <RowDefinition Height="Auto"/>
-                        <!-- ⬆️ HẾT PHẦN THÊM -->
-                    </Grid.RowDefinitions>
+        <!-- ===== 1. Thông tin sách (Input Fields) - Grid.Row="0" ===== -->
+        <GroupBox Grid.Row="0" Style="{StaticResource CardGroupBoxStyle}">
+            <GroupBox.Header>
+                <TextBlock Text="Thông Tin Sách" FontWeight="Bold" Foreground="#FF08A7E5"/>
+            </GroupBox.Header>
+            <Grid Margin="10,0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"/>
+                    <!-- Label 1 -->
+                    <ColumnDefinition Width="*"/>
+                    <!-- Input 1 -->
+                    <ColumnDefinition Width="30"/>
+                    <!-- Spacer -->
+                    <ColumnDefinition Width="Auto"/>
+                    <!-- Label 2 -->
+                    <ColumnDefinition Width="*"/>
+                    <!-- Input 2 -->
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <!-- Dòng 1: Thời hạn / NXB -->
+                    <RowDefinition Height="Auto"/>
+                    <!-- Dòng 2: Thể loại / Ngày nhập -->
+                    <RowDefinition Height="Auto"/>
+                    <!-- Dòng 3: Tên sách / SL Tồn -->
+                    <RowDefinition Height="Auto"/>
+                    <!-- Dòng 4: Tác giả / SL Mượn -->
+                    <RowDefinition Height="*"/>
+                    <!-- Dòng 5: Mô tả -->
+                </Grid.RowDefinitions>
 
-                    <!-- Dòng 1 -->
-                    <TextBlock Text="Thời Hạn Mượn" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" ></TextBlock>
-                    <xctk:IntegerUpDown Minimum="1" Maximum="30" x:Name="txtThoihanmuon" Grid.Row="0" Margin="15,5,25,5" Grid.Column="1" />
-                    <TextBlock Text="NXB:" Grid.Row="0" Grid.Column="3" VerticalAlignment="Center"/>
-                    <TextBox x:Name="txtNXB" Grid.Row="0" Grid.Column="4" Margin="15,5,-45,5" Width="180"/>
+                <!-- Cột 1 (Label & Input) -->
 
-                    <!-- Dòng 2 -->
-                    <TextBlock Text="Thể Loại:" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center"/>
-                    <TextBox x:Name="txtTheLoai" Grid.Row="1" Grid.Column="1" Margin="15,5,25,5"/>
+                <!-- Dòng 1: Thời Hạn Mượn -->
+                <TextBlock Text="Thời Hạn Mượn (Ngày):" Grid.Row="0" Grid.Column="0" VerticalAlignment="Center" Margin="0,5"/>
+                <xctk:IntegerUpDown Minimum="1" Maximum="30" x:Name="txtThoihanmuon" Grid.Row="0" Grid.Column="1" Margin="10,5,10,5" Value="0"/>
 
-                    <TextBlock Text="Ngày Nhập:" Grid.Row="1" Grid.Column="3" VerticalAlignment="Center"/>
-                    <DatePicker x:Name="dpNgayNhap" Grid.Row="1" Grid.Column="4" Margin="15,5,-45,5"/>
+                <!-- Dòng 2: Thể Loại -->
+                <TextBlock Text="Thể Loại:" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" Margin="0,5"/>
+                <TextBox x:Name="txtTheLoai" Grid.Row="1" Grid.Column="1" Margin="10,5,10,5"/>
 
-                    <!-- Dòng 3 -->
-                    <TextBlock Text="Tên Sách:" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center"/>
-                    <TextBox x:Name="txtTieude" Grid.Row="2" Grid.Column="1" Margin="15,5,25,5"/>
+                <!-- Dòng 3: Tên Sách -->
+                <TextBlock Text="Tên Sách:" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" Margin="0,5"/>
+                <TextBox x:Name="txtTieude" Grid.Row="2" Grid.Column="1" Margin="10,5,10,5"/>
 
-                    <TextBlock Text="SL Tồn:" Grid.Row="2" Grid.Column="3" VerticalAlignment="Center"/>
-                    <xctk:IntegerUpDown Grid.Row="2" Grid.Column="4" Margin="15,5,-45,5" x:Name="txtSLTon"     
-                                        ClipValueToMinMax="True"
-                                        AllowSpin="False"
-                                        FormatString="N0" 
-                                        Minimum="0" Maximum="1000" />
+                <!-- Dòng 4: Tác Giả -->
+                <TextBlock Text="Tác Giả:" Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" Margin="0,5"/>
+                <TextBox x:Name="txtTacGia" Grid.Row="3" Grid.Column="1" Margin="10,5,10,5"/>
 
-                    <!-- Dòng 4 -->
-                    <TextBlock Text="Tác Giả:" Grid.Row="3" Grid.Column="0" VerticalAlignment="Center"/>
-                    <TextBox x:Name="txtTacGia" Grid.Row="3" Grid.Column="1" Margin="15,5,25,5"/>
-                    <TextBlock Text="SL Mượn:" Grid.Row="3" Grid.Column="3" VerticalAlignment="Center"/>
-                    <xctk:IntegerUpDown Minimum="0" Maximum="1000" x:Name="txtSLMuon" Grid.Row="3" Grid.Column="4" Margin="15,5,-45,5"/>
+                <!-- Cột 2 (Label & Input) -->
 
-                    <!-- ⬇️ ĐÃ THÊM -->
-                    <!-- Dòng 5: Mô tả sách -->
-                    <TextBlock Text="Mô Tả:" Grid.Row="4" Grid.Column="0" VerticalAlignment="Top" Margin="2,25,0,0"/>
-                    <TextBox x:Name="txtMota" 
-                             Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="4"
-                             Margin="15,5,-42,5"
-                             Height="60"
-                             Width="530"
-                             TextWrapping="Wrap"
-                             AcceptsReturn="True"
-                             VerticalScrollBarVisibility="Auto"/>
-                    <!-- ⬆️ HẾT PHẦN THÊM -->
+                <!-- Dòng 1: NXB -->
+                <TextBlock Text="NXB:" Grid.Row="0" Grid.Column="3" VerticalAlignment="Center" Margin="0,5"/>
+                <TextBox x:Name="txtNXB" Grid.Row="0" Grid.Column="4" Margin="10,5,10,5"/>
 
-                </Grid>
-            </GroupBox>
+                <!-- Dòng 2: Ngày Nhập -->
+                <TextBlock Text="Ngày Nhập:" Grid.Row="1" Grid.Column="3" VerticalAlignment="Center" Margin="0,5"/>
+                <DatePicker x:Name="dpNgayNhap" Grid.Row="1" Grid.Column="4" Margin="10,5,10,5"/>
 
-            <!-- ===== Nút chức năng + Tìm kiếm ===== -->
-            <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,10">
-                <TextBox Width="150" Margin="5" VerticalAlignment="Center" 
-                         ToolTip="Nhập tên sách hoặc tác giả để tìm" 
-                         x:Name="txtTimKiem"/>
-                <Button x:Name="btn_Themsach"  Content="Thêm" Width="80" Margin="5" Click="btn_Themsach_Click"/>
-                <Button x:Name="btn_Xoasach" Content="Xóa" Width="80" Margin="5" Click="Xoa_Click" />
-                <Button x:Name="btn_Capnhat" Content="Cập nhật" Width="100" Margin="5" Click="Cap_Nhat_Click"/>
-                <Button x:Name="btn_In" Content="In" Width="80" Margin="5"  />
-            </StackPanel>
+                <!-- Dòng 3: SL Tồn -->
+                <TextBlock Text="SL Tồn:" Grid.Row="2" Grid.Column="3" VerticalAlignment="Center" Margin="0,5"/>
+                <xctk:IntegerUpDown Grid.Row="2" Grid.Column="4" Margin="10,5,10,5" x:Name="txtSLTon" Value="0"
+                                    Minimum="0" Maximum="10000" AllowSpin="False"/>
 
-            <!-- ===== Danh sách sách ===== -->
-            <DataGrid x:Name="dgSach" Grid.Row="2" AutoGenerateColumns="False" IsReadOnly="True" Margin="0,5,0,0"
-                      HorizontalAlignment="Stretch" VerticalAlignment="Stretch" SelectionChanged="dgSach_SelectionChanged">
+                <!-- Dòng 4: SL Mượn -->
+                <TextBlock Text="SL Mượn:" Grid.Row="3" Grid.Column="3" VerticalAlignment="Center" Margin="0,5"/>
+                <xctk:IntegerUpDown Minimum="0" Maximum="10000" x:Name="txtSLMuon" Grid.Row="3" Grid.Column="4" Margin="10,5,10,5" Value="0"/>
+
+                <!-- Dòng 5: Mô tả sách (Kéo dài 2 cột) -->
+                <TextBlock Text="Mô Tả:" Grid.Row="4" Grid.Column="0" VerticalAlignment="Top" Margin="0,15,0,0"/>
+                <TextBox x:Name="txtMota" 
+                         Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="4"
+                         Margin="10,10,10,5"
+                         Height="60"
+                         TextWrapping="Wrap"
+                         AcceptsReturn="True"
+                         VerticalScrollBarVisibility="Auto"/>
+            </Grid>
+        </GroupBox>
+
+        <!-- ===== 2. Nút chức năng + Tìm kiếm - Grid.Row="1" ===== -->
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" Margin="10,10,10,10">
+            <!-- Tìm kiếm -->
+            <TextBox Width="200" Margin="5,0,20,0" VerticalAlignment="Center" 
+                     ToolTip="Nhập tên sách hoặc tác giả để tìm" 
+                     x:Name="txtTimKiem"
+                     Text="Nhập tên sách cần tìm..."
+                     />
+
+            <!-- Các nút CRUD/In -->
+            <Button x:Name="btn_Themsach" Content="Thêm" Width="80" Click="btn_Themsach_Click" Style="{StaticResource FunctionButtonStyle}"/>
+            <Button x:Name="btn_Xoasach" Content="Xóa" Width="80" Click="Xoa_Click" Style="{StaticResource FunctionButtonStyle}" Background="#FF3E3E"/>
+            <Button x:Name="btn_Capnhat" Content="Cập nhật" Width="100" Click="Cap_Nhat_Click" Style="{StaticResource FunctionButtonStyle}" Background="#FFC107"/>
+            <Button x:Name="btn_In" Content="In" Width="80" Style="{StaticResource FunctionButtonStyle}"/>
+        </StackPanel>
+
+        <!-- ===== 3. Danh sách sách (DataGrid) - Grid.Row="2" ===== -->
+        <GroupBox Grid.Row="2" Style="{StaticResource CardGroupBoxStyle}" >
+            <GroupBox.Header>
+                <TextBlock Text="Danh Sách" FontWeight="Bold" Foreground="#FF08A7E5" />
+            </GroupBox.Header>
+            <DataGrid x:Name="dgSach" AutoGenerateColumns="False" IsReadOnly="True" Margin="0"
+                      HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+                      SelectionChanged="dgSach_SelectionChanged"
+                      GridLinesVisibility="Horizontal" 
+                      HeadersVisibility="Column" 
+                      RowBackground="#F7F7F7" 
+                      AlternatingRowBackground="White"
+                      BorderBrush="#DDDDDD" 
+                      BorderThickness="1"
+                      Background="White">
+                <DataGrid.Resources>
+                    <Style TargetType="{x:Type DataGridColumnHeader}">
+                        <Setter Property="Background" Value="#EEEEEE"/>
+                        <Setter Property="FontWeight" Value="SemiBold"/>
+                        <Setter Property="Padding" Value="5,5"/>
+                    </Style>
+                </DataGrid.Resources>
                 <DataGrid.Columns>
                     <DataGridTextColumn Header="Mã Sách" Binding="{Binding MaSach}" Width="60"/>
-                    <DataGridTextColumn Header="Thể Loại" Binding="{Binding TheLoai}"/>
-                    <DataGridTextColumn Header="Tên Sách" Binding="{Binding TieuDe}"/>
-                    <DataGridTextColumn Header="Tác Giả" Binding="{Binding TacGia}"/>
-                    <DataGridTextColumn Header="NXB" Binding="{Binding NhaXuatBan}"/>
-                    <DataGridTextColumn Header="Ngày Nhập" Binding="{Binding NgayNhap,StringFormat={}{0:yyyy-MM-dd}}"/>
-                    <DataGridTextColumn Header="SL Tồn" Binding="{Binding SoLuongTon}"/>
-                    <DataGridTextColumn Header="SL Mượn" Binding="{Binding SoLuongMuon}"/>
-                    <DataGridTextColumn Header="Thời Hạn Mượn (Ngày)" Binding="{Binding Thoihanmuon}"/>
-                    <DataGridTextColumn Header="Mô tả" Binding="{Binding Mota}"/>
+                    <DataGridTextColumn Header="Thể Loại" Binding="{Binding TheLoai}" Width="80"/>
+                    <DataGridTextColumn Header="Tên Sách" Binding="{Binding TieuDe}" Width="Auto"/>
+                    <DataGridTextColumn Header="Tác Giả" Binding="{Binding TacGia}" Width="90"/>
+                    <DataGridTextColumn Header="NXB" Binding="{Binding NhaXuatBan}" Width="Auto"/>
+                    <DataGridTextColumn Header="Ngày Nhập" Binding="{Binding NgayNhap,StringFormat={}{0:yyyy-MM-dd}}" Width="90"/>
+                    <DataGridTextColumn Header="SL Tồn" Binding="{Binding SoLuongTon}" Width="60"/>
+                    <DataGridTextColumn Header="SL Mượn" Binding="{Binding SoLuongMuon}" Width="60"/>
+                    <DataGridTextColumn Header="Thời Hạn Mượn (Ngày)" Binding="{Binding Thoihanmuon}" Width="Auto"/>
+                    <DataGridTextColumn Header="Mô tả" Binding="{Binding Mota}" Width="3*"/>
                 </DataGrid.Columns>
             </DataGrid>
-            <Border BorderBrush="Black" BorderThickness="1" Grid.Row="2"/>
-        </Grid>
-    </Border>
+        </GroupBox>
+    </Grid>
 </UserControl>

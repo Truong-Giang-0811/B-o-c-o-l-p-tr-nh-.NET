@@ -1,17 +1,20 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
 using QUAN_LY.UI.Models;
+using BCrypt.Net;
 using System;
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore.Diagnostics;
 
 namespace QUAN_LY.UI.Data
 {
     public class LibraryContext : DbContext
     {
+        private static readonly string AdminPasswordHash = BCrypt.Net.BCrypt.HashPassword("08112005");
         // Constructor mặc định để WPF có thể gọi new LibraryContext()
         public LibraryContext() { }
         public LibraryContext(DbContextOptions<LibraryContext> options) : base(options) { }
@@ -109,6 +112,22 @@ namespace QUAN_LY.UI.Data
                 .WithMany(c => c.HiddenHistories)
                 .HasForeignKey(h => h.MaChiTietMuon)
                 .OnDelete(DeleteBehavior.Cascade);
+
+            
+
+            modelBuilder.Entity<Admin>().HasData(
+                new Admin
+                {
+                    MaNhanVien = -1, // ID cố định cho Admin đầu tiên
+                    HoTen = "Trường Giang",
+                    Chucvu = "Admin",
+                    Tendangnhap = "Admin0811",
+                    Matkhau = AdminPasswordHash, 
+                }
+            );
+            // ===================================================================
+
+            base.OnModelCreating(modelBuilder);
         }
 
         // Cấu hình kết nối đến SQL Server
@@ -124,6 +143,7 @@ namespace QUAN_LY.UI.Data
                 var connectionString = configuration.GetConnectionString("LibraryDb");
                 optionsBuilder.UseSqlServer(connectionString);
             }
+            optionsBuilder.ConfigureWarnings(w => w.Ignore(RelationalEventId.PendingModelChangesWarning));
         }
     }
 }
