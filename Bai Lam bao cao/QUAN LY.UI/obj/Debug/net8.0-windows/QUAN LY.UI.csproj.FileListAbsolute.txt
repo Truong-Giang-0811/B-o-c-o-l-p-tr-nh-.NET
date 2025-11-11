@@ -158,3 +158,208 @@ D:\Lap trinh .NET\DỰ ÁN BÁO CÁO\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0
 D:\Lap trinh .NET\DỰ ÁN BÁO CÁO\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\Microsoft.Extensions.FileSystemGlobbing.dll
 D:\Lap trinh .NET\DỰ ÁN BÁO CÁO\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\appsettings.json
 D:\Lap trinh .NET\DỰ ÁN BÁO CÁO\Bai Lam bao cao\QUAN LY.UI\obj\Debug\net8.0-windows\QUAN LY.UI.sourcelink.json
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\appsettings.json
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\QUAN LY.UI.exe
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\QUAN LY.UI.deps.json
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\QUAN LY.UI.runtimeconfig.json
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\QUAN LY.UI.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\QUAN LY.UI.pdb
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\Azure.Core.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\Azure.Identity.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\BCrypt.Net-Next.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\Xceed.Wpf.AvalonDock.Themes.Aero.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\Xceed.Wpf.AvalonDock.Themes.Metro.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\Xceed.Wpf.AvalonDock.Themes.VS2010.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\Xceed.Wpf.AvalonDock.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\Xceed.Wpf.Toolkit.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\Humanizer.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\LiveCharts.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\LiveCharts.Wpf.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\Microsoft.Bcl.AsyncInterfaces.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\Microsoft.Build.Locator.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\Microsoft.CodeAnalysis.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\Microsoft.CodeAnalysis.CSharp.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\Microsoft.CodeAnalysis.CSharp.Workspaces.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\Microsoft.CodeAnalysis.Workspaces.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\Microsoft.CodeAnalysis.Workspaces.MSBuild.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\Microsoft.Data.SqlClient.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Abstractions.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Design.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.Relational.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\Microsoft.EntityFrameworkCore.SqlServer.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Abstractions.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\Microsoft.Extensions.Caching.Memory.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Abstractions.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.FileExtensions.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\Microsoft.Extensions.Configuration.Json.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyInjection.Abstractions.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\Microsoft.Extensions.DependencyModel.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\Microsoft.Extensions.FileProviders.Abstractions.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\Microsoft.Extensions.FileProviders.Physical.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\Microsoft.Extensions.FileSystemGlobbing.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\Microsoft.Extensions.Logging.Abstractions.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\Microsoft.Extensions.Options.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\Microsoft.Extensions.Primitives.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\Microsoft.Identity.Client.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\Microsoft.Identity.Client.Extensions.Msal.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Abstractions.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\Microsoft.IdentityModel.JsonWebTokens.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Logging.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Protocols.OpenIdConnect.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\Microsoft.IdentityModel.Tokens.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\Microsoft.SqlServer.Server.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\Mono.TextTemplating.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\System.ClientModel.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\System.Composition.AttributedModel.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\System.Composition.Convention.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\System.Composition.Hosting.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\System.Composition.Runtime.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\System.Composition.TypedParts.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\System.Diagnostics.DiagnosticSource.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\System.Formats.Asn1.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\System.IdentityModel.Tokens.Jwt.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\System.IO.Pipelines.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\System.Memory.Data.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\System.Runtime.Caching.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\System.Text.Encodings.Web.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\System.Text.Json.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\cs-CZ\Xceed.Wpf.AvalonDock.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\de\Xceed.Wpf.AvalonDock.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\es\Xceed.Wpf.AvalonDock.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\fr\Xceed.Wpf.AvalonDock.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\hu\Xceed.Wpf.AvalonDock.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\it\Xceed.Wpf.AvalonDock.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\ja-JP\Xceed.Wpf.AvalonDock.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\pt-BR\Xceed.Wpf.AvalonDock.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\ro\Xceed.Wpf.AvalonDock.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\ru\Xceed.Wpf.AvalonDock.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\sv\Xceed.Wpf.AvalonDock.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\zh-Hans\Xceed.Wpf.AvalonDock.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\cs\Microsoft.CodeAnalysis.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\de\Microsoft.CodeAnalysis.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\es\Microsoft.CodeAnalysis.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\fr\Microsoft.CodeAnalysis.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\it\Microsoft.CodeAnalysis.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\ja\Microsoft.CodeAnalysis.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\ko\Microsoft.CodeAnalysis.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\pl\Microsoft.CodeAnalysis.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\pt-BR\Microsoft.CodeAnalysis.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\ru\Microsoft.CodeAnalysis.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\tr\Microsoft.CodeAnalysis.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\zh-Hans\Microsoft.CodeAnalysis.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\zh-Hant\Microsoft.CodeAnalysis.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\cs\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\de\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\es\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\fr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\it\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\ja\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\ko\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\pl\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\pt-BR\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\ru\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\tr\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\zh-Hans\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\zh-Hant\Microsoft.CodeAnalysis.CSharp.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\cs\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\de\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\es\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\fr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\it\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\ja\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\ko\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\pl\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\pt-BR\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\ru\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\tr\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\zh-Hans\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\zh-Hant\Microsoft.CodeAnalysis.CSharp.Workspaces.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\cs\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\de\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\es\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\fr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\it\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\ja\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\ko\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\pl\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\pt-BR\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\ru\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\tr\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\zh-Hans\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\zh-Hant\Microsoft.CodeAnalysis.Workspaces.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\cs\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\de\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\es\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\fr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\it\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\ja\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\ko\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\pl\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\pt-BR\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\ru\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\tr\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\zh-Hans\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\zh-Hant\Microsoft.CodeAnalysis.Workspaces.MSBuild.BuildHost.resources.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\runtimes\unix\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\runtimes\win\lib\net6.0\Microsoft.Data.SqlClient.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\runtimes\win-arm\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\runtimes\win-arm64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\runtimes\win-x64\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\runtimes\win-x86\native\Microsoft.Data.SqlClient.SNI.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\bin\Debug\net8.0-windows\runtimes\browser\lib\net8.0\System.Text.Encodings.Web.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\obj\Debug\net8.0-windows\QUAN LY.UI.csproj.AssemblyReference.cache
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\obj\Debug\net8.0-windows\MainWindow.g.cs
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\obj\Debug\net8.0-windows\Views\Dangky.g.cs
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\obj\Debug\net8.0-windows\Views\Dangnhap.g.cs
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\obj\Debug\net8.0-windows\Views\Giao diện admin.g.cs
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\obj\Debug\net8.0-windows\Views\Giao_dien_doc_gia.g.cs
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\obj\Debug\net8.0-windows\Views\Giao_Dien_Nhan_vien.g.cs
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\obj\Debug\net8.0-windows\Views\Gio_muon.g.cs
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\obj\Debug\net8.0-windows\Views\Lich_su_muon.g.cs
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\obj\Debug\net8.0-windows\Views\Quan_Ly_Doc_Gia.g.cs
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\obj\Debug\net8.0-windows\Views\Quan_ly_muon_tra.g.cs
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\obj\Debug\net8.0-windows\Views\Quan_Ly_Nhan_Vien.g.cs
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\obj\Debug\net8.0-windows\Views\Quan_Ly_Sach.g.cs
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\obj\Debug\net8.0-windows\Views\Tai_khoan_ca_nhan.g.cs
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\obj\Debug\net8.0-windows\Views\Thong_Ke.g.cs
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\obj\Debug\net8.0-windows\Views\Tra_Cuu_Sach.g.cs
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\obj\Debug\net8.0-windows\App.g.cs
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\obj\Debug\net8.0-windows\QUAN LY.UI_MarkupCompile.cache
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\obj\Debug\net8.0-windows\QUAN LY.UI_MarkupCompile.lref
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\obj\Debug\net8.0-windows\App.baml
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\obj\Debug\net8.0-windows\MainWindow.baml
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\obj\Debug\net8.0-windows\Views\Dangky.baml
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\obj\Debug\net8.0-windows\Views\Dangnhap.baml
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\obj\Debug\net8.0-windows\Views\Giao diện admin.baml
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\obj\Debug\net8.0-windows\Views\Giao_dien_doc_gia.baml
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\obj\Debug\net8.0-windows\Views\Giao_Dien_Nhan_vien.baml
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\obj\Debug\net8.0-windows\Views\Gio_muon.baml
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\obj\Debug\net8.0-windows\Views\Lich_su_muon.baml
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\obj\Debug\net8.0-windows\Views\Quan_Ly_Doc_Gia.baml
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\obj\Debug\net8.0-windows\Views\Quan_ly_muon_tra.baml
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\obj\Debug\net8.0-windows\Views\Quan_Ly_Nhan_Vien.baml
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\obj\Debug\net8.0-windows\Views\Quan_Ly_Sach.baml
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\obj\Debug\net8.0-windows\Views\Tai_khoan_ca_nhan.baml
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\obj\Debug\net8.0-windows\Views\Thong_Ke.baml
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\obj\Debug\net8.0-windows\Views\Tra_Cuu_Sach.baml
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\obj\Debug\net8.0-windows\QUAN LY.UI.g.resources
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\obj\Debug\net8.0-windows\QUAN LY.UI.GeneratedMSBuildEditorConfig.editorconfig
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\obj\Debug\net8.0-windows\QUAN LY.UI.AssemblyInfoInputs.cache
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\obj\Debug\net8.0-windows\QUAN LY.UI.AssemblyInfo.cs
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\obj\Debug\net8.0-windows\QUAN LY.UI.csproj.CoreCompileInputs.cache
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\obj\Debug\net8.0-windows\QUAN LY.UI.sourcelink.json
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\obj\Debug\net8.0-windows\QUAN LY.UI.csproj.Up2Date
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\obj\Debug\net8.0-windows\QUAN LY.UI.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\obj\Debug\net8.0-windows\refint\QUAN LY.UI.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\obj\Debug\net8.0-windows\QUAN LY.UI.pdb
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\obj\Debug\net8.0-windows\QUAN LY.UI.genruntimeconfig.cache
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\obj\Debug\net8.0-windows\ref\QUAN LY.UI.dll
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\obj\Debug\net8.0-windows\Views\Quan_ly_nguoi_dung.g.cs
+D:\Ki 5\.NET\B-o-c-o-l-p-tr-nh-.NET\Bai Lam bao cao\QUAN LY.UI\obj\Debug\net8.0-windows\Views\Quan_ly_nguoi_dung.baml

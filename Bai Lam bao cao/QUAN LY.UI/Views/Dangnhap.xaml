@@ -5,39 +5,36 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:QUAN_LY.UI.Views"
         mc:Ignorable="d"
-        Title="Dangnhap" Height="300" Width="400" WindowStartupLocation="CenterScreen">
+        Title="Dangnhap" Height="320" Width="420" WindowStartupLocation="CenterScreen">
     <Window.Resources>
-        <Style TargetType="PasswordBox" >
+        <Style TargetType="PasswordBox">
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="PasswordBox">
-                        <Border BorderThickness="1,1,1,1" 
-                   
-                   CornerRadius="10"
-               BorderBrush="#FF087026"
-              
-               Background="White">
-                            <ScrollViewer x:Name="PART_ContentHost"    
-                             Margin="4,2,4,2"
-                             HorizontalScrollBarVisibility="Hidden"
-                             VerticalScrollBarVisibility="Hidden"/>
+                        <Border BorderThickness="1"
+                        CornerRadius="10"
+                        BorderBrush="#00BCD5"
+                        Background="White">
+                            <ScrollViewer x:Name="PART_ContentHost"
+                                  Margin="4,2,4,2"
+                                  HorizontalScrollBarVisibility="Hidden"
+                                  VerticalScrollBarVisibility="Hidden"/>
                         </Border>
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>
         </Style>
-        
-        <Style TargetType="TextBox" >
+
+
+        <Style TargetType="TextBox">
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="TextBox">
-                        <Border BorderThickness="1,1,1,1" 
-                        
+                        <Border BorderThickness="1"
                         CornerRadius="10"
-                    BorderBrush="#FF087026"
-                   
-                    Background="White">
-                            <ScrollViewer x:Name="PART_ContentHost"    
+                        BorderBrush="#00BCD5"
+                        Background="White">
+                            <ScrollViewer x:Name="PART_ContentHost"
                                   Margin="4,2,4,2"
                                   HorizontalScrollBarVisibility="Hidden"
                                   VerticalScrollBarVisibility="Hidden"/>
@@ -55,25 +52,29 @@
             </Style.Triggers>
         </Style>
         <Style x:Key="Signup" TargetType="Button">
-            <Setter Property="Background" Value="#FF0D9F56"></Setter>
-            <Setter Property="Foreground" Value="White"></Setter>
+            <Setter Property="Background" Value="#FF39F1F1"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontWeight" Value="Bold"/>
             <Setter Property="Cursor" Value="Arrow"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Height" Value="34"/>
+            <Setter Property="FontSize" Value="15"/>
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="Button">
                         <Border Background="{TemplateBinding Background}"
-                                CornerRadius="8"
-                                BorderThickness="{TemplateBinding BorderThickness}"
-                                BorderBrush="{TemplateBinding BorderBrush}">
-                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"></ContentPresenter>
+                        CornerRadius="8">
+                            <ContentPresenter HorizontalAlignment="Center"
+                                      VerticalAlignment="Center"/>
                         </Border>
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>
             <Style.Triggers>
+                <!-- Hover: chỉ đổi đậm hơn -->
                 <Trigger Property="IsMouseOver" Value="True">
-                    <Setter Property="Background" Value="#FF007139"></Setter>
-                    <Setter Property="Foreground" Value="#FFFF00"></Setter>
+                    <Setter Property="Background" Value="#0097A7"/>
+                    <Setter Property="Foreground" Value="White"/>
                     <Setter Property="Cursor" Value="Hand"/>
                 </Trigger>
             </Style.Triggers>
@@ -82,20 +83,54 @@
 
     <Grid>
         <Grid.Background>
-            <SolidColorBrush Color="#FFD3F8E6"/>
+            <LinearGradientBrush EndPoint="0,0" StartPoint="0,1">
+                <GradientStop Color="#FFE1F2F7" Offset="0"/>
+                <GradientStop Color="#FF97F3F3" Offset="0.5"/>
+                <GradientStop Color="#FFF0F4F6" Offset="1"/>
+            </LinearGradientBrush>
         </Grid.Background>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="0.4*"></ColumnDefinition>
             <ColumnDefinition Width="0.6*"></ColumnDefinition>
         </Grid.ColumnDefinitions>
-        <Grid Grid.Column="0" Background="#FF6AE4A7" >
-            <Image Source="/Anh/Logo.png" VerticalAlignment="Top" HorizontalAlignment="Center" />
-            <Button  Height="20" Width="120" Margin="0,140,0,0" Background="#FF6AE4A7" Content="Quên mật khẩu?" FontWeight="Medium" FontFamily="Georgia" BorderThickness="0,0,0,0"/>
-            <Button Style="{StaticResource Signup}" x:Name="btbdangki" Height="30" Width="120" VerticalContentAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,20" Content="ĐĂNG KÍ" FontSize="16" ForceCursor="True" FontWeight="Heavy" Click="btbdangki_Click">
+        <Grid Grid.Column="0">
+            <Grid.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                    <GradientStop Color="#00BCD5" Offset="0"/>
+                    <GradientStop Color="#26C6DA" Offset="1"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+            <StackPanel Margin="10,40"
+                VerticalAlignment="Top"
+                Orientation="Vertical"
+                HorizontalAlignment="Center">
+
+                <!-- Icon ở hàng trên -->
+                <TextBlock Text="📖"
+                   FontSize="35"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"
+                   Foreground="White"/>
+
+                <!-- Chữ ở hàng dưới -->
+                <TextBlock Text="THƯ VIỆN GCLB"
+                   FontSize="19"
+                   FontWeight="Bold"
+                   Foreground="White"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"
+                   Margin="0,10,0,0"/>
+            </StackPanel>
+            <Label Content="Bạn chưa có tài khoản?
+                    " HorizontalAlignment="Center" FontFamily="Georgia" Margin="0,186,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.333,-0.519" Width="140"/>
+
+            <Button Style="{StaticResource Signup}" x:Name="btbdangki" Height="30" Width="120" VerticalContentAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,20" Content="ĐĂNG KÝ" FontSize="16" ForceCursor="True" FontWeight="Heavy" Click="btbdangki_Click">
             </Button>
+            <Label Content="Đăng ký ngay:
+                   " HorizontalAlignment="Center" FontFamily="Georgia" Margin="0,205,0,0" VerticalAlignment="Top" RenderTransformOrigin="0.333,-0.519" Width="90" Height="24"/>
         </Grid>
         <Grid Grid.Column="1">
-            <TextBlock Text="Đăng Nhập " FontSize="16" FontWeight="ExtraBold" Margin="18,19,-8,0" VerticalAlignment="Top"/>
+            <TextBlock Text="ĐĂNG NHẬP " FontSize="16" FontWeight="ExtraBold" Margin="63,19,63,0" VerticalAlignment="Top"/>
 
 
             <Button Style="{StaticResource Signup}" x:Name="btbdangnhap" Height="30" Width="160" VerticalContentAlignment="Center" VerticalAlignment="Bottom" Margin="0,0,0,20" Content="ĐĂNG NHẬP " FontSize="16" ForceCursor="True" FontWeight="Heavy" Click="btbdangnhap_Click"/>

@@ -6,7 +6,7 @@
              xmlns:local="clr-namespace:QUAN_LY.UI.Views"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Grid x:Name="mainGrid" Background="#F7FFF8" Margin="10">
+    <Grid x:Name="mainGrid" Background="White" Margin="10">
 
         <!-- ========== Layout chính ========== -->
         <Grid>
@@ -16,7 +16,7 @@
             </Grid.RowDefinitions>
 
             <!-- Phần trên -->
-            <Border BorderBrush="#4CAF50" BorderThickness="2" CornerRadius="6" Background="#E9F7EF" Margin="5" Padding="3">
+            <Border BorderBrush="#1C82AD" BorderThickness="2" CornerRadius="6" Margin="5" Padding="3">
                 <StackPanel Orientation="Horizontal" VerticalAlignment="Center" HorizontalAlignment="Left">
                     <Grid Width="60" Height="60" Margin="6">
                         <Image x:Name="imgAvatar"
@@ -31,7 +31,7 @@
                             </Image.Clip>
                             
                         </Image>
-                        <Ellipse Fill="Transparent" Stroke="#C8E6C9" StrokeThickness="2"/>
+                        <Ellipse Fill="Transparent" Stroke="#00BCD5" StrokeThickness="2"/>
                     </Grid>
 
                     <StackPanel VerticalAlignment="Center" Margin="8,0,0,0">
@@ -40,18 +40,18 @@
                                    Text="Nguyễn Văn A"
                                    FontSize="16"
                                    FontWeight="Bold"
-                                   Foreground="#2E7D32"/>
+                                   Foreground="#00BCD5"/>
                     </StackPanel>
                 </StackPanel>
             </Border>
 
             <!-- Phần thông tin -->
-            <Border Grid.Row="1" BorderBrush="#4CAF50" BorderThickness="2" CornerRadius="6" Background="#E9F7EF" Margin="5" Padding="15">
+            <Border Grid.Row="1" BorderBrush="#1C82AD" BorderThickness="2" CornerRadius="6" Margin="5" Padding="15">
                 <StackPanel Margin="0,-5,0,-5">
                     <TextBlock Text="HỒ SƠ CỦA TÔI"
                                FontSize="15"
                                FontWeight="Bold"
-                               Foreground="#2E7D32"
+                               Foreground="#00BCD5"
                                Margin="0,5,0,10"
                                HorizontalAlignment="Center"/>
 
@@ -119,9 +119,9 @@
             <Rectangle Fill="#66000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
 
             <Border Width="300" Height="Auto"
-                    Background="#F0FFF5"
                     CornerRadius="8"
-                    BorderBrush="#88C9A1"
+                    Background="White"
+                    BorderBrush="#1C82AD"
                     BorderThickness="3"
                     Padding="10"
                     HorizontalAlignment="Center"
@@ -139,7 +139,7 @@
                     <TextBlock Text="ĐỔI MẬT KHẨU" 
                                FontSize="16" 
                                FontWeight="Bold" 
-                               Foreground="#2E7D32"
+                               Foreground="#00BCD5"
                                HorizontalAlignment="Center"
                                Margin="0,0,0,10"/>
 
@@ -170,9 +170,9 @@
             <Rectangle Fill="#66000000" HorizontalAlignment="Stretch" VerticalAlignment="Stretch"/>
 
             <Border Width="400" Height="Auto"
-                    Background="#FFFFFF"
+                    Background="White"
                     CornerRadius="8"
-                    BorderBrush="#4CAF50"
+                    BorderBrush="#1C82AD"
                     BorderThickness="2"
                     Padding="15"
                     HorizontalAlignment="Center"
@@ -182,7 +182,7 @@
                     <TextBlock Text="CẬP NHẬT THÔNG TIN CÁ NHÂN"
                                FontSize="16"
                                FontWeight="Bold"
-                               Foreground="#2E7D32"
+                               Foreground="#00BCD5"
                                HorizontalAlignment="Center"
                                Margin="0,0,0,10"/>
 

@@ -6,55 +6,117 @@
         xmlns:local="clr-namespace:QUAN_LY.UI.Views"
         mc:Ignorable="d"
         Title="Giao_Dien_Nhan_vien" Height="600" Width="900" WindowStartupLocation="CenterScreen">
+
     <Window.Resources>
+        <!-- Style nút sidebar -->
         <Style x:Key="Btbadmin" TargetType="Button">
-            <Setter Property="Background" Value="#FF0D9F56"></Setter>
-            <Setter Property="Foreground" Value="White"></Setter>
+            <Setter Property="Background" Value="Transparent"/>
+            <Setter Property="Foreground" Value="Black"/>
             <Setter Property="Cursor" Value="Arrow"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Height" Value="38"/>
+            <Setter Property="Margin" Value="10,15,10,0"/>
+            <Setter Property="BorderBrush" Value="#00BCD5"/>
+            <Setter Property="BorderThickness" Value="0"/>
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="Button">
                         <Border Background="{TemplateBinding Background}"
                                 CornerRadius="8"
-                                BorderThickness="{TemplateBinding BorderThickness}"
                                 BorderBrush="{TemplateBinding BorderBrush}">
-                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"></ContentPresenter>
+                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Border>
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>
             <Style.Triggers>
+                <!-- Hover -->
                 <Trigger Property="IsMouseOver" Value="True">
-                    <Setter Property="Background" Value="#FF007139"></Setter>
-                    <Setter Property="Foreground" Value="#FFFF00"></Setter>
+                    <Setter Property="Background" Value="#00BCD5"/>
+                    <Setter Property="Foreground" Value="White"/>
                     <Setter Property="Cursor" Value="Hand"/>
+                </Trigger>
+                <Trigger Property="Tag" Value="Active">
+                    <Setter Property="Background" Value="#33BFA5"/>
+                    <Setter Property="Foreground" Value="White"/>
                 </Trigger>
             </Style.Triggers>
         </Style>
     </Window.Resources>
+
+    <!-- Giao diện chính -->
     <Grid>
+        <Grid.Background>
+            <SolidColorBrush Color="White"/>
+        </Grid.Background>
+
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="0.2*"></ColumnDefinition>
-            <ColumnDefinition Width="0.8*"></ColumnDefinition>
+            <ColumnDefinition Width="0.25*"/>
+            <ColumnDefinition Width="0.75*"/>
         </Grid.ColumnDefinitions>
-        <Grid Grid.Column="0" Background="#FF6AE4A7">
-            <Image Source="/Anh/Logo.png" VerticalAlignment="Top" HorizontalAlignment="Center"></Image>
-            <Button  Style="{StaticResource Btbadmin}" Content="Quản lý sách" Margin="24,180,24,0" VerticalAlignment="Top" Height="33" Width="132" FontSize="15" FontWeight="Medium" Click="Quanlysach" />
-            <Button  Style="{StaticResource Btbadmin}" Content="Quản lý người dùng" HorizontalAlignment="Center" Margin="0,240,0,0" VerticalAlignment="Top" FontSize="14" FontWeight="Medium" Height="33" Width="132" Click="Button_Click"/>
-            <Button  Style="{StaticResource Btbadmin}" Content="Quản lý đơn mượn" HorizontalAlignment="Center" Margin="0,300,0,0" VerticalAlignment="Top" FontSize="15" FontWeight="Medium" Height="33" Width="132" Click="Quanlydonmuon"/>
-            <Button  Style="{StaticResource Btbadmin}" Content="Báo cáo thống kê" HorizontalAlignment="Center" Margin="0,360,0,0" VerticalAlignment="Top" FontSize="15" FontWeight="Medium" Height="33" Width="132"/>
-            <Button  Style="{StaticResource Btbadmin}" Content="Tài khoản cá nhân" HorizontalAlignment="Center" Margin="0,420,0,0" VerticalAlignment="Top" FontSize="15" FontWeight="Medium" Height="33" Width="132" Click="Taikhoancanhan"/>
-            <Button x:Name="btn_dangxuat"  Style="{StaticResource Btbadmin}" Content="Đăng xuất" HorizontalAlignment="Center" Margin="0,480,0,0" VerticalAlignment="Top" Height="33" Width="132" FontSize="15" FontWeight="Medium" Click="btn_dangxuat_Click" />
 
+        <!-- Sidebar -->
+        <Grid>
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0,0" StartPoint="0,1">
+                    <GradientStop Color="#FFE1F2F7" Offset="0"/>
+                    <GradientStop Color="#FF39F1F1" Offset="0.5"/>
+                    <GradientStop Color="#FFF0F4F6" Offset="1"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+
+            <!-- Logo -->
+            <StackPanel Margin="0,20,0,0" VerticalAlignment="Top" Orientation="Horizontal" HorizontalAlignment="Center">
+                <TextBlock Text="📖"
+                           FontSize="35"
+                           VerticalAlignment="Center"
+                           Foreground="#00BCD5"/>
+                <TextBlock Text="THƯ VIỆN GCLB"
+                           FontSize="20"
+                           FontWeight="Bold"
+                           Foreground="#00BCD5"
+                           VerticalAlignment="Center"
+                           Margin="10,10,0,0"/>
+            </StackPanel>
+
+            <!-- Menu chức năng -->
+            <StackPanel VerticalAlignment="Center" Height="435">
+                <Button Style="{StaticResource Btbadmin}"
+                        Content="📚 Quản lý sách"
+                        Height="38" Width="200"
+                        Click="Quanlysach"/>
+
+                <Button Style="{StaticResource Btbadmin}"
+                        Content="👥 Quản lý độc giả"
+                        Height="38" Width="200"
+                        Click="Button_Click"/>
+
+                <Button Style="{StaticResource Btbadmin}"
+                        Content="🧾 Quản lý đơn mượn"
+                        Height="38" Width="200"
+                        Click="Quanlydonmuon"/>
+
+                <Button Style="{StaticResource Btbadmin}"
+                        Content="📊 Báo cáo thống kê"
+                        Height="38" Width="200"/>
+
+                <Button Style="{StaticResource Btbadmin}"
+                        Content="👤 Tài khoản cá nhân"
+                        Height="38" Width="200"
+                        Click="Taikhoancanhan"/>
+
+                <Button x:Name="btn_dangxuat"
+                        Style="{StaticResource Btbadmin}"
+                        Content="🚪 Đăng xuất"
+                        Height="38" Width="200"
+                        Click="btn_dangxuat_Click"/>
+            </StackPanel>
         </Grid>
-        <Grid Grid.Column="1" Background="#FFD3F8E6">
 
-            <ContentControl x:Name="Mainconten" 
-                            Margin="10,60,10,10"/>
-
-
+        <!-- Nội dung chính -->
+        <Grid Grid.Column="1">
+            <ContentControl x:Name="Mainconten" Margin="10,30,10,10"/>
         </Grid>
     </Grid>
 </Window>
-
-

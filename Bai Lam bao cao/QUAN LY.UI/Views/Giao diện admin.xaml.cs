@@ -53,7 +53,7 @@ namespace QUAN_LY.UI.Views
 
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            Mainconten.Content = new Views.Quan_ly_nguoi_dung();
+            Mainconten.Content = new Views.Quan_Ly_Doc_Gia();
         }
     }
 }

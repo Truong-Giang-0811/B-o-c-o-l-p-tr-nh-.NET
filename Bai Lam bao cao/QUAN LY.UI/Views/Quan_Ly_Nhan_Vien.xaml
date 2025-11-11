@@ -6,20 +6,19 @@
              xmlns:local="clr-namespace:QUAN_LY.UI.Views"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Border Background="#E6FAF0" Padding="12" CornerRadius="6">
+    <Border Background="White" Padding="12" CornerRadius="6">
         <Grid>
             <Grid.RowDefinitions>
                 <RowDefinition Height="Auto"/>
-                <!-- Thông tin nhân viên -->
                 <RowDefinition Height="Auto"/>
-                <!-- Nút chức năng -->
                 <RowDefinition Height="*"/>
-                <!-- Danh sách -->
             </Grid.RowDefinitions>
 
+            <!-- ==== THÔNG TIN NHÂN VIÊN ==== -->
             <GroupBox Header="Thông Tin Nhân Viên"
-                      FontWeight="Bold"
-                      FontSize="14"
+                      FontSize="15"
+                      
+                      BorderBrush="#1C82AD"
                       Margin="0,0,0,10">
                 <Grid Margin="8,6">
                     <Grid.ColumnDefinitions>
@@ -44,20 +43,27 @@
 
                     <TextBlock Text="Tên đăng nhập:" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center"/>
                     <TextBox x:Name="txtTenDangNhap" Grid.Row="1" Grid.Column="1" Margin="5"/>
-                    
+
                     <TextBlock Text="Mật khẩu:" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center"/>
                     <PasswordBox x:Name="pwbMatKhau" Grid.Row="2" Grid.Column="1" Margin="5"/>
-                    <TextBox Visibility="Collapsed" x:Name="txtMatKhau" Grid.Row="2" Grid.Column="1" Margin="5"/>
+                    <TextBox x:Name="txtMatKhau" Grid.Row="2" Grid.Column="1" Margin="5" Visibility="Collapsed"/>
 
-                    
                     <TextBlock Text="Nhập lại MK:" Grid.Row="3" Grid.Column="0" VerticalAlignment="Center"/>
                     <PasswordBox x:Name="pwbNhapLaiMK" Grid.Row="3" Grid.Column="1" Margin="5"/>
-                    <TextBox Visibility="Collapsed" x:Name="txtNhapLaiMK" Grid.Row="3" Grid.Column="1" Margin="5"/>
-                    <CheckBox Checked="chkHienMK_Checked" Unchecked="chkHienMK_Unchecked" x:Name="ckbHienMK" Content="Hiện mật khẩu" Grid.Row="4" Grid.Column="1" Width="125" Height="25" Margin="20,0,0,0"/>
+                    <TextBox x:Name="txtNhapLaiMK" Grid.Row="3" Grid.Column="1" Margin="5" Visibility="Collapsed"/>
+
+                    <CheckBox x:Name="ckbHienMK"
+                              Content="Hiện mật khẩu"
+                              Grid.Row="4" Grid.Column="1"
+                              Margin="20,0,0,0"
+                              Width="125"
+                              Height="25"
+                              Checked="chkHienMK_Checked"
+                              Unchecked="chkHienMK_Unchecked"/>
 
                     <!-- CỘT PHẢI -->
                     <TextBlock Text="Địa chỉ:" Grid.Row="0" Grid.Column="3" VerticalAlignment="Center"/>
-                    <TextBox x:Name="txtDiaChi" Grid.Row="0" Grid.Column="4" Margin="5,5,5,0" Height="29" VerticalAlignment="Top"/>
+                    <TextBox x:Name="txtDiaChi" Grid.Row="0" Grid.Column="4" Margin="5"/>
 
                     <TextBlock Text="Ngày sinh:" Grid.Row="1" Grid.Column="3" VerticalAlignment="Center"/>
                     <DatePicker x:Name="dpNgaySinh" Grid.Row="1" Grid.Column="4" Margin="5"/>
@@ -76,106 +82,101 @@
                 </Grid>
             </GroupBox>
 
-            <!-- FORM ĐỔI MẬT KHẨU -->
-            <Grid x:Name="DoiMK"
-                  HorizontalAlignment="Stretch"
-                  VerticalAlignment="Stretch"
-                  Visibility="Collapsed">
-
-                <Rectangle Fill="#66000000"
-                           HorizontalAlignment="Stretch"
-                           VerticalAlignment="Stretch"/>
-
-                <Border Width="300" Height="180"
-                        Background="#F0FFF5"
-                        CornerRadius="8"
-                        BorderBrush="#88C9A1"
-                        BorderThickness="3"
-                        Padding="12"
-                        HorizontalAlignment="Center"
-                        VerticalAlignment="Center"
-                        SnapsToDevicePixels="True"
-                        >
-                    <Grid>
-                        <Grid.RowDefinitions>
-                            <RowDefinition Height="Auto"/>
-                            <RowDefinition Height="Auto"/>
-                            <RowDefinition Height="Auto"/>
-                            <RowDefinition Height="Auto"/>
-                            <RowDefinition Height="Auto"/>
-                        </Grid.RowDefinitions>
-
-                        <Grid.ColumnDefinitions>
-                            <ColumnDefinition Width="120"/>
-                            <ColumnDefinition Width="*"/>
-                        </Grid.ColumnDefinitions>
-
-                        <!-- Tiêu đề -->
-                        <TextBlock Text="ĐỔI MẬT KHẨU"
-                       Grid.Row="0" Grid.ColumnSpan="2"
-                       FontSize="16"
-                       FontWeight="Bold"
-                       Foreground="#2E7D32"
-                       HorizontalAlignment="Center"
-                       Margin="0,0,0,8"/>
-
-                        <!-- Nhập mật khẩu -->
-                        <TextBlock Text="Mật khẩu cũ:" FontWeight="Bold" Grid.Row="1" Grid.Column="0" VerticalAlignment="Center" Margin="4"/>
-                        <PasswordBox x:Name="txtMKCu" Grid.Row="1" Grid.Column="1" Margin="4"/>
-
-                        <TextBlock Text="Mật khẩu mới:" FontWeight="Bold" Grid.Row="2" Grid.Column="0" VerticalAlignment="Center" Margin="4"/>
-                        <PasswordBox x:Name="txtMKMoi" Grid.Row="2" Grid.Column="1" Margin="4"/>
-
-                        <TextBlock Text="Nhập lại MK:" FontWeight="Bold" Grid.Row="3" Grid.Column="0" VerticalAlignment="Center" Margin="4"/>
-                        <PasswordBox x:Name="txtNhapLaiMKMoi" Grid.Row="3" Grid.Column="1" Margin="4"/>
-
-                        <!-- Nút bấm -->
-                        
-                    </Grid>
-                </Border>
-            </Grid>
-
-
             <!-- ==== NÚT CHỨC NĂNG & TÌM KIẾM ==== -->
             <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,10">
                 <!-- Ô tìm kiếm -->
-                <Grid Width="200" Height="30" Margin="5,0,15,0">
+                <Grid Width="240" Height="32" Margin="5,0,15,0">
                     <TextBox x:Name="txtTimKiem"
-                             
                              VerticalContentAlignment="Center"
-                             Padding="6,0,0,0"/>
+                             Padding="6,0,0,0"
+                             BorderBrush="#1C82AD"
+                             BorderThickness="1"
+                             TextChanged="txtTimKiem_TextChanged" HorizontalAlignment="Right" Width="240"
+                             />
                     <TextBlock x:Name="txtPlaceholder"
-                               Text="🔍 Tìm theo tên hoặc mã nhân viên..."
+                               Text="🔍 Nhập tên nhân viên để tìm..."
                                Foreground="Gray"
                                VerticalAlignment="Center"
                                IsHitTestVisible="False"
-                               Visibility="Visible" HorizontalAlignment="Center" Width="200"/>
+                               Visibility="Visible"
+                               HorizontalAlignment="Center"/>
                 </Grid>
-
+                
                 <!-- Nút thao tác -->
-                <Button x:Name="btnThemnv" Content="Thêm" Width="70" Height="28" Margin="5" Click="btnThemnv_Click" />
-                <Button x:Name="btnXoaNV" Content="Xóa" Width="70" Height="28" Margin="5" Click="btnXoaNV_Click" />
-                <Button x:Name="btnCapnhatNV" Content="Cập nhật" Width="70" Height="28" Margin="5" Click="btnCapnhatNV_Click" />
-                <Button x:Name="btnReset" Content="Reset" Width="70" Height="28" Margin="5" Click="btnReset_Click" />
-            </StackPanel>
+                <Button x:Name="btnThemnv" Content="Thêm" Width="80" Height="30" Margin="5" Background="#1C82AD" Foreground="White" BorderBrush="#1C82AD" Cursor="Hand"/>
+                <Button x:Name="btnXoaNV" Content="Xóa" Width="80" Height="30" Margin="5" Background="#FF3E3E" Foreground="White" BorderBrush="#1C82AD" Cursor="Hand"/>
+                <Button x:Name="btnCapnhatNV" Content="Cập nhật" Width="80" Height="30" Margin="5" Background="#FFC107" Foreground="White" BorderBrush="#1C82AD" Cursor="Hand"/>
+                <Button x:Name="btnReset" Content="Reset" Width="80" Height="30" Margin="5" Background="#1C82AD" Foreground="White" BorderBrush="#1C82AD" Cursor="Hand"/>
 
+                <!-- Hover effect -->
+                <StackPanel.Resources>
+                    <Style TargetType="Button">
+                        <Setter Property="Background" Value="#1C82AD"/>
+                        <Setter Property="Foreground" Value="White"/>
+                        <Setter Property="BorderBrush" Value="#1C82AD"/>
+                        <Setter Property="Cursor" Value="Hand"/>
+                        <Style.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter Property="Background" Value="#176E8F"/>
+                            </Trigger>
+                        </Style.Triggers>
+                    </Style>
+                </StackPanel.Resources>
+            </StackPanel>
+            
             <!-- ==== DANH SÁCH NHÂN VIÊN ==== -->
             <DataGrid x:Name="dgNhanVien"
+                      
                       Grid.Row="2"
                       AutoGenerateColumns="False"
                       IsReadOnly="True"
-                      AlternatingRowBackground="#F5FFF9"
-                      GridLinesVisibility="Horizontal"
-                      CanUserAddRows="False"
-                      RowHeight="28"
-                      Margin="0,5,0,0"
-                      FontSize="13"
-                      SelectionChanged="dgNhanVien_SelectionChanged">
+                        CanUserAddRows="False"
+                        FrozenColumnCount="1"
+                        SelectionChanged="dgNhanVien_SelectionChanged"
+                        HeadersVisibility="Column"
+                        AlternatingRowBackground="#F9F9F9"
+                        GridLinesVisibility="Horizontal"
+                        BorderBrush="#1C82AD"
+                        BorderThickness="1"
+                        Background="White"
+                        ScrollViewer.CanContentScroll="True"
+                        ScrollViewer.VerticalScrollBarVisibility="Auto"
+                        ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                        FontFamily="Segoe UI"
+                        FontSize="14"
+                        RowHeight="30"
+                        HorizontalGridLinesBrush="#E0F2F1"
+                        VerticalGridLinesBrush="#E0F2F1"
+                      >
+                <DataGrid.Resources>
+                    <Style TargetType="DataGridColumnHeader">
+                        <Setter Property="Background" Value="#B2EBF2"/>
+                        <Setter Property="FontWeight" Value="Bold"/>
+                        <Setter Property="Foreground" Value="#006064"/>
+                        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                        <Setter Property="VerticalContentAlignment" Value="Center"/>
+                        <Setter Property="Padding" Value="8,6"/>
+                        <Setter Property="BorderBrush" Value="#80DEEA"/>
+                        <Setter Property="BorderThickness" Value="0,0,1,1"/>
+                    </Style>
+
+                    <Style TargetType="DataGridCell">
+                        <Setter Property="Padding" Value="6,4"/>
+                        <Setter Property="BorderBrush" Value="#E0F2F1"/>
+                        <Setter Property="BorderThickness" Value="0,0,1,1"/>
+                    </Style>
+                </DataGrid.Resources>
                 <DataGrid.Columns>
-                    <DataGridTextColumn Header="Mã NV" Binding="{Binding MaNhanVien}" Width="*"/>
-                    <DataGridTextColumn Header="Tên nhân viên" Binding="{Binding HoTen}" Width="*"/>
-                    <DataGridTextColumn Header="Địa chỉ" Binding="{Binding DiaChi}" Width="*"/>
-                    <DataGridTextColumn Header="Giới tính" Binding="{Binding GioiTinh}" Width="*"/>
+                    <DataGridTextColumn Header="Mã NV" Binding="{Binding MaNhanVien}"/>
+                    <DataGridTemplateColumn Header="Tên nhân viên">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding HoTen}"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTextColumn Header="Địa chỉ" Binding="{Binding DiaChi}"/>
+                    <DataGridTextColumn Header="Giới tính" Binding="{Binding GioiTinh}"/>
                 </DataGrid.Columns>
             </DataGrid>
         </Grid>

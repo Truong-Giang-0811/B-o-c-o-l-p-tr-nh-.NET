@@ -1,23 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Lap trinh .NET\\DỰ ÁN BÁO CÁO\\Bai Lam bao cao\\QUAN LY.UI\\QUAN LY.UI.csproj": {}
+    "D:\\Ki 5\\.NET\\B-o-c-o-l-p-tr-nh-.NET\\Bai Lam bao cao\\QUAN LY.UI\\QUAN LY.UI.csproj": {}
   },
   "projects": {
-    "D:\\Lap trinh .NET\\DỰ ÁN BÁO CÁO\\Bai Lam bao cao\\QUAN LY.UI\\QUAN LY.UI.csproj": {
+    "D:\\Ki 5\\.NET\\B-o-c-o-l-p-tr-nh-.NET\\Bai Lam bao cao\\QUAN LY.UI\\QUAN LY.UI.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Lap trinh .NET\\DỰ ÁN BÁO CÁO\\Bai Lam bao cao\\QUAN LY.UI\\QUAN LY.UI.csproj",
+        "projectUniqueName": "D:\\Ki 5\\.NET\\B-o-c-o-l-p-tr-nh-.NET\\Bai Lam bao cao\\QUAN LY.UI\\QUAN LY.UI.csproj",
         "projectName": "QUAN LY.UI",
-        "projectPath": "D:\\Lap trinh .NET\\DỰ ÁN BÁO CÁO\\Bai Lam bao cao\\QUAN LY.UI\\QUAN LY.UI.csproj",
-        "packagesPath": "C:\\Users\\Admin\\.nuget\\packages\\",
-        "outputPath": "D:\\Lap trinh .NET\\DỰ ÁN BÁO CÁO\\Bai Lam bao cao\\QUAN LY.UI\\obj\\",
+        "projectPath": "D:\\Ki 5\\.NET\\B-o-c-o-l-p-tr-nh-.NET\\Bai Lam bao cao\\QUAN LY.UI\\QUAN LY.UI.csproj",
+        "packagesPath": "C:\\Users\\Cong\\.nuget\\packages\\",
+        "outputPath": "D:\\Ki 5\\.NET\\B-o-c-o-l-p-tr-nh-.NET\\Bai Lam bao cao\\QUAN LY.UI\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\Admin\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Cong\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -50,6 +50,18 @@
         "net8.0-windows7.0": {
           "targetAlias": "net8.0-windows",
           "dependencies": {
+            "BCrypt.Net-Next": {
+              "target": "Package",
+              "version": "[4.0.3, )"
+            },
+            "Extended.Wpf.Toolkit": {
+              "target": "Package",
+              "version": "[5.0.0, )"
+            },
+            "LiveCharts.Wpf": {
+              "target": "Package",
+              "version": "[0.9.7, )"
+            },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
               "version": "[9.0.9, )"
@@ -96,7 +108,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.301/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

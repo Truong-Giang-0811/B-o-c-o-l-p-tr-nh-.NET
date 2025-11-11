@@ -6,7 +6,8 @@
              xmlns:local="clr-namespace:QUAN_LY.UI.Views"
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800">
-    <Border Background="#FF0D9F56" Padding="10" CornerRadius="5"
+
+    <Border Background="White" Padding="10" CornerRadius="5"
             HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
         <Grid>
             <Grid.RowDefinitions>
@@ -19,12 +20,13 @@
             </Grid.RowDefinitions>
 
             <!-- ===== Thông tin độc giả ===== -->
-            <GroupBox Grid.Row="0" Margin="0,0,0,10">
+            <GroupBox Grid.Row="0" Margin="0,0,0,10" BorderBrush="#DDDDDD" BorderThickness="1" Background="White">
                 <GroupBox.Header>
                     <TextBlock Text="Thông Tin Độc Giả"
                                HorizontalAlignment="Center"
                                FontWeight="Bold"
-                               FontSize="14"/>
+                               FontSize="16"
+                               Foreground="#00BCD5"/>
                 </GroupBox.Header>
 
                 <Grid Margin="10">
@@ -77,25 +79,82 @@
 
             <!-- ===== Nút chức năng + Tìm kiếm ===== -->
             <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,10">
-                <TextBox Width="150" Margin="5" VerticalAlignment="Center"
-                         ToolTip="Nhập tên hoặc số điện thoại để tìm"
-                         x:Name="txtTimKiemDG"/>
-                <Button Content="Thêm" Width="80" Margin="5" />
-                <Button Content="Xóa" Width="80" Margin="5" />
-                <Button Content="Cập nhật" Width="100" Margin="5" />
-                <Button Content="In" Width="80" Margin="5" />
+                <Grid Width="240" Height="32" Margin="5,0,15,0">
+                    <TextBox x:Name="txtTimKiem"
+                         VerticalContentAlignment="Center"
+                         Padding="6,0,0,0"
+                         BorderBrush="#1C82AD"
+                         BorderThickness="1"
+                         TextChanged="txtTimKiem_TextChanged" HorizontalAlignment="Right" Width="240"
+                         /> 
+                    <TextBlock x:Name="txtPlaceholder"
+                       Text="🔍 Nhập tên độc giả để tìm..."
+                       Foreground="Gray"
+                       VerticalAlignment="Center"
+                       IsHitTestVisible="False"
+                       Visibility="Visible"
+                       HorizontalAlignment="Center"/>   
+                </Grid>
+                
+                <Button x:Name="XoaDG" Content="Xóa" Width="80" Margin="5" Background="#FF3E3E" Foreground="White" FontWeight="SemiBold" BorderThickness="0" Cursor="Hand"/>
+                <Button x:Name="CapNhatDG" Content="Cập nhật" Width="100" Margin="5" Background="#FFC107" Foreground="White" FontWeight="SemiBold" BorderThickness="0" Cursor="Hand"/>
+                <Button x:Name="InDG" Content="Reset" Width="80" Margin="5" Background="#007ACC" Foreground="White" FontWeight="SemiBold" BorderThickness="0" Cursor="Hand"/>
             </StackPanel>
 
             <!-- ===== Danh sách độc giả ===== -->
             <DataGrid x:Name="dgDocGia" Grid.Row="2" AutoGenerateColumns="False" IsReadOnly="True" Margin="0,5,0,0"
-                      HorizontalAlignment="Stretch" VerticalAlignment="Stretch">
+                      HorizontalAlignment="Stretch" VerticalAlignment="Stretch"
+                      AlternatingRowBackground="#F9F9F9"
+                      GridLinesVisibility="Horizontal"
+                      BorderBrush="#B2EBF2"
+                      SelectionChanged="dgDocGia_SelectionChanged"
+                      BorderThickness="1"
+                      Background="White"
+                      ScrollViewer.CanContentScroll="True"
+                      ScrollViewer.VerticalScrollBarVisibility="Auto"
+                      ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                      FontFamily="Segoe UI"
+                      FontSize="14"
+                      RowHeight="30"
+                      HorizontalGridLinesBrush="#E0F2F1"
+                      VerticalGridLinesBrush="#E0F2F1">
+
+                <DataGrid.Resources>
+                    <Style TargetType="DataGridColumnHeader">
+                        <Setter Property="Background" Value="#B2EBF2"/>
+                        <Setter Property="FontWeight" Value="Bold"/>
+                        <Setter Property="Foreground" Value="#006064"/>
+                        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                        <Setter Property="VerticalContentAlignment" Value="Center"/>
+                        <Setter Property="Padding" Value="8,6"/>
+                        <Setter Property="BorderBrush" Value="#80DEEA"/>
+                        <Setter Property="BorderThickness" Value="0,0,1,1"/>
+                    </Style>
+
+                    <Style TargetType="DataGridCell">
+                        <Setter Property="Padding" Value="6,4"/>
+                        <Setter Property="BorderBrush" Value="#E0F2F1"/>
+                        <Setter Property="BorderThickness" Value="0,0,1,1"/>
+                    </Style>
+                </DataGrid.Resources>
+
                 <DataGrid.Columns>
-                    <DataGridTextColumn Header="Mã ĐG" Binding="{Binding MaDG}"/>
-                    <DataGridTextColumn Header="Họ Tên" Binding="{Binding HoTen}"/>
+                    <DataGridTextColumn Header="Mã ĐG" Binding="{Binding MaKhachHang}"/>
+                    <DataGridTemplateColumn Header="Họ Tên">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock>
+                                    <TextBlock.Inlines>
+                                        <Run Text="{Binding HoTen}" />
+                                    </TextBlock.Inlines>
+                                </TextBlock>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
                     <DataGridTextColumn Header="Giới Tính" Binding="{Binding GioiTinh}"/>
                     <DataGridTextColumn Header="Ngày Sinh" Binding="{Binding NgaySinh}"/>
                     <DataGridTextColumn Header="Địa Chỉ" Binding="{Binding DiaChi}"/>
-                    <DataGridTextColumn Header="SĐT" Binding="{Binding SDT}"/>
+                    <DataGridTextColumn Header="SĐT" Binding="{Binding SoDienThoai}"/>
                     <DataGridTextColumn Header="Email" Binding="{Binding Email}"/>
                     <DataGridTextColumn Header="Ngày ĐK" Binding="{Binding NgayDK}"/>
                 </DataGrid.Columns>

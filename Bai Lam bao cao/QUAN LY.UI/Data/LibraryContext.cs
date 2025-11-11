@@ -109,6 +109,22 @@ namespace QUAN_LY.UI.Data
                 .WithMany(c => c.HiddenHistories)
                 .HasForeignKey(h => h.MaChiTietMuon)
                 .OnDelete(DeleteBehavior.Cascade);
+            modelBuilder.Entity<Admin>().HasData(
+                new Admin
+                {
+                    MaNhanVien = 1,
+                    Anhcanhan = null,
+                    HoTen = "Quản trị viên",
+                    Email = "admin@admin.com",
+                    SoDienThoai = "0123456789",
+                    GioiTinh = "Nam",
+                    NgaySinh = new DateTime(1990, 1, 1),
+                    DiaChi = "Hà Nội",
+                    Chucvu = "Admin",
+                    Tendangnhap = "kong",
+                    Matkhau = BCrypt.Net.BCrypt.HashPassword("31082005")
+                }
+            );
         }
 
         // Cấu hình kết nối đến SQL Server

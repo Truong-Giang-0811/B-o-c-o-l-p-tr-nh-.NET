@@ -1,4 +1,6 @@
-﻿using QUAN_LY.UI.Data;
+﻿using Microsoft.EntityFrameworkCore;
+using QUAN_LY.UI.Data;
+using QUAN_LY.UI.Models;
 using QUAN_LY.UI.Services;
 using System;
 using System.Collections.Generic;
@@ -7,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
@@ -14,6 +17,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using QUAN_LY.UI.Data;   
 using QUAN_LY.UI.Models;
 
 namespace QUAN_LY.UI.Views
@@ -25,15 +29,120 @@ namespace QUAN_LY.UI.Views
     {
         private readonly Quan_ly_Sach Qlsach;
         private Sach selectedSach;
+        private readonly LibraryContext _context;
+        private List<Sach> danhSachGoc;
         public Quan_Ly_Sach()
         {
             InitializeComponent();
             var db = new LibraryContext();
             Qlsach = new Quan_ly_Sach(db);
+            _context = new LibraryContext();
             dgSach.ItemsSource = db.Saches.ToList();
             dpNgayNhap.SelectedDate = DateTime.Now.Date;
+            LoadDanhSachSach();
 
         }
+        private void LoadDanhSachSach()
+        {
+            danhSachGoc = _context.Saches.ToList();
+            dgSach.ItemsSource = danhSachGoc;
+        }
+        private static T FindVisualChild<T>(DependencyObject parent) where T : DependencyObject
+        {
+            if (parent == null) return null;
+            for (int i = 0; i < VisualTreeHelper.GetChildrenCount(parent); i++)
+            {
+                var child = VisualTreeHelper.GetChild(parent, i);
+                if (child is T found)
+                    return found;
+                var result = FindVisualChild<T>(child);
+                if (result != null)
+                    return result;
+            }
+            return null;
+        }
+
+        private void HighlightMatchingText(string keyword)
+        {
+            foreach (var item in dgSach.Items)
+            {
+                if (item is not Sach sach) continue;
+
+                var row = dgSach.ItemContainerGenerator.ContainerFromItem(item) as DataGridRow;
+                if (row == null) continue;
+
+                var presenter = FindVisualChild<DataGridCellsPresenter>(row);
+                if (presenter == null) continue;
+
+                // Tìm cột Tên sách (index 2)
+                var cell = presenter.ItemContainerGenerator.ContainerFromIndex(2) as DataGridCell;
+                if (cell == null) continue;
+
+                var txtBlock = FindVisualChild<TextBlock>(cell);
+                if (txtBlock == null) continue;
+
+                string text = sach.TieuDe ?? "";
+                txtBlock.Inlines.Clear();
+
+                if (string.IsNullOrEmpty(keyword))
+                {
+                    txtBlock.Inlines.Add(new Run(text));
+                    continue;
+                }
+
+                int startIndex = 0;
+                string lowerText = text.ToLower();
+                string lowerKey = keyword.ToLower();
+
+                while (true)
+                {
+                    int index = lowerText.IndexOf(lowerKey, startIndex);
+                    if (index == -1)
+                    {
+                        txtBlock.Inlines.Add(new Run(text.Substring(startIndex)));
+                        break;
+                    }
+
+                    // phần trước
+                    txtBlock.Inlines.Add(new Run(text.Substring(startIndex, index - startIndex)));
+                    // phần khớp -> đỏ + đậm
+                    txtBlock.Inlines.Add(new Run(text.Substring(index, keyword.Length))
+                    {
+                        FontWeight = FontWeights.Bold,
+                        Foreground = Brushes.Red
+                    });
+
+                    startIndex = index + keyword.Length;
+                }
+            }
+        }
+
+
+        private void txtTimKiem_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            string keyword = txtTimKiem.Text.Trim().ToLower();
+
+            txtPlaceholder.Visibility = string.IsNullOrEmpty(keyword)
+                ? Visibility.Visible
+                : Visibility.Collapsed;
+
+            if (string.IsNullOrEmpty(keyword))
+            {
+                dgSach.ItemsSource = danhSachGoc;
+            }
+            else
+            {
+                dgSach.ItemsSource = danhSachGoc
+                    .Where(s => s.TieuDe.ToLower().Contains(keyword) ||
+                                s.TacGia.ToLower().Contains(keyword))
+                    .ToList();
+            }
+
+            dgSach.Items.Refresh();
+
+            dgSach.Dispatcher.InvokeAsync(() => HighlightMatchingText(keyword));
+        }
+
 
         private void btn_Themsach_Click(object sender, RoutedEventArgs e)
         {
