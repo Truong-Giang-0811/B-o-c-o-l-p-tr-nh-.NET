@@ -23,12 +23,17 @@ namespace QUAN_LY.UI.Services
                                       .FirstOrDefault(t => t.Tendangnhap == tenDangNhap);
             if (taiKhoan == null)
                 return null;
+            if (!string.Equals(tenDangNhap, taiKhoan.Tendangnhap, StringComparison.Ordinal))
+            {
+                return null;
+            }
 
             // Kiểm tra mật khẩu bằng BCrypt
             bool hopLe = BCrypt.Net.BCrypt.Verify(matKhau, taiKhoan.Matkhau);
             return hopLe ? taiKhoan : null;
         }
         // Đăng nhập cho Admin và Nhân viên
+
         public Admin DangNhap2(string tenDangNhap, string matKhau)
         {
             // Tìm tài khoản khớp username + password
@@ -37,6 +42,11 @@ namespace QUAN_LY.UI.Services
 
             if (taiKhoan == null)
                 return null;
+
+            if (!string.Equals(tenDangNhap, taiKhoan.Tendangnhap, StringComparison.Ordinal))
+            {
+                return null;
+            }
 
             // Kiểm tra mật khẩu bằng BCrypt
             bool hopLe = BCrypt.Net.BCrypt.Verify(matKhau, taiKhoan.Matkhau);

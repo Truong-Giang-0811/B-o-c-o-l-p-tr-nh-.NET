@@ -77,10 +77,12 @@ namespace QUAN_LY.UI.Services
                 return false;
             }
             // Kiểm tra username đã tồn tại chưa
-            var existingUser = _context.KhachHangs.FirstOrDefault(u => u.Tendangnhap == username);
-            if (existingUser != null)
+            var existingUser = _context.KhachHangs.Any(u => u.Tendangnhap == username);
+            var existingAdmin = _context.Admins.Any(u => u.Tendangnhap == username);
+
+            if (existingUser || existingAdmin)
             {
-                message = "Tên đăng nhập đã tồn tại!";
+                message = "Tên đăng nhập đã tồn tại! Vui lòng chọn tên đăng nhập khác.";
                 return false;
             }
 

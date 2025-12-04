@@ -34,6 +34,12 @@ namespace QUAN_LY.UI.Services
                 message = "Vui lòng nhập đầy đủ thông tin hợp lệ!";
                 return false;
             }
+            var existingBook = _context.Saches.FirstOrDefault(u => u.TieuDe == tieuDe);
+            if (existingBook != null)
+            {
+                message = "Sach đã tồn tại!";
+                return false;
+            }
             if (ngayNhap.Value > DateTime.Now)
             {
                 message = "Ngày nhập không được lớn hơn ngày hiện tại!";
