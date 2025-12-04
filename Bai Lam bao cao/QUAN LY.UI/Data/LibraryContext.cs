@@ -14,12 +14,12 @@ namespace QUAN_LY.UI.Data
 {
     public class LibraryContext : DbContext
     {
-        private static readonly string AdminPasswordHash = BCrypt.Net.BCrypt.HashPassword("08112005");
+        
         // Constructor mặc định để WPF có thể gọi new LibraryContext()
         public LibraryContext() { }
         public LibraryContext(DbContextOptions<LibraryContext> options) : base(options) { }
 
-    
+   
         public DbSet<Admin> Admins { get; set; }
         public DbSet<KhachHang> KhachHangs { get; set; }
         public DbSet<Sach> Saches { get; set; }
@@ -115,16 +115,6 @@ namespace QUAN_LY.UI.Data
 
             
 
-            modelBuilder.Entity<Admin>().HasData(
-                new Admin
-                {
-                    MaNhanVien = -1, // ID cố định cho Admin đầu tiên
-                    HoTen = "Trường Giang",
-                    Chucvu = "Admin",
-                    Tendangnhap = "Admin0811",
-                    Matkhau = AdminPasswordHash, 
-                }
-            );
             // ===================================================================
 
             base.OnModelCreating(modelBuilder);
