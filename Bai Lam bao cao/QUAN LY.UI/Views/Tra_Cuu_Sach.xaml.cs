@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
@@ -26,7 +27,7 @@ namespace QUAN_LY.UI.Views
 
         private readonly LibraryContext _context;
         private readonly Them_Gio_Hang _gioHangService;
-       
+        private List<Sach> danhSachGoc;
 
 
         public Tra_Cuu_Sach()
@@ -34,9 +35,99 @@ namespace QUAN_LY.UI.Views
             InitializeComponent();
             _context = new Data.LibraryContext();
             _gioHangService = new Them_Gio_Hang(_context);
-            dgSach.ItemsSource = _context.Saches.ToList();
+            danhSachGoc = _context.Saches.ToList();
+            dgSach.ItemsSource = danhSachGoc;
+            txtTimKiem.TextChanged += TxtTimKiem_TextChanged;
+        }
+        private void TxtTimKiem_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            string keyword = txtTimKiem.Text.Trim().ToLower();
+            txtPlaceholder.Visibility = string.IsNullOrEmpty(keyword)
+                               ? Visibility.Visible
+                               : Visibility.Collapsed;
+            if (string.IsNullOrEmpty(keyword))
+            {
+                dgSach.ItemsSource = danhSachGoc;
+            }
+            else
+            {
+                dgSach.ItemsSource = danhSachGoc
+                    .Where(s => !string.IsNullOrEmpty(s.TieuDe) && s.TieuDe.ToLower().Contains(keyword))
+                    .ToList();
+            }
+
+            dgSach.Items.Refresh();
+
+            dgSach.Dispatcher.InvokeAsync(() => HighlightMatchingText(keyword));
+        }
+        private static T FindVisualChild<T>(DependencyObject parent) where T : DependencyObject
+        {
+            if (parent == null) return null;
+            for (int i = 0; i < VisualTreeHelper.GetChildrenCount(parent); i++)
+            {
+                var child = VisualTreeHelper.GetChild(parent, i);
+                if (child is T found)
+                    return found;
+                var result = FindVisualChild<T>(child);
+                if (result != null)
+                    return result;
+            }
+            return null;
         }
 
+        private void HighlightMatchingText(string keyword)
+        {
+            foreach (var item in dgSach.Items)
+            {
+                if (item is not Sach sach) continue;
+
+                var row = dgSach.ItemContainerGenerator.ContainerFromItem(item) as DataGridRow;
+                if (row == null) continue;
+
+                var presenter = FindVisualChild<DataGridCellsPresenter>(row);
+                if (presenter == null) continue;
+
+                // Chỉ highlight cột Tên sách (index 0)
+                var cell = presenter.ItemContainerGenerator.ContainerFromIndex(0) as DataGridCell;
+                if (cell == null) continue;
+
+                var txtBlock = FindVisualChild<TextBlock>(cell);
+                if (txtBlock == null) continue;
+
+                txtBlock.Inlines.Clear();
+
+                string text = sach.TieuDe ?? "";
+                if (string.IsNullOrEmpty(keyword))
+                {
+                    txtBlock.Inlines.Add(new Run(text));
+                    continue;
+                }
+
+                int startIndex = 0;
+                string lowerText = text.ToLower();
+
+                while (true)
+                {
+                    int index = lowerText.IndexOf(keyword, startIndex);
+                    if (index == -1)
+                    {
+                        txtBlock.Inlines.Add(new Run(text.Substring(startIndex)));
+                        break;
+                    }
+
+                    // phần trước từ khóa
+                    txtBlock.Inlines.Add(new Run(text.Substring(startIndex, index - startIndex)));
+                    // phần từ khóa
+                    txtBlock.Inlines.Add(new Run(text.Substring(index, keyword.Length))
+                    {
+                        FontWeight = FontWeights.Bold,
+                        Foreground = Brushes.Red
+                    });
+
+                    startIndex = index + keyword.Length;
+                }
+            }
+        }
         private void dgSach_SelectionChanged(object sender, SelectionChangedEventArgs e)
         {
             if (dgSach.SelectedItem is Sach selectedBook)
@@ -76,8 +167,8 @@ namespace QUAN_LY.UI.Views
                 }
             }
             // Lấy mã khách hàng hiện tại (được lưu khi đăng nhập)
-            
-           
+
+
         }
     }
 }

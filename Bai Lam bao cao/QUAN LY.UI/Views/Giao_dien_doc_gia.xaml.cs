@@ -22,6 +22,7 @@ namespace QUAN_LY.UI.Views
         public Giao_dien_doc_gia()
         {
             InitializeComponent();
+            Mainconten.Content = new Views.Tra_Cuu_Sach();
         }
 
         private void btnTraCuuSach_Click(object sender, RoutedEventArgs e)

@@ -22,12 +22,26 @@ namespace QUAN_LY.UI.Views
         public Giao_Dien_Nhan_vien()
         {
             InitializeComponent();
+            Mainconten.Content = new Views.Quan_Ly_Sach();
         }
         private void btn_dangxuat_Click(object sender, RoutedEventArgs e)
         {
-            Dangnhap dangnhap = new Dangnhap();
-            dangnhap.Show();
-            this.Close();
+            MessageBoxResult result = MessageBox.Show(
+               "Bạn có chắc chắn muốn đăng xuất không?",
+               "Xác nhận đăng xuất",
+           MessageBoxButton.YesNo,
+           MessageBoxImage.Question);
+
+            // Kiểm tra nếu người dùng chọn 'Yes'
+            if (result == MessageBoxResult.Yes)
+            {
+                // 1. Tạo và hiển thị cửa sổ Đăng nhập mới
+                Dangnhap dangnhap = new Dangnhap();
+                dangnhap.Show();
+
+                // 2. Đóng cửa sổ hiện tại (ví dụ: cửa sổ chính/admin)
+                this.Close();
+            }
         }
 
         private void Quanlysach(object sender, RoutedEventArgs e)

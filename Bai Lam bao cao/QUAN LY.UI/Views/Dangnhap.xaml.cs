@@ -43,6 +43,10 @@ namespace QUAN_LY.UI.Views
 
         private void btbdangnhap_Click(object sender, RoutedEventArgs e)
         {
+            if (chkHienMK.IsChecked == true)
+            {
+                chkHienMK.IsChecked = false;
+            }
             string tendangnhap = txtbtendangnhap.Text;
             string matkhau = pwdbox.Password;
             var taikhoanadmin = xacthuc.DangNhap2(tendangnhap, matkhau);

@@ -29,6 +29,7 @@ namespace QUAN_LY.UI.Views
         {
             var donmuon = db.MuonSaches
                 .Include(g => g.KhachHang)
+                .OrderByDescending(g => g.NgayYeuCau)
                 .Select(g => new DonmuonViewModel
                 {
                     MaDonMuon = g.MaMuon,
@@ -44,21 +45,25 @@ namespace QUAN_LY.UI.Views
         private void LoadDatatrasach()
         {
             var data = db.ChiTietMuonSaches
-                .Include(ct => ct.Sach)
-                .Include(ct => ct.MuonSach)
-                    .ThenInclude(m => m.KhachHang)
-                .Where(ct => ct.TrangThai != "Đang chờ duyệt" && ct.TrangThai != "Đã từ chối")
-                .Select(ct => new DonTraViewModel
-                {
-                    MaChiTietMuon = ct.MaChiTietMuon,
-                    TieuDe = ct.Sach.TieuDe,
-                    TenKhachHang = ct.MuonSach.KhachHang.HoTen,
-                    NgayMuon = ct.NgayMuon,
-                    HanTra = ct.HanTra,
-                    NgayTra = ct.NgayTra,
-                    TrangThai = ct.TrangThai
-                })
-                .ToList();
+         .Include(ct => ct.Sach)
+         .Include(ct => ct.MuonSach)
+             .ThenInclude(m => m.KhachHang)
+         .Where(ct => ct.TrangThai != "Đang chờ duyệt"
+                   && ct.TrangThai != "Đã từ chối"
+                   && ct.TrangThai != "Đã trả")
+         .OrderByDescending(ct => ct.NgayMuon)
+         .Select(ct => new DonTraViewModel
+         {
+             MaChiTietMuon = ct.MaChiTietMuon,
+             TieuDe = ct.Sach.TieuDe,
+             TenKhachHang = ct.MuonSach.KhachHang.HoTen,
+             SoLuong = ct.SoLuong,
+             NgayMuon = ct.NgayMuon,
+             HanTra = ct.HanTra,
+             NgayTra = ct.NgayTra,
+             TrangThai = ct.TrangThai
+         })
+         .ToList();
 
             dgTraSach.ItemsSource = data;
         }
@@ -95,7 +100,7 @@ namespace QUAN_LY.UI.Views
             txtSoLuongTrs.Text = this.selectedChiTiet.SoLuong.ToString();
             dpNgayMuonTrs.SelectedDate = this.selectedChiTiet.NgayMuon;
             dpNgayHenTraTrs.SelectedDate = this.selectedChiTiet.HanTra;
-            dpNgayTraTrs.SelectedDate = DateTime.Now;
+            dpNgayTraTrs.SelectedDate = this.selectedChiTiet.NgayTra;
         }
 
         private void BtnTraSach_Click(object sender, RoutedEventArgs e)
@@ -137,9 +142,9 @@ namespace QUAN_LY.UI.Views
                         muonSach.TrangThai = "Hoàn tất";
                 }
 
-                // (Tùy chọn) - nếu bạn quản lý tồn kho sách, tăng lại số lượng trong bảng Sach ở đây
-                // var sach = db.Saches.Find(selectedChiTiet.MaSach);
-                // if (sach != null) { sach.SoLuong += selectedChiTiet.SoLuong; }
+                
+                 var sach = db.Saches.Find(selectedChiTiet.MaSach);
+                 if (sach != null) { sach.SoLuongTon += selectedChiTiet.SoLuong; }
 
                 db.SaveChanges();
 
@@ -167,7 +172,7 @@ namespace QUAN_LY.UI.Views
             // reset biến class-level
             selectedChiTiet = null;
         }
-        private void BtnThoat(object sender, RoutedEventArgs e)
+        private void BtnReset(object sender, RoutedEventArgs e)
         {
             // Bỏ chọn dòng đang chọn trong DataGrid trả sách
             dgTraSach.SelectedItem = null;
@@ -251,10 +256,16 @@ namespace QUAN_LY.UI.Views
                 MessageBox.Show("Vui lòng chọn đơn mượn!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
+            var maDonMuonCanChonLai = selectedDonMuon.MaDonMuon;
 
             if (cbotensach.SelectedValue is not ChiTietMuonSach chiTiet)
             {
                 MessageBox.Show("Vui lòng chọn sách để duyệt!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+            if (chiTiet.TrangThai != "Đang chờ duyệt")
+            {
+                MessageBox.Show($"Chỉ có thể duyệt sách đang ở trạng thái 'Đang chờ duyệt'. Trạng thái hiện tại: {chiTiet.TrangThai}", "Cảnh báo", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
 
@@ -289,6 +300,15 @@ namespace QUAN_LY.UI.Views
                 dpNgayHenTra1.SelectedDate = chiTiet.HanTra;
                 txtTrangthai.Text = chiTiet.TrangThai;
                 LoadDatamuonsach();
+                if (dgmuontra.ItemsSource is IEnumerable<DonmuonViewModel> items)
+                {
+                    var itemCanChon = items.FirstOrDefault(i => i.MaDonMuon == maDonMuonCanChonLai);
+                    if (itemCanChon != null)
+                    {
+                        dgmuontra.SelectedItem = itemCanChon;
+                        dgmuontra.ScrollIntoView(itemCanChon); // Cuộn đến mục đã chọn
+                    }
+                }
             }
             catch (Exception ex)
             {
@@ -303,10 +323,16 @@ namespace QUAN_LY.UI.Views
                 MessageBox.Show("Vui lòng chọn đơn mượn!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
+            
 
             if (cbotensach.SelectedValue is not ChiTietMuonSach chiTiet)
             {
                 MessageBox.Show("Vui lòng chọn sách để từ chối!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Warning);
+                return;
+            }
+            if (chiTiet.TrangThai != "Đang chờ duyệt")
+            {
+                MessageBox.Show($"Chỉ có thể duyệt sách đang ở trạng thái 'Đang chờ duyệt'. Trạng thái hiện tại: {chiTiet.TrangThai}", "Cảnh báo", MessageBoxButton.OK, MessageBoxImage.Warning);
                 return;
             }
 
@@ -321,6 +347,11 @@ namespace QUAN_LY.UI.Views
             }
 
             chiTiet.TrangThai = "Đã từ chối";
+            var sach = db.Saches.Find(chiTiet.MaSach);
+            if (sach != null)
+            {
+                sach.SoLuongTon += chiTiet.SoLuong;
+            }
 
             bool khongConChoDuyet = muonSach.ChiTietMuonSaches.All(ct => ct.TrangThai != "Đang chờ duyệt");
             if (khongConChoDuyet)
@@ -332,6 +363,29 @@ namespace QUAN_LY.UI.Views
             MessageBox.Show("Đã cập nhật trạng thái chi tiết!", "Thành công", MessageBoxButton.OK, MessageBoxImage.Information);
             txtTrangthai.Text = chiTiet.TrangThai;
             LoadDatamuonsach();
+
+        }
+
+        private void ResetSach_Click(object sender, RoutedEventArgs e)
+        {
+            dgmuontra.SelectedItem = null;
+
+      
+            txtTrangthai.Clear();
+            txtSoLuong.Clear();
+            dpNgaymuon.SelectedDate = null;
+            dpNgayHenTra1.SelectedDate = null;
+            txtmadocgia.Clear();
+            txttendocgia.Clear();
+            txtdiachi.Clear();
+            txtsodienthoai.Clear();
+
+
+         
+            LoadDatamuonsach();
+
+           
+            selectedChiTiet = null;
         }
     }
 }

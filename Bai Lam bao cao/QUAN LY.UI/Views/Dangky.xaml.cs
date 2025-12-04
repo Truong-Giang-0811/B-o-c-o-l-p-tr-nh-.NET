@@ -61,6 +61,10 @@ namespace QUAN_LY.UI.Views
 
         private void btbdangki_Click(object sender, RoutedEventArgs e)
         {
+            if (cbkHienMK.IsChecked == true)
+            {
+                cbkHienMK.IsChecked = false;
+            }
             string username = txttendangnhap.Text.Trim();
             string password = pwdbox.Password.Trim();
             string rePassword = pwdbox1.Password.Trim();

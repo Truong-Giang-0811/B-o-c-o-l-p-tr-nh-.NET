@@ -140,7 +140,7 @@ namespace QUAN_LY.UI.Views
                 try
                 {
               
-                    // BƯỚC 1: TẠO BẢN GHI MỚI TRONG BẢNG MuonSach (HEADER)
+                   
                    
                     var donMuonMoi = new MuonSach
                     {
@@ -156,9 +156,6 @@ namespace QUAN_LY.UI.Views
                     int maMuonVuaTao = donMuonMoi.MaMuon;
                     var maGioHangCanXoa = new List<int>();
 
-                    // =======================================================
-                    // BƯỚC 2 & 3: TẠO CHI TIẾT ĐƠN MƯỢN & CẬP NHẬT TỒN KHO
-                    // =======================================================
                     foreach (var item in danhSachChon)
                     {
                         // 3. Kiểm tra và Cập nhật tồn kho (Giảm SoLuongTon)
@@ -191,14 +188,12 @@ namespace QUAN_LY.UI.Views
                     }
                    
 
-                    // =======================================================
-                    // BƯỚC 4: XÓA DỮ LIỆU KHỎI BẢNG Giohang
-                    // =======================================================
+                
+                   
                     var gioHangCanXoa = db.Giohangs.Where(g => maGioHangCanXoa.Contains(g.MaGioHang)).ToList();
                     db.Giohangs.RemoveRange(gioHangCanXoa);
                     db.SaveChanges(); // Lưu thay đổi (xóa giỏ hàng)
 
-                    // Hoàn tất giao dịch nếu tất cả các bước thành công
                     dbTransaction.Commit();
 
                     MessageBox.Show($"Đã tạo đơn mượn thành công", "Thành công", MessageBoxButton.OK, MessageBoxImage.Information);

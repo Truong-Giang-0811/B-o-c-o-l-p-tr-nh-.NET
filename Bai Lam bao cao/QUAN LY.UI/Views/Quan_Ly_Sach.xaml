@@ -62,20 +62,20 @@
 
     <Grid Background="White">
         <Grid.RowDefinitions>
-            
+
             <RowDefinition Height="320"/>
-           
-            <RowDefinition Height="Auto"/>
-          
-            <RowDefinition Height="*"/>
+
+            <RowDefinition Height="Auto" MinHeight="51.96"/>
+
+            <RowDefinition/>
         </Grid.RowDefinitions>
 
         <!-- ===== 1. Thông tin sách (Input Fields) - Grid.Row="0" ===== -->
-        <GroupBox Grid.Row="0" Style="{StaticResource CardGroupBoxStyle}">
+        <GroupBox Grid.Row="0" Style="{StaticResource CardGroupBoxStyle}" Margin="10,10,10,10">
             <GroupBox.Header>
-                <TextBlock Text="Thông Tin Sách" FontWeight="Bold" Foreground="#FF08A7E5"/>
+                <TextBlock Text="Thông Tin Sách" FontWeight="Bold" Foreground="#00BCD5" FontSize="16"/>
             </GroupBox.Header>
-            <Grid Margin="10,0">
+            <Grid Margin="10,0,10,10">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="Auto"/>
                     <!-- Label 1 -->
@@ -97,7 +97,7 @@
                     <!-- Dòng 3: Tên sách / SL Tồn -->
                     <RowDefinition Height="Auto"/>
                     <!-- Dòng 4: Tác giả / SL Mượn -->
-                    <RowDefinition Height="*"/>
+                    <RowDefinition Height="Auto"/>
                     <!-- Dòng 5: Mô tả -->
                 </Grid.RowDefinitions>
 
@@ -142,7 +142,7 @@
                 <TextBlock Text="Mô Tả:" Grid.Row="4" Grid.Column="0" VerticalAlignment="Top" Margin="0,15,0,0"/>
                 <TextBox x:Name="txtMota" 
                          Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="4"
-                         Margin="10,10,10,5"
+                         Margin="10,0,10,10"
                          Height="60"
                          TextWrapping="Wrap"
                          AcceptsReturn="True"
@@ -150,55 +150,106 @@
             </Grid>
         </GroupBox>
 
-        <!-- ===== 2. Nút chức năng + Tìm kiếm - Grid.Row="1" ===== -->
-        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" Margin="10,10,10,10">
-            <!-- Tìm kiếm -->
-            <TextBox Width="200" Margin="5,0,20,0" VerticalAlignment="Center" 
-                     ToolTip="Nhập tên sách hoặc tác giả để tìm" 
-                     x:Name="txtTimKiem"
-                     Text="Nhập tên sách cần tìm..."
-                     />
 
-            <!-- Các nút CRUD/In -->
+        <!-- ===== 2. Nút chức năng ===== -->
+        <StackPanel Grid.Row="1" Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,0,0,10">
+            <!-- Ô tìm kiếm -->
+            <Grid Width="240" Height="32" Margin="5,0,15,0">
+                <TextBox x:Name="txtTimKiem"
+                  VerticalContentAlignment="Center"
+                  Padding="6,0,0,0"
+                  BorderBrush="#1C82AD"
+                  BorderThickness="1"
+                  TextChanged="txtTimKiem_TextChanged" HorizontalAlignment="Right" Width="240"
+                  />
+                <TextBlock x:Name="txtPlaceholder"
+                    Text="🔍 Nhập tên sách để tìm..."
+                    Foreground="Gray"
+                    VerticalAlignment="Center"
+                    IsHitTestVisible="False"
+                    Visibility="Visible"
+                    HorizontalAlignment="Center"/>
+            </Grid>
+
             <Button x:Name="btn_Themsach" Content="Thêm" Width="80" Click="btn_Themsach_Click" Style="{StaticResource FunctionButtonStyle}"/>
             <Button x:Name="btn_Xoasach" Content="Xóa" Width="80" Click="Xoa_Click" Style="{StaticResource FunctionButtonStyle}" Background="#FF3E3E"/>
             <Button x:Name="btn_Capnhat" Content="Cập nhật" Width="100" Click="Cap_Nhat_Click" Style="{StaticResource FunctionButtonStyle}" Background="#FFC107"/>
-            <Button x:Name="btn_In" Content="In" Width="80" Style="{StaticResource FunctionButtonStyle}"/>
+            <Button x:Name="btn_reset" Content="Reset" Width="80" Style="{StaticResource FunctionButtonStyle}" Click="btn_reset_Click"/>
         </StackPanel>
 
-        <!-- ===== 3. Danh sách sách (DataGrid) - Grid.Row="2" ===== -->
-        <GroupBox Grid.Row="2" Style="{StaticResource CardGroupBoxStyle}" >
+        <!-- ===== 3. Danh sách sách ===== -->
+        <GroupBox Grid.Row="2" Style="{StaticResource CardGroupBoxStyle}" Margin="10,10,10,10">
             <GroupBox.Header>
-                <TextBlock Text="Danh Sách" FontWeight="Bold" Foreground="#FF08A7E5" />
+                <TextBlock Text="Danh Sách" FontWeight="Bold" Foreground="#00BCD5" FontSize="16"/>
             </GroupBox.Header>
-            <DataGrid x:Name="dgSach" AutoGenerateColumns="False" IsReadOnly="True" Margin="0"
-                      HorizontalAlignment="Stretch" VerticalAlignment="Stretch" 
+
+            <DataGrid x:Name="dgSach"
+                      AutoGenerateColumns="False"
+                      IsReadOnly="True"
+                      CanUserAddRows="False"
+                      FrozenColumnCount="1"
                       SelectionChanged="dgSach_SelectionChanged"
-                      GridLinesVisibility="Horizontal" 
-                      HeadersVisibility="Column" 
-                      RowBackground="#F7F7F7" 
-                      AlternatingRowBackground="White"
-                      BorderBrush="#DDDDDD" 
+                      HeadersVisibility="Column"
+                      AlternatingRowBackground="#F9F9F9"
+                      GridLinesVisibility="Horizontal"
+                      BorderBrush="#B2EBF2"
                       BorderThickness="1"
-                      Background="White">
+                      Background="White"
+                      ScrollViewer.CanContentScroll="True"
+                      ScrollViewer.VerticalScrollBarVisibility="Auto"
+                      ScrollViewer.HorizontalScrollBarVisibility="Auto"
+                      FontFamily="Segoe UI"
+                      FontSize="14"
+                      RowHeight="30"
+                      HorizontalGridLinesBrush="#E0F2F1"
+                      VerticalGridLinesBrush="#E0F2F1">
+
                 <DataGrid.Resources>
-                    <Style TargetType="{x:Type DataGridColumnHeader}">
-                        <Setter Property="Background" Value="#EEEEEE"/>
-                        <Setter Property="FontWeight" Value="SemiBold"/>
-                        <Setter Property="Padding" Value="5,5"/>
+                    <Style TargetType="DataGridColumnHeader">
+                        <Setter Property="Background" Value="#B2EBF2"/>
+                        <Setter Property="FontWeight" Value="Bold"/>
+                        <Setter Property="Foreground" Value="#006064"/>
+                        <Setter Property="HorizontalContentAlignment" Value="Center"/>
+                        <Setter Property="VerticalContentAlignment" Value="Center"/>
+                        <Setter Property="Padding" Value="8,6"/>
+                        <Setter Property="BorderBrush" Value="#80DEEA"/>
+                        <Setter Property="BorderThickness" Value="0,0,1,1"/>
+                    </Style>
+
+                    <Style TargetType="DataGridCell">
+                        <Setter Property="Padding" Value="6,4"/>
+                        <Setter Property="BorderBrush" Value="#E0F2F1"/>
+                        <Setter Property="BorderThickness" Value="0,0,1,1"/>
                     </Style>
                 </DataGrid.Resources>
+
                 <DataGrid.Columns>
-                    <DataGridTextColumn Header="Mã Sách" Binding="{Binding MaSach}" Width="60"/>
-                    <DataGridTextColumn Header="Thể Loại" Binding="{Binding TheLoai}" Width="80"/>
-                    <DataGridTextColumn Header="Tên Sách" Binding="{Binding TieuDe}" Width="Auto"/>
-                    <DataGridTextColumn Header="Tác Giả" Binding="{Binding TacGia}" Width="90"/>
+                    <DataGridTextColumn Header="Mã Sách" Binding="{Binding MaSach}" Width="Auto"/>
+                    <DataGridTextColumn Header="Thể Loại" Binding="{Binding TheLoai}" Width="Auto"/>
+                    <DataGridTemplateColumn Header="Tên sách" Width="200">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding TieuDe}"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+                    <DataGridTextColumn Header="Tác Giả" Binding="{Binding TacGia}" Width="Auto"/>
                     <DataGridTextColumn Header="NXB" Binding="{Binding NhaXuatBan}" Width="Auto"/>
-                    <DataGridTextColumn Header="Ngày Nhập" Binding="{Binding NgayNhap,StringFormat={}{0:yyyy-MM-dd}}" Width="90"/>
-                    <DataGridTextColumn Header="SL Tồn" Binding="{Binding SoLuongTon}" Width="60"/>
-                    <DataGridTextColumn Header="SL Mượn" Binding="{Binding SoLuongMuon}" Width="60"/>
+                    <DataGridTextColumn Header="Ngày Nhập" Binding="{Binding NgayNhap, StringFormat={}{0:yyyy-MM-dd}}" Width="Auto"/>
+                    <DataGridTextColumn Header="SL Tồn" Binding="{Binding SoLuongTon}" Width="Auto"/>
+                    <DataGridTextColumn Header="SL Mượn" Binding="{Binding SoLuongMuon}" Width="Auto"/>
                     <DataGridTextColumn Header="Thời Hạn Mượn (Ngày)" Binding="{Binding Thoihanmuon}" Width="Auto"/>
-                    <DataGridTextColumn Header="Mô tả" Binding="{Binding Mota}" Width="3*"/>
+                    <DataGridTemplateColumn Header="Mô Tả" Width="Auto">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <TextBlock Text="{Binding Mota}"
+                                           TextTrimming="CharacterEllipsis"
+                                           TextWrapping="NoWrap"
+                                           ToolTip="{Binding Mota}"
+                                           MaxWidth="300"/>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
                 </DataGrid.Columns>
             </DataGrid>
         </GroupBox>

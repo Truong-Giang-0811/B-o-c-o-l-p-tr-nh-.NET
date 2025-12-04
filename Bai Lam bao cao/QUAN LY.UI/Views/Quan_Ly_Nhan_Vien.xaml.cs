@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
@@ -42,11 +43,14 @@ namespace QUAN_LY.UI.Views
                 MessageBox.Show("Lỗi khi khởi tạo giao diện Quản lý nhân viên:\n" + ex.Message);
             }
         }
+        private List<Admin> danhSachGoc;
+
         private void LoadDanhSachNhanVien()
         {
-            dgNhanVien.ItemsSource = _context.Admins
+            danhSachGoc = _context.Admins
                 .Where(a => a.Chucvu == "Nhân viên")
                 .ToList();
+            dgNhanVien.ItemsSource = danhSachGoc;
         }
         private void ClearForm()
         {
@@ -217,6 +221,105 @@ namespace QUAN_LY.UI.Views
 
             }
         }
+        private static T FindVisualChild<T>(DependencyObject parent) where T : DependencyObject
+        {
+            if (parent == null) return null;
+            for (int i = 0; i < VisualTreeHelper.GetChildrenCount(parent); i++)
+            {
+                var child = VisualTreeHelper.GetChild(parent, i);
+                if (child is T found)
+                    return found;
+                var result = FindVisualChild<T>(child);
+                if (result != null)
+                    return result;
+            }
+            return null;
+        }
+
+        private void HighlightMatchingText(string keyword)
+        {
+            foreach (var item in dgNhanVien.Items)
+            {
+                if (item is not Admin nv) continue;
+
+                var row = dgNhanVien.ItemContainerGenerator.ContainerFromItem(item) as DataGridRow;
+                if (row == null) continue;
+
+                // tìm trong cột Tên nhân viên (TemplateColumn)
+                var presenter = FindVisualChild<DataGridCellsPresenter>(row);
+                if (presenter == null) continue;
+
+                var cell = presenter.ItemContainerGenerator.ContainerFromIndex(1) as DataGridCell; // cột thứ 2
+                if (cell == null) continue;
+
+                var txtBlock = FindVisualChild<TextBlock>(cell);
+                if (txtBlock == null) continue;
+
+                string text = nv.HoTen ?? "";
+                txtBlock.Inlines.Clear();
+
+                if (string.IsNullOrEmpty(keyword))
+                {
+                    txtBlock.Inlines.Add(new Run(text));
+                    continue;
+                }
+
+                int startIndex = 0;
+                string lowerText = text.ToLower();
+                string lowerKey = keyword.ToLower();
+
+                while (true)
+                {
+                    int index = lowerText.IndexOf(lowerKey, startIndex);
+                    if (index == -1)
+                    {
+                        txtBlock.Inlines.Add(new Run(text.Substring(startIndex)));
+                        break;
+                    }
+
+                    // phần trước
+                    txtBlock.Inlines.Add(new Run(text.Substring(startIndex, index - startIndex)));
+                    // phần khớp
+                    txtBlock.Inlines.Add(new Run(text.Substring(index, keyword.Length))
+                    {
+                        FontWeight = FontWeights.Bold,
+                        Foreground = Brushes.Red
+                    });
+
+                    startIndex = index + keyword.Length;
+                }
+            }
+        }
+
+
+        private void txtTimKiem_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            string keyword = txtTimKiem.Text.Trim().ToLower();
+
+            // Hiển thị hoặc ẩn placeholder
+            txtPlaceholder.Visibility = string.IsNullOrEmpty(keyword)
+                ? Visibility.Visible
+                : Visibility.Collapsed;
+
+            if (string.IsNullOrEmpty(keyword))
+            {
+                dgNhanVien.ItemsSource = danhSachGoc;
+            }
+            else
+            {
+                dgNhanVien.ItemsSource = danhSachGoc
+                    .Where(nv => nv.HoTen.ToLower().Contains(keyword) ||
+                                 nv.MaNhanVien.ToString().ToLower().Contains(keyword))
+                    .ToList();
+            }
+
+            dgNhanVien.Items.Refresh();
+
+            // 👉 Gọi hàm tô đậm sau khi DataGrid hiển thị xong
+            dgNhanVien.Dispatcher.InvokeAsync(() => HighlightMatchingText(keyword));
+        }
+
+
 
         private void btnReset_Click(object sender, RoutedEventArgs e)
         {

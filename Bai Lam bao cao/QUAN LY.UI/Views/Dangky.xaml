@@ -8,72 +8,68 @@
         Title="Dangky"  Height="700" Width="440" WindowStartupLocation="CenterScreen">
     <Window.Resources>
         <!--Chỉnh sửa hiệu ứng chuột của check box -->
-        <Style TargetType="CheckBox"  >
-            <Setter Property="Cursor" Value="Arrow"></Setter>
+        <Style TargetType="CheckBox">
+            <Setter Property="Cursor" Value="Arrow"/>
             <Style.Triggers>
                 <Trigger Property="IsMouseOver" Value="True">
-                    <Setter Property="Cursor" Value="Hand"></Setter>
+                    <Setter Property="Cursor" Value="Hand"/>
                 </Trigger>
             </Style.Triggers>
         </Style>
 
         <!--Chỉnh style button -->
         <Style x:Key="Signup" TargetType="Button">
-            <Setter Property="Background" Value="#FF5C605E"></Setter>
-            <Setter Property="Foreground" Value="White"></Setter>
+            <Setter Property="Background" Value="#00BCD5"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="FontWeight" Value="Bold"/>
             <Setter Property="Cursor" Value="Arrow"/>
-            <Setter Property="SnapsToDevicePixels" Value="True"/>
-            <Setter Property="UseLayoutRounding" Value="True"/>
+            <Setter Property="BorderThickness" Value="0"/>
+            <Setter Property="Height" Value="34"/>
+            <Setter Property="FontSize" Value="15"/>
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="Button">
-                        <!--Tạo hiệu ứng bo góc của button và background -->
                         <Border Background="{TemplateBinding Background}"
-                                
-                                CornerRadius="8"
-                                BorderThickness="{TemplateBinding BorderThickness}"
-                                BorderBrush="{TemplateBinding BorderBrush}"
-                               >
-
-                            <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"></ContentPresenter>
+                                CornerRadius="8">
+                            <ContentPresenter HorizontalAlignment="Center"
+                                              VerticalAlignment="Center"/>
                         </Border>
                     </ControlTemplate>
                 </Setter.Value>
             </Setter>
             <Style.Triggers>
+                <!-- Hover: chỉ đổi đậm hơn -->
                 <Trigger Property="IsMouseOver" Value="True">
-                    <Setter Property="Background" Value="#FF007139"></Setter>
-                    <Setter Property="Foreground" Value="#FFFF00"></Setter>
+                    <Setter Property="Background" Value="#0097A7"/>
+                    <Setter Property="Foreground" Value="White"/>
                     <Setter Property="Cursor" Value="Hand"/>
                 </Trigger>
             </Style.Triggers>
         </Style>
 
-        <!--Chỉnh sửa hiệu ứng chuột cho RadioButton-->
+        <!--RadioButton -->
         <Style TargetType="RadioButton">
-            <Setter Property="Cursor" Value="Arrow"></Setter>
+            <Setter Property="Cursor" Value="Arrow"/>
             <Style.Triggers>
                 <Trigger Property="IsMouseOver" Value="True">
-                    <Setter Property="Cursor" Value="Hand"></Setter>
+                    <Setter Property="Cursor" Value="Hand"/>
                 </Trigger>
             </Style.Triggers>
         </Style>
 
         <!--Chỉnh sửa bo góc cho password box -->
-        <Style TargetType="PasswordBox" >
+        <Style TargetType="PasswordBox">
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="PasswordBox">
-                        <Border BorderThickness="1,1,1,1" 
-              
-              CornerRadius="10"
-          BorderBrush="#FF087026"
-         
-          Background="White">
-                            <ScrollViewer x:Name="PART_ContentHost"    
-                        Margin="4,2,4,2"
-                        HorizontalScrollBarVisibility="Hidden"
-                        VerticalScrollBarVisibility="Hidden"/>
+                        <Border BorderThickness="1"
+                                CornerRadius="10"
+                                BorderBrush="#00BCD5"
+                                Background="White">
+                            <ScrollViewer x:Name="PART_ContentHost"
+                                          Margin="4,2,4,2"
+                                          HorizontalScrollBarVisibility="Hidden"
+                                          VerticalScrollBarVisibility="Hidden"/>
                         </Border>
                     </ControlTemplate>
                 </Setter.Value>
@@ -84,13 +80,11 @@
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="TextBox">
-                        <Border BorderThickness="1,1,1,1" 
-                                
+                        <Border BorderThickness="1"
                                 CornerRadius="10"
-                            BorderBrush="#FF087026"
-                           
-                            Background="White">
-                            <ScrollViewer x:Name="PART_ContentHost"    
+                                BorderBrush="#00BCD5"
+                                Background="White">
+                            <ScrollViewer x:Name="PART_ContentHost"
                                           Margin="4,2,4,2"
                                           HorizontalScrollBarVisibility="Hidden"
                                           VerticalScrollBarVisibility="Hidden"/>
@@ -99,23 +93,62 @@
                 </Setter.Value>
             </Setter>
         </Style>
-       
+
     </Window.Resources>
     <Grid>
         <Grid.Background>
-            <SolidColorBrush Color="#FFD3F8E6"/>
+            <LinearGradientBrush EndPoint="0,0" StartPoint="0,1">
+                <GradientStop Color="#FFE1F2F7" Offset="0"/>
+                <GradientStop Color="#FF97F3F3" Offset="0.5"/>
+                <GradientStop Color="#FFF0F4F6" Offset="1"/>
+            </LinearGradientBrush>
         </Grid.Background>
         <Grid.RowDefinitions>
-            <RowDefinition Height="80"></RowDefinition>
-            <RowDefinition></RowDefinition>
+            <RowDefinition Height="90"/>
+            <RowDefinition/>
         </Grid.RowDefinitions>
-        <Grid Grid.Row="0" Background="#FF6AE4A7">
+
+        <!--  Header -->
+        <Grid Grid.Row="0">
+            <Grid.Background>
+                <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
+                    <GradientStop Color="#00BCD5" Offset="0"/>
+                    <GradientStop Color="#26C6DA" Offset="1"/>
+                </LinearGradientBrush>
+            </Grid.Background>
+
             <Grid.ColumnDefinitions>
-                <ColumnDefinition></ColumnDefinition>
-                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition/>
             </Grid.ColumnDefinitions>
-            <Image Source="/Anh/Logo.png" HorizontalAlignment="Center" VerticalAlignment="Top"/>
-            <Label Content="ĐĂNG KÝ TÀI KHOẢN" HorizontalAlignment="Left" VerticalAlignment="Center" RenderTransformOrigin="-0.333,-0.127" FontSize="16" FontWeight="Heavy" Foreground="White" Grid.ColumnSpan="2" Margin="195,0,0,0"/>
+            <StackPanel Margin="10,0"
+                VerticalAlignment="Top"
+                Orientation="Vertical"
+                HorizontalAlignment="Center">
+
+                <!-- Icon ở hàng trên -->
+                <TextBlock Text="📖"
+                   FontSize="35"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"
+                   Foreground="White"/>
+
+                <!-- Chữ ở hàng dưới -->
+                <TextBlock Text="THƯ VIỆN GCLB"
+                   FontSize="20"
+                   FontWeight="Bold"
+                   Foreground="White"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center"
+                   Margin="0,10,0,0"/>
+            </StackPanel>
+
+            <Label Content="ĐĂNG KÝ TÀI KHOẢN"
+                   Foreground="White"
+                   FontSize="20"
+                   FontWeight="Bold"
+                   VerticalAlignment="Center"
+                   HorizontalAlignment="Center" Grid.Column="1"/>
         </Grid>
         <Grid Grid.Row="1">
             <Label x:Name="lbl_ten_tai_khoan" Content="Tên tài khoản:" HorizontalAlignment="Left" Margin="90,35,0,0" VerticalAlignment="Top" FontSize="17" FontWeight="Medium"/>
@@ -132,17 +165,17 @@
             <TextBox TabIndex="1" x:Name="txtpassword" HorizontalAlignment="Left" Margin="219,84,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="185" Height="24" BorderBrush="Black"/>
             <PasswordBox TabIndex="2" x:Name="pwdbox1"  HorizontalAlignment="Left" Margin="219,129,0,0" VerticalAlignment="Top" Width="185" Height="24" BorderBrush="Black" BorderThickness="1,1,1,1"/>
             <TextBox TabIndex="2" x:Name="txtpassword1" HorizontalAlignment="Left" Margin="219,129,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="185"  Height="24" BorderBrush="Black"/>
-            <CheckBox TabIndex="3" Content="Hiện mật khẩu" HorizontalAlignment="Left" Margin="304,157,0,0" VerticalAlignment="Top" FontSize="12" FontWeight="Medium" Checked="CheckBox_Checked" Unchecked="CheckBox_UnChecked"/>
+            <CheckBox x:Name="cbkHienMK" TabIndex="3" Content="Hiện mật khẩu" HorizontalAlignment="Left" Margin="304,157,0,0" VerticalAlignment="Top" FontSize="12" FontWeight="Medium" Checked="CheckBox_Checked" Unchecked="CheckBox_UnChecked"/>
             <TextBox TabIndex="4" x:Name="txthoten" HorizontalAlignment="Left" Margin="219,174,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="185" Height="24" BorderBrush="Black"/>
             <TextBox TabIndex="6" x:Name="txtdiachi" HorizontalAlignment="Left" Margin="219,264,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="185" Height="24" BorderBrush="Black"/>
             <TextBox x:Name="txtemail" HorizontalAlignment="Left" Margin="219,309,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="185" Height="24" BorderBrush="Black" TabIndex="7"/>
             <TextBox x:Name="txtsodienthoai" HorizontalAlignment="Left" Margin="219,354,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="185" Height="24" BorderBrush="Black" HorizontalContentAlignment="Left" VerticalContentAlignment="Center" TabIndex="8"/>
-            <DatePicker x:Name="datengaysinh" HorizontalAlignment="Left" Margin="219,221,0,0" VerticalAlignment="Top" Height="24" Width="186" BorderBrush="Black" TabIndex="5" />
+            <DatePicker x:Name="datengaysinh" HorizontalAlignment="Left" Margin="219,221,0,0" VerticalAlignment="Top" Height="29" Width="186" BorderBrush="Black" TabIndex="5" />
             <RadioButton x:Name="rdNam" Content="Nam" HorizontalAlignment="Left" Margin="219,404,0,0" VerticalAlignment="Top" Height="19" Width="50" FontSize="14"/>
             <RadioButton Content="Nữ" HorizontalAlignment="Left" Margin="290,404,0,0" VerticalAlignment="Top" Height="19" Width="50" FontSize="14"/>
-            <Button Style="{StaticResource Signup}" x:Name="btbdangki" Height="30" Width="160" VerticalContentAlignment="Center" VerticalAlignment="Bottom" Margin="140,0,0,105" Content="ĐĂNG KÝ " FontSize="16" ForceCursor="True" FontWeight="Heavy" Background="#FF0D9F56" BorderThickness="0,0,0,0" Padding="0,0,0,0" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Click="btbdangki_Click"/>
+            <Button Style="{StaticResource Signup}" x:Name="btbdangki" Height="30" Width="160" VerticalContentAlignment="Center" VerticalAlignment="Bottom" Margin="140,0,0,105" Content="ĐĂNG KÝ " FontSize="16" ForceCursor="True" FontWeight="Heavy"  BorderThickness="0,0,0,0" Padding="0,0,0,0" HorizontalContentAlignment="Center" HorizontalAlignment="Left" Click="btbdangki_Click"/>
             <TextBlock HorizontalAlignment="Left" Margin="8,0,0,50" TextWrapping="Wrap" Text="Bạn đã có tài khoản? Đăng nhập ngay:" VerticalAlignment="Bottom" FontSize="15" FontWeight="Medium"/>
-            <Button Style="{StaticResource Signup}" x:Name="btbdangnhap" Width="120" Height="26" VerticalContentAlignment="Center" Margin="295,0,0,47" Content="ĐĂNG NHẬP" FontSize="16" ForceCursor="True" FontWeight="Heavy" Background="#FF0D9F56" BorderThickness="0,0,0,0" HorizontalAlignment="Left" Padding="0,0,0,0" VerticalAlignment="Bottom" Click="btbdangnhap_Click"/>
+            <Button Style="{StaticResource Signup}" x:Name="btbdangnhap" Width="120" Height="26" VerticalContentAlignment="Center" Margin="295,0,0,47" Content="ĐĂNG NHẬP" FontSize="16" ForceCursor="True" FontWeight="Heavy" BorderThickness="0,0,0,0" HorizontalAlignment="Left" Padding="0,0,0,0" VerticalAlignment="Bottom" Click="btbdangnhap_Click"/>
 
 
         </Grid>

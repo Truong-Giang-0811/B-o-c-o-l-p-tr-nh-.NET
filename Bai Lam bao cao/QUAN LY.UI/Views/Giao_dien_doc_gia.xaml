@@ -7,7 +7,8 @@
         mc:Ignorable="d"
         Title="Giao_dien_doc_gia" Height="600" Width="900" WindowStartupLocation="CenterScreen" >
     <Window.Resources>
-        <!-- Giữ nguyên style bạn đã định nghĩa -->
+
+        <!-- Hover đổi con trỏ -->
         <Style TargetType="CheckBox">
             <Setter Property="Cursor" Value="Arrow"/>
             <Style.Triggers>
@@ -17,18 +18,24 @@
             </Style.Triggers>
         </Style>
 
-        <Style x:Key="Signup" TargetType="Button">
-            <Setter Property="Background" Value="#FF5C605E"/>
-            <Setter Property="Foreground" Value="White"/>
+        <!-- Style nút trong sidebar -->
+        <Style x:Key="SidebarButton" TargetType="Button">
+            <Setter Property="Background" Value="Transparent"/>
+            <!-- xanh biển đậm -->
+            <Setter Property="Foreground" Value="Black"/>
+            <!-- trắng -->
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="Height" Value="38"/>
+            <Setter Property="Margin" Value="10,15,10,0"/>
+            <Setter Property="BorderBrush" Value="#00BCD5"/>
+            <Setter Property="BorderThickness" Value="0"/>
             <Setter Property="Cursor" Value="Arrow"/>
-            <Setter Property="SnapsToDevicePixels" Value="True"/>
-            <Setter Property="UseLayoutRounding" Value="True"/>
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="Button">
                         <Border Background="{TemplateBinding Background}"
                                 CornerRadius="8"
-                                BorderThickness="{TemplateBinding BorderThickness}"
                                 BorderBrush="{TemplateBinding BorderBrush}">
                             <ContentPresenter HorizontalAlignment="Center" VerticalAlignment="Center"/>
                         </Border>
@@ -36,21 +43,29 @@
                 </Setter.Value>
             </Setter>
             <Style.Triggers>
+                <!-- Hover -->
                 <Trigger Property="IsMouseOver" Value="True">
-                    <Setter Property="Background" Value="#FF007139"/>
-                    <Setter Property="Foreground" Value="#FFFF00"/>
+                    <Setter Property="Background" Value="#00BCD5"/>
+                    <!-- xanh biển đậm hơn -->
+                    <Setter Property="Foreground" Value="#FFFFFF"/>
                     <Setter Property="Cursor" Value="Hand"/>
+                </Trigger>
+                <Trigger Property="Tag" Value="Active">
+                    <Setter Property="Background" Value="#33BFA5"/>
+                    <!-- cyan xanh ngọc -->
+                    <Setter Property="Foreground" Value="White"/>
                 </Trigger>
             </Style.Triggers>
         </Style>
 
+        <!-- Style TextBox trong giao diện -->
         <Style TargetType="TextBox">
             <Setter Property="Template">
                 <Setter.Value>
                     <ControlTemplate TargetType="TextBox">
                         <Border BorderThickness="1"
                                 CornerRadius="10"
-                                BorderBrush="#FF087026"
+                                BorderBrush="#1C82AD"
                                 Background="White">
                             <ScrollViewer x:Name="PART_ContentHost"
                                           Margin="4,2,4,2"
@@ -61,64 +76,67 @@
                 </Setter.Value>
             </Setter>
         </Style>
+
     </Window.Resources>
 
-    <Grid Margin="0,0,0,0">
+    <!-- Giao diện chính -->
+    <Grid>
         <!-- Nền -->
         <Grid.Background>
-            <SolidColorBrush Color="#FFD3F8E6"/>
+            <SolidColorBrush Color="White"/>
         </Grid.Background>
 
         <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="0.2*"/>
-            <ColumnDefinition Width="0.8*"/>
+            <ColumnDefinition Width="0.25*"/>
+            <ColumnDefinition Width="0.75*"/>
         </Grid.ColumnDefinitions>
 
         <!-- Sidebar -->
-        <Grid Grid.Row="0" Background="#FF6AE4A7" >
-            <!-- Logo -->
-            <Image Margin="0,0,0,0" Source="/Anh/Logo.png" VerticalAlignment="Top" />
+        <Grid>
+            <Grid.Background>
+                <LinearGradientBrush EndPoint="0,0" StartPoint="0,1">
+                    <GradientStop Color="#FFE1F2F7" Offset="0"/>
+                    <GradientStop Color="#FF39F1F1" Offset="0.5"/>
+                    <GradientStop Color="#FFF0F4F6" Offset="1"/>
+                </LinearGradientBrush>
+            </Grid.Background>
 
-            <!-- Menu chức năng -->
-            <StackPanel VerticalAlignment="Center">
-                <Button Style="{StaticResource Signup}" x:Name="btnTraCuuSach"
-                        Content="📚 Tra cứu sách" Margin="10,10,10,0"
-                        Height="37" FontSize="16" FontWeight="Bold"
-                        BorderBrush="#FF0D9F56" Background="#FF0D9F56"
-                        Click="btnTraCuuSach_Click"/>
+            <StackPanel Margin="0,20,0,0" VerticalAlignment="Top" Orientation="Horizontal" HorizontalAlignment="Center">
+                <!-- Icon sách mở -->
+                <TextBlock Text="📖"
+                   FontSize="35"
+                   VerticalAlignment="Center"
+                   Foreground="#00BCD5"/>
 
-                <Button Style="{StaticResource Signup}" x:Name="btnGioMuon"
-                        Content="🛒 Giỏ mượn" Margin="10,10,10,0"
-                        Height="37" FontSize="16" FontWeight="Bold"
-                        BorderBrush="#FF0D9F56" Background="#FF0D9F56"
-                        Click="btnGioMuon_Click"/>
 
-                <Button Style="{StaticResource Signup}" x:Name="btnLichSuMuon"
-                        Content="🕓 Lịch sử mượn" Margin="10,10,10,0"
-                        Height="37" FontSize="16" FontWeight="Bold"
-                        BorderBrush="#FF0D9F56" Background="#FF0D9F56"
-                        Click="btnLichSuMuon_Click"/>
-
-                <Button Style="{StaticResource Signup}" x:Name="btnTaiKhoan"
-                        Content="👤 Tài khoản cá nhân" Margin="10,10,10,0"
-                        Height="37" FontSize="16" FontWeight="Bold"
-                        BorderBrush="#FF0D9F56" Background="#FF0D9F56" Click="btnTaiKhoan_Click"
-                        />
-
-                <Button Style="{StaticResource Signup}" x:Name="btnExit"
-                        Content="🚪 Đăng xuất" Margin="10,20,10,0"
-                        Height="37" FontSize="16" FontWeight="Bold"
-                        BorderBrush="#FF0D9F56" Background="#FF0D9F56" Click="btnExit_Click"
-                        />
+                <!-- Tên thư viện -->
+                <TextBlock Text="THƯ VIỆN GCLB"
+               FontSize="20"
+               FontWeight="Bold"
+               Foreground="#00BCD5"
+               VerticalAlignment="Center"
+               Margin="10,10,0,0"/>
             </StackPanel>
 
+            <!-- Menu chức năng -->
+            <StackPanel VerticalAlignment="Center" Height="435">
+                <Button Style="{StaticResource SidebarButton}" x:Name="btnTraCuuSach"
+                        Content="📚 Tra cứu sách" Click="btnTraCuuSach_Click"/>
+                <Button Style="{StaticResource SidebarButton}" x:Name="btnGioMuon"
+                        Content="🛒 Giỏ mượn" Click="btnGioMuon_Click"/>
+                <Button Style="{StaticResource SidebarButton}" x:Name="btnLichSuMuon"
+                        Content="🕓 Lịch sử mượn" Click="btnLichSuMuon_Click"/>
+                <Button Style="{StaticResource SidebarButton}" x:Name="btnTaiKhoan"
+                        Content="👤 Tài khoản cá nhân" Click="btnTaiKhoan_Click"/>
+                <Button Style="{StaticResource SidebarButton}" x:Name="btnExit"
+                        Content="🚪 Đăng xuất" Click="btnExit_Click"/>
+            </StackPanel>
         </Grid>
+
         <!-- Nội dung chính -->
         <Grid Grid.Column="1">
-            <ContentControl x:Name="Mainconten" 
-                Margin="10,60,10,10"/>
+            <ContentControl x:Name="Mainconten" Margin="10,60,10,10"/>
         </Grid>
-        
-      
+
     </Grid>
 </Window>

@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Windows.Controls.Primitives;
 using System.Windows.Data;
 using System.Windows.Documents;
 using System.Windows.Input;
@@ -23,7 +24,7 @@ namespace QUAN_LY.UI.Views
     public partial class Quan_ly_nguoi_dung : UserControl
     {
         private readonly LibraryContext _context;
-
+        private List<KhachHang> danhSachGoc;
         public Quan_ly_nguoi_dung()
         {
             try
@@ -41,7 +42,106 @@ namespace QUAN_LY.UI.Views
         // ======= Load danh sách độc giả =======
         private void LoadDanhSachDocGia()
         {
-            dgDocGia.ItemsSource = _context.KhachHangs.ToList();
+            danhSachGoc = _context.KhachHangs.ToList();
+            dgDocGia.ItemsSource = danhSachGoc;
+        }
+        private static T FindVisualChild<T>(DependencyObject parent) where T : DependencyObject
+        {
+            if (parent == null) return null;
+            for (int i = 0; i < VisualTreeHelper.GetChildrenCount(parent); i++)
+            {
+                var child = VisualTreeHelper.GetChild(parent, i);
+                if (child is T found)
+                    return found;
+                var result = FindVisualChild<T>(child);
+                if (result != null)
+                    return result;
+            }
+            return null;
+        }
+
+        private void HighlightMatchingText(string keyword)
+        {
+            foreach (var item in dgDocGia.Items)
+            {
+                if (item is not KhachHang kh) continue;
+
+                var row = dgDocGia.ItemContainerGenerator.ContainerFromItem(item) as DataGridRow;
+                if (row == null) continue;
+
+                var presenter = FindVisualChild<DataGridCellsPresenter>(row);
+                if (presenter == null) continue;
+
+                // Cột Họ Tên (index 1)
+                HighlightCellText(kh.HoTen, keyword, presenter, 1);
+            }
+        }
+
+        private void HighlightCellText(string text, string keyword, DataGridCellsPresenter presenter, int columnIndex)
+        {
+            var cell = presenter.ItemContainerGenerator.ContainerFromIndex(columnIndex) as DataGridCell;
+            if (cell == null) return;
+
+            var txtBlock = FindVisualChild<TextBlock>(cell);
+            if (txtBlock == null) return;
+
+            txtBlock.Inlines.Clear();
+
+            if (string.IsNullOrEmpty(text))
+            {
+                return;
+            }
+
+            if (string.IsNullOrEmpty(keyword))
+            {
+                txtBlock.Inlines.Add(new Run(text));
+                return;
+            }
+
+            int startIndex = 0;
+            string lowerText = text.ToLower();
+            string lowerKey = keyword.ToLower();
+
+            while (true)
+            {
+                int index = lowerText.IndexOf(lowerKey, startIndex);
+                if (index == -1)
+                {
+                    txtBlock.Inlines.Add(new Run(text.Substring(startIndex)));
+                    break;
+                }
+
+                txtBlock.Inlines.Add(new Run(text.Substring(startIndex, index - startIndex)));
+                txtBlock.Inlines.Add(new Run(text.Substring(index, keyword.Length))
+                {
+                    FontWeight = FontWeights.Bold,
+                    Foreground = Brushes.Red
+                });
+
+                startIndex = index + keyword.Length;
+            }
+        }
+
+        // ===== Sự kiện TextChanged =====
+        private void txtTimKiem_TextChanged(object sender, TextChangedEventArgs e)
+        {
+            string keyword = txtTimKiem.Text.Trim().ToLower();
+            txtPlaceholder.Visibility = string.IsNullOrEmpty(keyword)
+                ? Visibility.Visible
+                : Visibility.Collapsed;
+
+            if (string.IsNullOrEmpty(keyword))
+            {
+                dgDocGia.ItemsSource = danhSachGoc;
+            }
+            else
+            {
+                dgDocGia.ItemsSource = danhSachGoc
+                    .Where(kh => !string.IsNullOrEmpty(kh.HoTen) && kh.HoTen.ToLower().Contains(keyword))
+                    .ToList();
+            }
+            dgDocGia.Items.Refresh();
+            dgDocGia.Dispatcher.InvokeAsync(() => HighlightMatchingText(keyword));
         }
 
         // ======= Xóa trắng form =======
@@ -138,6 +238,7 @@ namespace QUAN_LY.UI.Views
                 txtEmail.Text = selected.Email;
                 txtSDT.Text = selected.SoDienThoai;
                 dpNgaySinh.SelectedDate = selected.NgaySinh;
+
 
                 if (!string.IsNullOrEmpty(selected.GioiTinh))
                 {
