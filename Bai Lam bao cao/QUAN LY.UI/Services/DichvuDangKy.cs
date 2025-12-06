@@ -99,7 +99,8 @@ namespace QUAN_LY.UI.Services
                 DiaChi = diaChi,
                 Email = email,
                 SoDienThoai = soDienThoai,
-                GioiTinh = gioiTinh
+                GioiTinh = gioiTinh,
+                Ghichu= "Hoạt động"
             };
 
             _context.KhachHangs.Add(newUser);

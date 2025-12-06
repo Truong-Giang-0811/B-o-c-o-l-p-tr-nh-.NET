@@ -55,7 +55,8 @@ namespace QUAN_LY.UI.Services
                 SoLuongTon = soLuongTon,
                 SoLuongMuon = 0, // Mới thêm nên số lượng mượn là 0
                 NgayNhap = ngayNhap,
-                Mota = mota
+                Mota = mota,
+                Ghichu = "Đang sử dụng"
             };
             _context.Saches.Add(newBook);
             _context.SaveChanges();
@@ -121,7 +122,7 @@ namespace QUAN_LY.UI.Services
                 message = "Không thể xóa sách đang được mượn!";
                 return false;
             }
-            _context.Saches.Remove(sach);
+            sach.Ghichu="Đã xóa";
             _context.SaveChanges();
             message = "Xóa sách thành công!";
             return true;
