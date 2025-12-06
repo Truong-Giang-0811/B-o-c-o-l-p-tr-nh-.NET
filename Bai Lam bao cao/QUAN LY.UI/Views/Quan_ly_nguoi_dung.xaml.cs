@@ -42,8 +42,12 @@ namespace QUAN_LY.UI.Views
         // ======= Load danh sách độc giả =======
         private void LoadDanhSachDocGia()
         {
-            danhSachGoc = _context.KhachHangs.ToList();
+            danhSachGoc = _context.KhachHangs
+                        .Where(kh => kh.Ghichu != "Đã xóa")
+                        .ToList();
+
             dgDocGia.ItemsSource = danhSachGoc;
+            txtTimKiem_TextChanged(txtTimKiem, null);
         }
         private static T FindVisualChild<T>(DependencyObject parent) where T : DependencyObject
         {
@@ -159,16 +163,16 @@ namespace QUAN_LY.UI.Views
         // ======= Nút Xóa =======
         private void btnXoaDG_Click(object sender, RoutedEventArgs e)
         {
-            if (dgDocGia.SelectedItem is KhachHang selected)
+            if (dgDocGia.SelectedItem is KhachHang kh)
             {
-                var confirm = MessageBox.Show($"Bạn có chắc muốn xóa độc giả '{selected.HoTen}' không?",
+                var confirm = MessageBox.Show($"Bạn có chắc muốn xóa độc giả '{kh.HoTen}' không?",
                     "Xác nhận xóa", MessageBoxButton.YesNo, MessageBoxImage.Question);
 
                 if (confirm == MessageBoxResult.Yes)
                 {
                     try
                     {
-                        _context.KhachHangs.Remove(selected);
+                        kh.Ghichu="Đã xóa"; 
                         _context.SaveChanges();
 
                         MessageBox.Show("Xóa độc giả thành công!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
@@ -259,7 +263,7 @@ namespace QUAN_LY.UI.Views
         }
 
         // ======= Nút Reset =======
-        private void btnInDG_Click(object sender, RoutedEventArgs e)
+        private void btnReset_Click(object sender, RoutedEventArgs e)
         {
             ClearForm();
             dgDocGia.SelectedItem = null;

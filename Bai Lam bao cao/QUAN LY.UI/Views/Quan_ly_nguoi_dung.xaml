@@ -95,9 +95,9 @@
                        HorizontalAlignment="Center"/>
                 </Grid>
 
-                <Button x:Name="XoaDG" Content="Xóa" Width="80" Margin="5" Background="#FF3E3E" Foreground="White" FontWeight="SemiBold" BorderThickness="0" Cursor="Hand"/>
-                <Button x:Name="CapNhatDG" Content="Cập nhật" Width="100" Margin="5" Background="#FFC107" Foreground="White" FontWeight="SemiBold" BorderThickness="0" Cursor="Hand"/>
-                <Button x:Name="InDG" Content="Reset" Width="80" Margin="5" Background="#007ACC" Foreground="White" FontWeight="SemiBold" BorderThickness="0" Cursor="Hand"/>
+                <Button x:Name="XoaDG" Click="btnXoaDG_Click" Content="Xóa" Width="80" Margin="5" Background="#FF3E3E" Foreground="White" FontWeight="SemiBold" BorderThickness="0" Cursor="Hand"/>
+                <Button x:Name="CapNhatDG" Click="btnCapNhatDG_Click" Content="Cập nhật" Width="100" Margin="5" Background="#FFC107" Foreground="White" FontWeight="SemiBold" BorderThickness="0" Cursor="Hand"/>
+                <Button x:Name="Reset" Click="btnReset_Click" Content="Reset" Width="80" Margin="5" Background="#007ACC" Foreground="White" FontWeight="SemiBold" BorderThickness="0" Cursor="Hand"/>
             </StackPanel>
 
             <!-- ===== Danh sách độc giả ===== -->

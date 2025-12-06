@@ -37,14 +37,16 @@ namespace QUAN_LY.UI.Views
             var db = new LibraryContext();
             Qlsach = new Quan_ly_Sach(db);
             _context = new LibraryContext();
-            dgSach.ItemsSource = db.Saches.ToList();
+            
             dpNgayNhap.SelectedDate = DateTime.Now.Date;
             LoadDanhSachSach();
 
         }
         private void LoadDanhSachSach()
         {
-            danhSachGoc = _context.Saches.ToList();
+            danhSachGoc = _context.Saches
+                        .Where(s => s.Ghichu != "Đã xóa")
+                        .ToList();
             dgSach.ItemsSource = danhSachGoc;
         }
         private static T FindVisualChild<T>(DependencyObject parent) where T : DependencyObject
@@ -174,10 +176,7 @@ namespace QUAN_LY.UI.Views
 
                 // Cập nhật lại DataGrid
                 dgSach.ItemsSource = null; // reset cũ
-                using (var db = new LibraryContext())
-                {
-                    dgSach.ItemsSource = db.Saches.ToList();
-                }
+                LoadDanhSachSach();
                 // Xoá trắng các trường sau khi thêm thành công
                 Resetform();
                 dpNgayNhap.SelectedDate = DateTime.Now.Date;
@@ -228,10 +227,7 @@ namespace QUAN_LY.UI.Views
                 MessageBox.Show(message, "Cập Nhật Thành công", MessageBoxButton.OK, MessageBoxImage.Information);
                 // Cập nhật lại DataGrid
                 dgSach.ItemsSource = null; // reset cũ
-                using (var db = new LibraryContext())
-                {
-                    dgSach.ItemsSource = db.Saches.ToList();
-                }
+                LoadDanhSachSach();
                 Resetform();
                 dpNgayNhap.SelectedDate = DateTime.Now.Date;
             }
@@ -258,10 +254,9 @@ namespace QUAN_LY.UI.Views
                     {
                         MessageBox.Show(message, "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
                         dgSach.ItemsSource = null; // reset cũ
-                        using (var db = new LibraryContext())
-                        {
-                            dgSach.ItemsSource = db.Saches.ToList();
-                        }
+                       
+                        LoadDanhSachSach();
+                        
                         Resetform();
                         dpNgayNhap.SelectedDate = DateTime.Now.Date;
                     }

@@ -144,7 +144,11 @@ namespace QUAN_LY.UI.Views
 
                 
                  var sach = db.Saches.Find(selectedChiTiet.MaSach);
-                 if (sach != null) { sach.SoLuongTon += selectedChiTiet.SoLuong; }
+                 if (sach != null) 
+                { 
+                    sach.SoLuongTon += selectedChiTiet.SoLuong; 
+                    sach.SoLuongMuon -= selectedChiTiet.SoLuong;
+                }
 
                 db.SaveChanges();
 
@@ -291,6 +295,11 @@ namespace QUAN_LY.UI.Views
             {
                 muonSach.TrangThai = "Đã duyệt";
             }
+            if (chiTiet.Sach != null)
+            {
+                // Tăng số lượng mượn của sách
+                chiTiet.Sach.SoLuongMuon += chiTiet.SoLuong;
+            }
 
             try
             {
@@ -299,6 +308,8 @@ namespace QUAN_LY.UI.Views
                 dpNgaymuon.SelectedDate = chiTiet.NgayMuon;
                 dpNgayHenTra1.SelectedDate = chiTiet.HanTra;
                 txtTrangthai.Text = chiTiet.TrangThai;
+              
+             
                 LoadDatamuonsach();
                 if (dgmuontra.ItemsSource is IEnumerable<DonmuonViewModel> items)
                 {
