@@ -23,7 +23,9 @@ namespace QUAN_LY.UI.Models
         public int SoLuongMuon { get; set; }
         public int Thoihanmuon { get; set; }
         public string Mota { get; set; }
+
         public DateTime? NgayNhap { get; set; }
+        public string? Ghichu { get; set; }  
 
         public ICollection<Giohang> Giohangs { get; set; }
         // Một sách có thể nằm trong nhiều chi tiết mượn
