@@ -15,7 +15,7 @@ namespace QUAN_LY.UI.Models
         [Key]
         [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
         public int MaNhanVien { get; set; }
-        public string? Anhcanhan { get; set; }
+       
         public string HoTen { get; set; }
         public string? Email { get; set; }
         public string? SoDienThoai { get; set; }
