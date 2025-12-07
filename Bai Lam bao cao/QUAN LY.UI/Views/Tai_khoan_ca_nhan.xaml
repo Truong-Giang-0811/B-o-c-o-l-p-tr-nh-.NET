@@ -23,7 +23,7 @@
                                Stretch="UniformToFill"
                                Width="60" Height="60"
                                ClipToBounds="True"
-                               MouseLeftButtonUp="imgAvatar_MouseLeftButtonUp" VerticalAlignment="Top" Panel.ZIndex="4">
+                               VerticalAlignment="Top" Panel.ZIndex="4">
 
                             <Image.Clip>
                                 <EllipseGeometry Center="30,30" RadiusX="30" RadiusY="30"/>

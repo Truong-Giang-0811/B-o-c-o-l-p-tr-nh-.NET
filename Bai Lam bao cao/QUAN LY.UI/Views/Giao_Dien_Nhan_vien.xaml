@@ -98,7 +98,8 @@
 
                 <Button Style="{StaticResource Btbadmin}"
                         Content="📊 Báo cáo thống kê"
-                        Height="38" Width="200"/>
+                        Height="38" Width="200"
+                        Click="Baocaothongke"/>
 
                 <Button Style="{StaticResource Btbadmin}"
                         Content="👤 Tài khoản cá nhân"

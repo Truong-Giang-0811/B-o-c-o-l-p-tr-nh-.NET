@@ -49,10 +49,7 @@ namespace QUAN_LY.UI.Views
             }
 
             // Hiển thị ảnh hiện có
-            if (!string.IsNullOrEmpty(_nguoiDung?.Anhcanhan) && File.Exists(_nguoiDung.Anhcanhan))
-                imgAvatar.Source = new BitmapImage(new Uri(_nguoiDung.Anhcanhan, UriKind.Absolute));
-            else
-                imgAvatar.Source = new BitmapImage(new Uri("/Anh/avatarzoro.jpg", UriKind.Relative));
+          
         }
 
         private void HienThiThongTinKhachHang(KhachHang kh)
@@ -68,10 +65,7 @@ namespace QUAN_LY.UI.Views
             txtNgaySinh.Text = kh.NgaySinh?.ToString("dd/MM/yyyy");
 
             // Hiển thị ảnh
-            if (!string.IsNullOrEmpty(kh.Anhcanhan) && File.Exists(kh.Anhcanhan))
-                imgAvatar.Source = new BitmapImage(new Uri(kh.Anhcanhan, UriKind.Absolute));
-            else
-                imgAvatar.Source = new BitmapImage(new Uri("/Anh/avatarzoro.jpg", UriKind.Relative));
+           
         }
 
         private void HienThiThongTinNhanVien(Admin ad)
@@ -87,65 +81,10 @@ namespace QUAN_LY.UI.Views
             txtNgaySinh.Text = ad.NgaySinh?.ToString("dd/MM/yyyy");
 
             // Hiển thị ảnh
-            if (!string.IsNullOrEmpty(ad.Anhcanhan) && File.Exists(ad.Anhcanhan))
-                imgAvatar.Source = new BitmapImage(new Uri(ad.Anhcanhan, UriKind.Absolute));
-            else
-                imgAvatar.Source = new BitmapImage(new Uri("/Anh/avatarzoro.jpg", UriKind.Relative));
+           
         }
 
-        private void imgAvatar_MouseLeftButtonUp(object sender, MouseButtonEventArgs e)
-        {
-            try
-            {
-                // Hộp thoại chọn ảnh
-                OpenFileDialog openFileDialog = new OpenFileDialog();
-                openFileDialog.Filter = "Image files (*.jpg;*.jpeg;*.png)|*.jpg;*.jpeg;*.png";
-                openFileDialog.Title = "Chọn ảnh đại diện mới";
-
-                if (openFileDialog.ShowDialog() == true)
-                {
-                    string selectedPath = openFileDialog.FileName;
-                   // ✅ Lấy thư mục gốc của dự án (tránh nằm trong bin/Debug)
-                    string projectDir = Directory.GetParent(AppDomain.CurrentDomain.BaseDirectory).Parent.Parent.Parent.FullName;
-                    string imagesDir = System.IO.Path.Combine(projectDir, "Anh", "Users");
-
-
-                    // Tạo thư mục nếu chưa có
-                    if (!Directory.Exists(imagesDir))
-                        Directory.CreateDirectory(imagesDir);
-
-                    // Tên file mới (ví dụ: kh_5.png)
-                    string newFileName = $"kh_{UserSession.CurrentKhachHang.MaKhachHang}{System.IO.Path.GetExtension(selectedPath)}";
-                    string destPath = System.IO.Path.Combine(imagesDir, newFileName);
-
-                    File.Copy(selectedPath, destPath, true);
-
-                    // Cập nhật giao diện ngay
-                    imgAvatar.Source = new BitmapImage(new Uri(destPath, UriKind.Absolute));
-
-                    // Lưu đường dẫn ảnh vào cơ sở dữ liệu
-                    var userId = UserSession.CurrentKhachHang?.MaKhachHang;
-                    if (userId != null)
-                    {
-                        var khachHang = _context.KhachHangs.FirstOrDefault(u => u.MaKhachHang == userId);
-                        if (khachHang != null)
-                        {
-                            khachHang.Anhcanhan = destPath;
-                            _context.SaveChanges();
-
-                            // Cập nhật session hiện tại
-                            UserSession.SetKhachHang(khachHang);
-
-                            MessageBox.Show("Đã cập nhật ảnh đại diện thành công!", "Thông báo", MessageBoxButton.OK, MessageBoxImage.Information);
-                        }
-                    }
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show($"Lỗi khi đổi ảnh: {ex.Message}", "Lỗi", MessageBoxButton.OK, MessageBoxImage.Error);
-            }
-        }
+        
         private void chkHienMK_Checked(object sender, RoutedEventArgs e)
         {
             // Mật khẩu cũ

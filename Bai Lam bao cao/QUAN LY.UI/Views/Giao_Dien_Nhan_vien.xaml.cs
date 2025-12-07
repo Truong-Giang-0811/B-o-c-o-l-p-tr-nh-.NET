@@ -63,5 +63,10 @@ namespace QUAN_LY.UI.Views
         {
             Mainconten.Content = new Views.Quan_ly_nguoi_dung();
         }
+
+        private void Baocaothongke(object sender, RoutedEventArgs e)
+        {
+            Mainconten.Content = new Views.Thong_Ke();
+        }
     }
 }
