@@ -58,8 +58,9 @@ namespace QUAN_LY.UI.Services
                 return false;
             }
             // Kiểm tra username trùng
-            var existingUser = _context.Admins.FirstOrDefault(a => a.Tendangnhap == username);
-            if (existingUser != null)
+            var existingUser = _context.KhachHangs.Any(u => u.Tendangnhap == username);
+            var existingAdmin = _context.Admins.Any(u => u.Tendangnhap == username);
+            if (existingAdmin || existingUser )
             {
                 message = "Tên đăng nhập đã tồn tại!";
                 return false;
